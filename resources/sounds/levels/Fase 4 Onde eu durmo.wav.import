@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://duajwnfaeip31"
+path="res://.godot/imported/Fase 4 Onde eu durmo.wav-2ebbde7a3eea36bd4505294a0044a9a5.sample"
+
+[deps]
+
+source_file="res://resources/sounds/levels/Fase 4 Onde eu durmo.wav"
+dest_files=["res://.godot/imported/Fase 4 Onde eu durmo.wav-2ebbde7a3eea36bd4505294a0044a9a5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

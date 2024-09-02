@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://2t27orondyv5"
+path="res://.godot/imported/Fase 7 Animal.wav-ce788629b811bf40aec214cd194d182d.sample"
+
+[deps]
+
+source_file="res://resources/sounds/levels/Fase 7 Animal.wav"
+dest_files=["res://.godot/imported/Fase 7 Animal.wav-ce788629b811bf40aec214cd194d182d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

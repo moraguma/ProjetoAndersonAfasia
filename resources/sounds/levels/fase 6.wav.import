@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bqenel6qo8q1"
+path="res://.godot/imported/fase 6.wav-91f2d0a28a992abde1da22f96e134683.sample"
+
+[deps]
+
+source_file="res://resources/sounds/levels/fase 6.wav"
+dest_files=["res://.godot/imported/fase 6.wav-91f2d0a28a992abde1da22f96e134683.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
