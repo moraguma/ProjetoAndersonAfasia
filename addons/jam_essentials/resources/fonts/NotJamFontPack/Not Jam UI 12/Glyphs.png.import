@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8qobhjl2shr7"
-path="res://.godot/imported/TinySki.png-e7e2a5e0cdc3086c694414d0c1250948.ctex"
+uid="uid://c718jxnf6vkcp"
+path="res://.godot/imported/Glyphs.png-7c1507901251c7c1d19566fc561b3c8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/images/main/TinySki.png"
-dest_files=["res://.godot/imported/TinySki.png-e7e2a5e0cdc3086c694414d0c1250948.ctex"]
+source_file="res://addons/jam_essentials/resources/fonts/NotJamFontPack/Not Jam UI 12/Glyphs.png"
+dest_files=["res://.godot/imported/Glyphs.png-7c1507901251c7c1d19566fc561b3c8d.ctex"]
 
 [params]
 

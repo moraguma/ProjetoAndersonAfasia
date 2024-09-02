@@ -1,0 +1,88 @@
+[gd_scene load_steps=14 format=3 uid="uid://kvirj2xj2eet"]
+
+[ext_resource type="Texture2D" uid="uid://bli0hywwwmwhv" path="res://resources/images/main/sprites/Flag.png" id="1_o2gwr"]
+[ext_resource type="Theme" uid="uid://yikwyyedwtfw" path="res://resources/themes/main_theme.tres" id="2_mniai"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_20s4g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hovvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vtk84"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fvk8k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wor02"]
+
+[sub_resource type="Theme" id="Theme_nlxf6"]
+Button/styles/disabled = SubResource("StyleBoxEmpty_20s4g")
+Button/styles/focus = SubResource("StyleBoxEmpty_hovvj")
+Button/styles/hover = SubResource("StyleBoxEmpty_vtk84")
+Button/styles/normal = SubResource("StyleBoxEmpty_fvk8k")
+Button/styles/pressed = SubResource("StyleBoxEmpty_wor02")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4jbt"]
+atlas = ExtResource("1_o2gwr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nyrx"]
+atlas = ExtResource("1_o2gwr")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_insoi"]
+atlas = ExtResource("1_o2gwr")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hediu"]
+atlas = ExtResource("1_o2gwr")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ll8lf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d4jbt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nyrx")
+}],
+"loop": true,
+"name": &"beat",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_insoi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hediu")
+}],
+"loop": true,
+"name": &"not_beat",
+"speed": 2.0
+}]
+
+[node name="LevelSelector" type="Button"]
+offset_left = -72.0
+offset_top = -72.0
+offset_right = 72.0
+offset_bottom = 72.0
+theme = SubResource("Theme_nlxf6")
+flat = true
+
+[node name="Flag" type="AnimatedSprite2D" parent="."]
+position = Vector2(72, 72)
+scale = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_ll8lf")
+animation = &"beat"
+frame_progress = 0.322148
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -56.0
+offset_top = -88.0
+offset_right = 200.0
+offset_bottom = 3.0
+theme = ExtResource("2_mniai")
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1

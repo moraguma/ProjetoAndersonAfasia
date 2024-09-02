@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc4d4vghmhl2y"
-path="res://.godot/imported/TinyDungeon.png-3c645cb98e38e54e92260d4db0f80fec.ctex"
+uid="uid://ofh2ga6t40yo"
+path="res://.godot/imported/Glyphs.png-9bc9c56df0a24050eb41a6085287266d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/images/main/TinyDungeon.png"
-dest_files=["res://.godot/imported/TinyDungeon.png-3c645cb98e38e54e92260d4db0f80fec.ctex"]
+source_file="res://addons/jam_essentials/resources/fonts/NotJamFontPack/Not Jam Signature 17/Glyphs.png"
+dest_files=["res://.godot/imported/Glyphs.png-9bc9c56df0a24050eb41a6085287266d.ctex"]
 
 [params]
 

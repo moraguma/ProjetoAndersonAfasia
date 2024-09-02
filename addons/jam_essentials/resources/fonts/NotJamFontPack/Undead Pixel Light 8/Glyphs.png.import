@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by15wmo5am4pc"
-path="res://.godot/imported/TinyTown.png-94cd8b27237eb80793de57d15b1d7a7b.ctex"
+uid="uid://bp4jh5mxc1y8g"
+path="res://.godot/imported/Glyphs.png-7f1c8d0653ddd4cba00c21ecaf6e8aa8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/images/main/TinyTown.png"
-dest_files=["res://.godot/imported/TinyTown.png-94cd8b27237eb80793de57d15b1d7a7b.ctex"]
+source_file="res://addons/jam_essentials/resources/fonts/NotJamFontPack/Undead Pixel Light 8/Glyphs.png"
+dest_files=["res://.godot/imported/Glyphs.png-7f1c8d0653ddd4cba00c21ecaf6e8aa8.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx13xw7qa7876"
-path="res://.godot/imported/TinyBattle.png-6f70c21db5a1ef5349b213aaad807e31.ctex"
+uid="uid://by15wmo5am4pc"
+path="res://.godot/imported/TinyTown.png-90768f9a84500fc72611574de3e5a37f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/images/main/TinyBattle.png"
-dest_files=["res://.godot/imported/TinyBattle.png-6f70c21db5a1ef5349b213aaad807e31.ctex"]
+source_file="res://resources/images/main/tilesets/TinyTown.png"
+dest_files=["res://.godot/imported/TinyTown.png-90768f9a84500fc72611574de3e5a37f.ctex"]
 
 [params]
 
