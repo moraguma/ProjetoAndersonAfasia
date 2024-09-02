@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="ChapeuVermelho"
-run/main_scene="res://nivel.tscn"
+run/main_scene="res://scenes/Main.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Mostrador="*res://Mostrador.tscn"
+Mostrador="*res://scenes/Mostrador.tscn"
 
 [display]
 

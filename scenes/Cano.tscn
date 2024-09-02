@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl7s0qp2vr6wn"]
+
+[ext_resource type="Script" path="res://scenes/scripts/Cano.gd" id="1_t2k6k"]
+[ext_resource type="Texture2D" uid="uid://5ds6772f0v2p" path="res://icon.svg" id="1_tn4wu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jp2rp"]
+radius = 63.1981
+
+[node name="Cano" type="Area2D"]
+script = ExtResource("1_t2k6k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tn4wu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jp2rp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
