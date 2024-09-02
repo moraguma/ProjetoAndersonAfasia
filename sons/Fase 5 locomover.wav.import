@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cthb2f6vv45ye"
+path="res://.godot/imported/Fase 5 locomover.wav-1f3a4f9f68e4b1f5911edb1d19631cf5.sample"
+
+[deps]
+
+source_file="res://sons/Fase 5 locomover.wav"
+dest_files=["res://.godot/imported/Fase 5 locomover.wav-1f3a4f9f68e4b1f5911edb1d19631cf5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://bttv10whonv08"]
+
+[ext_resource type="Script" path="res://Fases/Selecao.gd" id="1_ouprk"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://item.tscn" id="2_jisly"]
+[ext_resource type="Texture2D" uid="uid://v78y3ymccrvy" path="res://Imagens/pexels-atomlaborblog-844867.jpg" id="3_ndi5m"]
+[ext_resource type="Texture2D" uid="uid://cseyii27d0g3m" path="res://Imagens/free-photo-of-cidade-meio-urbano-franca-viagem.jpeg" id="4_aljif"]
+[ext_resource type="Texture2D" uid="uid://bwx1i8bl31gym" path="res://Imagens/pexels-jterrazz-13766924.jpg" id="5_5cp15"]
+[ext_resource type="AudioStream" uid="uid://brm44h7d6nfa7" path="res://sons/fase 1 sol careca.wav" id="6_vcea4"]
+
+[node name="Selecao" type="Node2D"]
+script = ExtResource("1_ouprk")
+
+[node name="Item" parent="." instance=ExtResource("2_jisly")]
+offset_left = 557.0
+offset_top = 106.0
+offset_right = 857.0
+offset_bottom = 406.0
+texture_normal = ExtResource("3_ndi5m")
+correto = true
+
+[node name="Item4" parent="." instance=ExtResource("2_jisly")]
+offset_left = 186.0
+offset_top = 160.0
+offset_right = 486.0
+offset_bottom = 460.0
+texture_normal = ExtResource("4_aljif")
+
+[node name="Item5" parent="." instance=ExtResource("2_jisly")]
+offset_left = 624.0
+offset_top = 440.0
+offset_right = 924.0
+offset_bottom = 740.0
+texture_normal = ExtResource("5_5cp15")
+
+[node name="Pergunta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_vcea4")

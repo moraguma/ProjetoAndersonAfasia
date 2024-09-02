@@ -1,0 +1,159 @@
+[gd_scene load_steps=22 format=3 uid="uid://o82jd3w44a5m"]
+
+[ext_resource type="Script" path="res://Fases/Selecao.gd" id="1_k0bhy"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://item.tscn" id="2_5gxyc"]
+[ext_resource type="Texture2D" uid="uid://bly1w3vf7qp4k" path="res://Imagens/fase 10/espelho.jpg" id="3_nn8ud"]
+[ext_resource type="Texture2D" uid="uid://bn8cii2pnbvko" path="res://Imagens/fase 10/1216.png" id="4_rdk14"]
+[ext_resource type="Texture2D" uid="uid://ckj6bymajn3ep" path="res://Imagens/fase 10/1114.jpg" id="5_6bm1x"]
+[ext_resource type="Texture2D" uid="uid://77m48vmqjscw" path="res://Imagens/fase 10/Arvore.jpg" id="6_8v0nn"]
+[ext_resource type="AudioStream" uid="uid://bunfnennjihoi" path="res://sons/fase 10 onde eu pode sento.wav" id="6_kxbur"]
+[ext_resource type="Texture2D" uid="uid://bymtpg6tbfeq4" path="res://Imagens/fase 10/Burger.jpg" id="7_1xder"]
+[ext_resource type="Texture2D" uid="uid://dwfrp4j4wruwg" path="res://Imagens/fase 10/Caderno.jpg" id="8_8wheq"]
+[ext_resource type="Texture2D" uid="uid://blfwkiv7sbsia" path="res://Imagens/fase 10/Banco.jpg" id="9_bmhub"]
+[ext_resource type="Texture2D" uid="uid://ccg6cncn1o3o6" path="res://Imagens/fase 10/Cachorro.jpg" id="10_ojrj0"]
+[ext_resource type="Texture2D" uid="uid://c0bvb24r8um4j" path="res://Imagens/fase 10/carta.png" id="11_yshuj"]
+[ext_resource type="Texture2D" uid="uid://bgdy3vkn03blg" path="res://Imagens/fase 10/Rocha.jpg" id="12_p2fu1"]
+[ext_resource type="Texture2D" uid="uid://cl6m10d4qbnm8" path="res://Imagens/fase 10/Espinho flor.jpg" id="13_b63gs"]
+[ext_resource type="Texture2D" uid="uid://gppxjsuuvbhe" path="res://Imagens/fase 10/Cadeira.jpg" id="14_cuhn4"]
+[ext_resource type="Texture2D" uid="uid://cqc3ndb0vnwi7" path="res://Imagens/fase 10/Sapato.jpg" id="15_0bbhb"]
+[ext_resource type="Texture2D" uid="uid://5xc3v8q2lnmw" path="res://Imagens/fase 10/Carro.png" id="16_yqa3s"]
+[ext_resource type="Texture2D" uid="uid://0gwsyuy1kwxl" path="res://Imagens/fase 10/Calculator.jpg" id="17_8gjht"]
+[ext_resource type="Texture2D" uid="uid://cbe1xexvghye0" path="res://Imagens/fase 10/Iphone.jpg" id="18_ej7ra"]
+[ext_resource type="Texture2D" uid="uid://bplytr4m8cygj" path="res://Imagens/fase 10/Barco.jpg" id="19_smdb3"]
+[ext_resource type="Texture2D" uid="uid://csjdsal0o2k8" path="res://Imagens/fase 10/Bananas.jpg" id="20_utic6"]
+
+[node name="Selecao" type="Node2D"]
+script = ExtResource("1_k0bhy")
+
+[node name="Espelho" parent="." instance=ExtResource("2_5gxyc")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 405.0
+offset_top = 65.0
+offset_right = 705.0
+offset_bottom = 365.0
+grow_horizontal = 0
+texture_normal = ExtResource("3_nn8ud")
+
+[node name="Comfortable" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = -1.0
+offset_top = 36.0
+offset_bottom = 338.0
+texture_normal = ExtResource("4_rdk14")
+correto = true
+
+[node name="Televisao" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 119.0
+offset_right = 1080.0
+offset_bottom = 419.0
+texture_normal = ExtResource("5_6bm1x")
+
+[node name="Arvore" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 419.0
+offset_right = 1080.0
+offset_bottom = 719.0
+texture_normal = ExtResource("6_8v0nn")
+correto = true
+
+[node name="Burger" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 407.0
+offset_top = 365.0
+offset_right = 707.0
+offset_bottom = 665.0
+texture_normal = ExtResource("7_1xder")
+
+[node name="Caderno" parent="." instance=ExtResource("2_5gxyc")]
+offset_top = 335.0
+offset_bottom = 635.0
+texture_normal = ExtResource("8_8wheq")
+
+[node name="Banco" parent="." instance=ExtResource("2_5gxyc")]
+offset_top = 636.0
+offset_bottom = 936.0
+texture_normal = ExtResource("9_bmhub")
+correto = true
+
+[node name="Cachorro" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 719.0
+offset_right = 1080.0
+offset_bottom = 1019.0
+texture_normal = ExtResource("10_ojrj0")
+
+[node name="Aviao" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 407.0
+offset_top = 665.0
+offset_right = 707.0
+offset_bottom = 965.0
+texture_normal = ExtResource("11_yshuj")
+correto = true
+
+[node name="Rocha" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 406.0
+offset_top = 962.0
+offset_right = 706.0
+offset_bottom = 1262.0
+texture_normal = ExtResource("12_p2fu1")
+correto = true
+
+[node name="Espinho" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 1.0
+offset_top = 935.0
+offset_bottom = 1234.0
+texture_normal = ExtResource("13_b63gs")
+
+[node name="Cadeira" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 1019.0
+offset_right = 1080.0
+offset_bottom = 1319.0
+texture_normal = ExtResource("14_cuhn4")
+correto = true
+
+[node name="Sapato" parent="." instance=ExtResource("2_5gxyc")]
+offset_top = 1235.0
+offset_bottom = 1535.0
+texture_normal = ExtResource("15_0bbhb")
+
+[node name="Carro" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 407.0
+offset_top = 1261.0
+offset_right = 707.0
+offset_bottom = 1561.0
+texture_normal = ExtResource("16_yqa3s")
+correto = true
+
+[node name="Calculador" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 1319.0
+offset_right = 1080.0
+offset_bottom = 1619.0
+texture_normal = ExtResource("17_8gjht")
+
+[node name="Iphone" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 407.0
+offset_top = 1556.0
+offset_right = 707.0
+offset_bottom = 1856.0
+texture_normal = ExtResource("18_ej7ra")
+
+[node name="Barco" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = -1.0
+offset_top = 1532.0
+offset_right = 299.0
+offset_bottom = 1832.0
+texture_normal = ExtResource("19_smdb3")
+correto = true
+
+[node name="Banana" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 1619.0
+offset_right = 1080.0
+offset_bottom = 1919.0
+texture_normal = ExtResource("20_utic6")
+
+[node name="Pergunta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_kxbur")

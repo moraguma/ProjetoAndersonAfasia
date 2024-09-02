@@ -1,0 +1,235 @@
+[gd_scene load_steps=28 format=3 uid="uid://cne6e75s75jvj"]
+
+[ext_resource type="Script" path="res://Fases/Selecao.gd" id="1_lw1pl"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://item.tscn" id="2_foi36"]
+[ext_resource type="Texture2D" uid="uid://0ue0nv2w0o7x" path="res://Imagens/Fase 4/Escada.jpg" id="3_ng3bh"]
+[ext_resource type="Texture2D" uid="uid://c71ln77yiq0qc" path="res://Imagens/Fase 4/Resturante.jpeg" id="4_0glr8"]
+[ext_resource type="Texture2D" uid="uid://t11grlq8ig8e" path="res://Imagens/Fase 4/Barco.jpeg" id="5_h7388"]
+[ext_resource type="Texture2D" uid="uid://ffkd6uukeuas" path="res://Imagens/Fase 4/Coador Cafe.png" id="5_l8xih"]
+[ext_resource type="Texture2D" uid="uid://dwog8oo5cp0og" path="res://Imagens/Fase 4/Famaca.jpeg" id="6_yjd3f"]
+[ext_resource type="Texture2D" uid="uid://bc2o5c0gjg0u5" path="res://Imagens/Fase 4/Fogo.jpeg" id="7_n61cx"]
+[ext_resource type="Texture2D" uid="uid://q4ecex57tef6" path="res://Imagens/Fase 4/Figarro.jpg" id="8_jeqa4"]
+[ext_resource type="Texture2D" uid="uid://dc7u6hir0k7x" path="res://Imagens/Fase 4/Empreso.jpg" id="9_p0w5g"]
+[ext_resource type="Texture2D" uid="uid://bk6bwy4pk77l0" path="res://Imagens/Fase 4/Banco rua.jpeg" id="10_c6ba4"]
+[ext_resource type="Texture2D" uid="uid://bqbekuhgs64wo" path="res://Imagens/Fase 4/urso.png" id="11_8ldnf"]
+[ext_resource type="Texture2D" uid="uid://drl2o5pnmg514" path="res://Imagens/Fase 4/Diretora.jpeg" id="11_f0jeu"]
+[ext_resource type="Texture2D" uid="uid://vgkekors8wkr" path="res://Imagens/Fase 4/Cama.jpeg" id="12_6kws2"]
+[ext_resource type="Texture2D" uid="uid://dqq2d7gii82gi" path="res://Imagens/Fase 4/Armario.jpg" id="14_fy5uf"]
+[ext_resource type="Texture2D" uid="uid://d2s0vangy5s2c" path="res://Imagens/Fase 4/Rato.jpeg" id="15_hbgqp"]
+[ext_resource type="Texture2D" uid="uid://e5xl72ups8nr" path="res://Imagens/Fase 4/rede.jpg" id="16_h82jg"]
+[ext_resource type="Texture2D" uid="uid://wt6f8ne8ksun" path="res://Imagens/Fase 4/som.jpg" id="17_3xtj1"]
+[ext_resource type="Texture2D" uid="uid://bbw0ywh7v83f3" path="res://Imagens/Fase 4/sofa.jpeg" id="18_18bi5"]
+[ext_resource type="Texture2D" uid="uid://jl74ypasj7dr" path="res://Imagens/Fase 4/ventilador.jpg" id="18_mvoaj"]
+[ext_resource type="Texture2D" uid="uid://d0soswc6a4qcw" path="res://Imagens/Fase 4/Piscina.png" id="20_3cjqf"]
+[ext_resource type="Texture2D" uid="uid://csjlo4if2gt1i" path="res://Imagens/Fase 4/natura.jpg" id="21_27iq1"]
+[ext_resource type="Texture2D" uid="uid://c0yo5mmarfn4y" path="res://Imagens/Fase 4/Roda.jpeg" id="22_ryqac"]
+[ext_resource type="Texture2D" uid="uid://dc8tbif82fkfk" path="res://Imagens/Fase 4/no chao.jpg" id="23_1alnd"]
+[ext_resource type="Texture2D" uid="uid://bxs87rngx7kc7" path="res://Imagens/Fase 4/rede praia.jpeg" id="24_e371l"]
+[ext_resource type="Texture2D" uid="uid://diimbu02jdysq" path="res://Imagens/Fase 4/tempestades.jpeg" id="25_5h0q4"]
+[ext_resource type="AudioStream" uid="uid://duajwnfaeip31" path="res://sons/Fase 4 Onde eu durmo.wav" id="27_aq8cc"]
+
+[node name="Selecao" type="Node2D"]
+script = ExtResource("1_lw1pl")
+
+[node name="Escada" parent="." instance=ExtResource("2_foi36")]
+offset_left = 310.0
+offset_top = 590.0
+offset_right = 617.0
+offset_bottom = 888.0
+texture_normal = ExtResource("3_ng3bh")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cama" parent="." instance=ExtResource("2_foi36")]
+offset_left = 309.0
+offset_top = 1.0
+offset_right = 609.0
+offset_bottom = 299.0
+texture_normal = ExtResource("12_6kws2")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Coador de Cafe" parent="." instance=ExtResource("2_foi36")]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 309.0
+offset_bottom = 299.0
+texture_normal = ExtResource("5_l8xih")
+metadata/_edit_use_anchors_ = true
+
+[node name="Armario" parent="." instance=ExtResource("2_foi36")]
+offset_left = 609.0
+offset_top = 1.0
+offset_right = 909.0
+offset_bottom = 299.0
+texture_normal = ExtResource("14_fy5uf")
+metadata/_edit_use_anchors_ = true
+
+[node name="Rato" parent="." instance=ExtResource("2_foi36")]
+offset_left = 909.0
+offset_top = 1.0
+offset_right = 1080.0
+offset_bottom = 299.0
+texture_normal = ExtResource("15_hbgqp")
+metadata/_edit_use_anchors_ = true
+
+[node name="Rede" parent="." instance=ExtResource("2_foi36")]
+offset_left = 3.0
+offset_top = 300.0
+offset_right = 311.0
+offset_bottom = 598.0
+texture_normal = ExtResource("16_h82jg")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Som" parent="." instance=ExtResource("2_foi36")]
+offset_left = 310.0
+offset_top = 300.0
+offset_right = 617.0
+offset_bottom = 592.0
+texture_normal = ExtResource("17_3xtj1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sofa" parent="." instance=ExtResource("2_foi36")]
+offset_left = 614.0
+offset_top = 298.0
+offset_right = 914.0
+offset_bottom = 599.0
+texture_normal = ExtResource("18_18bi5")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Urso" parent="." instance=ExtResource("2_foi36")]
+offset_left = 908.0
+offset_top = 298.0
+offset_right = 1079.0
+offset_bottom = 596.0
+texture_normal = ExtResource("11_8ldnf")
+metadata/_edit_use_anchors_ = true
+
+[node name="Piscina" parent="." instance=ExtResource("2_foi36")]
+offset_top = 594.0
+offset_right = 311.0
+offset_bottom = 892.0
+texture_normal = ExtResource("20_3cjqf")
+metadata/_edit_use_anchors_ = true
+
+[node name="Natura" parent="." instance=ExtResource("2_foi36")]
+offset_left = 617.0
+offset_top = 599.0
+offset_right = 917.0
+offset_bottom = 892.0
+texture_normal = ExtResource("21_27iq1")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Roda" parent="." instance=ExtResource("2_foi36")]
+offset_left = 910.0
+offset_top = 596.0
+offset_right = 1081.0
+offset_bottom = 891.0
+texture_normal = ExtResource("22_ryqac")
+metadata/_edit_use_anchors_ = true
+
+[node name="No cheio" parent="." instance=ExtResource("2_foi36")]
+offset_left = -2.0
+offset_top = 892.0
+offset_right = 305.0
+offset_bottom = 1190.0
+texture_normal = ExtResource("23_1alnd")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Rede de praia" parent="." instance=ExtResource("2_foi36")]
+offset_left = 304.0
+offset_top = 892.0
+offset_right = 611.0
+offset_bottom = 1190.0
+texture_normal = ExtResource("24_e371l")
+metadata/_edit_use_anchors_ = true
+
+[node name="Tempestade" parent="." instance=ExtResource("2_foi36")]
+offset_left = 611.0
+offset_top = 897.0
+offset_right = 911.0
+offset_bottom = 1190.0
+texture_normal = ExtResource("25_5h0q4")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Ventilador" parent="." instance=ExtResource("2_foi36")]
+offset_left = 909.0
+offset_top = 894.0
+offset_right = 1080.0
+offset_bottom = 1189.0
+texture_normal = ExtResource("18_mvoaj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Restaurante" parent="." instance=ExtResource("2_foi36")]
+offset_left = 300.0
+offset_top = 1184.0
+offset_right = 607.0
+offset_bottom = 1482.0
+texture_normal = ExtResource("4_0glr8")
+metadata/_edit_use_anchors_ = true
+
+[node name="Barco" parent="." instance=ExtResource("2_foi36")]
+offset_left = 2.0
+offset_top = 1188.0
+offset_right = 301.0
+offset_bottom = 1486.0
+texture_normal = ExtResource("5_h7388")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Fumaca" parent="." instance=ExtResource("2_foi36")]
+offset_left = 607.0
+offset_top = 1193.0
+offset_right = 907.0
+offset_bottom = 1486.0
+texture_normal = ExtResource("6_yjd3f")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Fogo" parent="." instance=ExtResource("2_foi36")]
+offset_left = 908.0
+offset_top = 1190.0
+offset_right = 1079.0
+offset_bottom = 1485.0
+texture_normal = ExtResource("7_n61cx")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cigarro" parent="." instance=ExtResource("2_foi36")]
+offset_top = 1486.0
+offset_right = 295.0
+offset_bottom = 1917.0
+texture_normal = ExtResource("8_jeqa4")
+metadata/_edit_use_anchors_ = true
+
+[node name="Emprego" parent="." instance=ExtResource("2_foi36")]
+offset_left = 294.0
+offset_top = 1486.0
+offset_right = 601.0
+offset_bottom = 1922.0
+texture_normal = ExtResource("9_p0w5g")
+metadata/_edit_use_anchors_ = true
+
+[node name="Banco" parent="." instance=ExtResource("2_foi36")]
+offset_left = 601.0
+offset_top = 1491.0
+offset_right = 901.0
+offset_bottom = 1916.0
+texture_normal = ExtResource("10_c6ba4")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Diretora" parent="." instance=ExtResource("2_foi36")]
+offset_left = 894.0
+offset_top = 1488.0
+offset_right = 1079.0
+offset_bottom = 1915.0
+texture_normal = ExtResource("11_f0jeu")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Pergunta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_aq8cc")
