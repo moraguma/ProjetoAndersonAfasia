@@ -25,7 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://dqxplmw1i18ee" path="res://resources/images/levels/level9/Ovos.jpg" id="23_0yr18"]
 [ext_resource type="Texture2D" uid="uid://rasycu86sxpi" path="res://resources/images/levels/level9/Sorvete.jpeg" id="24_h2apm"]
 [ext_resource type="Texture2D" uid="uid://ohu4xfjf74u8" path="res://resources/images/levels/level9/Diario.jpeg" id="25_s7nct"]
-[ext_resource type="AudioStream" uid="uid://bhty7y8gcndf3" path="res://resources/images/levels/level9/Fase 9 onde voce pode escrever.wav" id="26_kk1pj"]
+[ext_resource type="AudioStream" uid="uid://bhty7y8gcndf3" path="res://resources/sounds/levels/Fase 9 onde voce pode escrever.wav" id="26_kk1pj"]
 [ext_resource type="Texture2D" uid="uid://chwi7d8algw52" path="res://resources/images/levels/level9/carne.jpeg" id="27_6qnif"]
 [ext_resource type="Texture2D" uid="uid://bto6vhilrulrx" path="res://resources/images/levels/level9/Natal.jpeg" id="28_41ut6"]
 [ext_resource type="Texture2D" uid="uid://cn2x7fsyay75a" path="res://resources/images/levels/level9/Bolo.jpg" id="29_een6o"]

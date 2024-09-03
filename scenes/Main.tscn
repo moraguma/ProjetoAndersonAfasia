@@ -1,22 +1,12 @@
-[gd_scene load_steps=24 format=3 uid="uid://b1bpqhru7ygn"]
+[gd_scene load_steps=13 format=3 uid="uid://b1bpqhru7ygn"]
 
-[ext_resource type="Script" path="res://scenes/scripts/CharacterBody2D.gd" id="1_bmus6"]
+[ext_resource type="Script" path="res://scenes/scripts/Main.gd" id="1_evt1u"]
 [ext_resource type="Texture2D" uid="uid://dx13xw7qa7876" path="res://resources/images/main/tilesets/TinyBattle.png" id="1_xb4hn"]
-[ext_resource type="Texture2D" uid="uid://5ds6772f0v2p" path="res://icon.svg" id="2_1n8av"]
 [ext_resource type="Texture2D" uid="uid://cc4d4vghmhl2y" path="res://resources/images/main/tilesets/TinyDungeon.png" id="2_e5j22"]
 [ext_resource type="Texture2D" uid="uid://c8qobhjl2shr7" path="res://resources/images/main/tilesets/TinySki.png" id="3_6d666"]
-[ext_resource type="PackedScene" uid="uid://cl7s0qp2vr6wn" path="res://scenes/Cano.tscn" id="3_16ack"]
 [ext_resource type="Texture2D" uid="uid://by15wmo5am4pc" path="res://resources/images/main/tilesets/TinyTown.png" id="4_7e6i2"]
-[ext_resource type="Texture2D" uid="uid://cbyly2unvjj52" path="res://resources/images/levels/level1/Sol.jpeg" id="6_vnx1w"]
-[ext_resource type="Texture2D" uid="uid://b46psicexukio" path="res://resources/images/levels/level2/olho e coruja.jpg" id="7_50uuc"]
-[ext_resource type="Texture2D" uid="uid://d4e4e51xux7sf" path="res://resources/images/levels/level10/Bebe.jpg" id="7_gktgf"]
-[ext_resource type="Texture2D" uid="uid://cmlb76rxtvfpn" path="res://resources/images/levels/level4/Dorme.jpg" id="8_1kpjw"]
-[ext_resource type="Texture2D" uid="uid://cabmuodxip7jp" path="res://resources/images/levels/level3/Paria2024.jpeg" id="8_fjnda"]
-[ext_resource type="Texture2D" uid="uid://doad20qwbjwwq" path="res://resources/images/levels/level5/rua.jpeg" id="9_g2unl"]
-[ext_resource type="Texture2D" uid="uid://dowpqg3mc2ys6" path="res://resources/images/levels/level9/escrever.jpeg" id="10_0ledi"]
-[ext_resource type="Texture2D" uid="uid://dcpp8q7rsbsqa" path="res://resources/images/levels/level7/Zoologico.jpg" id="10_aeio6"]
-[ext_resource type="Texture2D" uid="uid://qvlhawf78ic1" path="res://resources/images/levels/level8/Casa.jpeg" id="11_sner1"]
-[ext_resource type="Texture2D" uid="uid://n6oslinjtsq5" path="res://resources/images/levels/level6/ECLESIASTES-3.jpg" id="11_y3cnn"]
+[ext_resource type="Texture2D" uid="uid://4xgbu6eh4x44" path="res://resources/images/main/sprites/player.png" id="5_lx6vw"]
+[ext_resource type="PackedScene" uid="uid://kvirj2xj2eet" path="res://scenes/LevelSelector.tscn" id="7_byrbx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fjqj1"]
 texture = ExtResource("1_xb4hn")
@@ -630,138 +620,98 @@ sources/1 = SubResource("TileSetAtlasSource_34jnn")
 sources/2 = SubResource("TileSetAtlasSource_t21jd")
 sources/3 = SubResource("TileSetAtlasSource_bq1sk")
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_7fa6a"]
-radius = 60.0
-
 [node name="Nivel" type="Node2D"]
+script = ExtResource("1_evt1u")
 metadata/_edit_horizontal_guides_ = [-120.0]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(470, 873)
-scale = Vector2(4, 4)
+scale = Vector2(8, 8)
 tile_set = SubResource("TileSet_ddkrf")
 format = 2
 layer_0/name = "Map"
-layer_0/tile_data = PackedInt32Array(851969, 65538, 1, 851970, 65538, 1, 851971, 65538, 1, 851972, 65538, 1, 851973, 65538, 1, 917505, 65538, 3, 917506, 65538, 3, 917507, 65538, 3, 917508, 65538, 3, 917509, 65538, 3, 917511, 131074, 3, 786437, 2, 1)
+layer_0/tile_data = PackedInt32Array(-393220, 0, 0, -393219, 65536, 0, -393218, 0, 0, -393217, 131072, 0, -458752, 65536, 0, -458751, 131072, 0, -458750, 0, 0, -458749, 0, 0, -458748, 0, 0, -393212, 65536, 0, -327676, 65536, 0, -262140, 131072, 0, -196604, 0, 0, -131068, 131072, 0, -65532, 0, 0, 4, 0, 0, 65540, 0, 0, 131076, 0, 0, 196612, 0, 0, 262148, 65536, 0, 327684, 0, 0, 393220, 65536, 0, 458756, 131072, 0, 524292, 131072, 0, 524291, 0, 0, 524290, 131072, 0, 524289, 0, 0, 524288, 131072, 0, 589823, 131075, 2, 589822, 65539, 2, 589821, 131072, 2, 589820, 65536, 2, 524284, 65536, 1, 458748, 65539, 2, 196604, 65536, 0, 262140, 0, 0, 327676, 131075, 1, 393212, 262147, 3, 131068, 65536, 0, 65532, 65536, 0, -4, 65536, 0, -65540, 131072, 0, -131076, 0, 0, -196612, 65536, 0, -262148, 65536, 0, -327684, 65536, 0, -327683, 0, 0, -327682, 131072, 0, -327681, 0, 0, -393216, 0, 0, -393215, 0, 0, -393214, 0, 0, -327678, 131072, 0, -262141, 65536, 0, -196605, 65536, 0, -393213, 0, 0, -327677, 0, 0, -327679, 65536, 0, -327680, 131072, 0, -262145, 131072, 0, -262146, 65536, 0, -196610, 65536, 0, -196611, 0, 0, -131075, 131072, 0, -262147, 131072, 0, -196609, 0, 0, -262144, 65536, 0, -262143, 0, 0, -262142, 65536, 0, -131073, 131072, 0, -65537, 131072, 0, -131072, 65536, 0, -65536, 65536, 0, -65535, 0, 0, -65534, 65536, 0, -131070, 65536, 0, -196606, 65536, 0, -131071, 65536, 0, 2, 0, 0, 65538, 0, 0, 3, 65536, 0, -65533, 131072, 0, -131069, 131072, 0, 458754, 131072, 0, 393218, 65536, 0, 393219, 0, 0, 327683, 0, 0, 262147, 65536, 0, 196611, 0, 0, 131075, 65536, 0, 65539, 0, 0, 458755, 131072, 0, 327682, 65536, 0, 327681, 0, 0, 262145, 65536, 0, 262144, 131072, 0, 327680, 0, 0, 393217, 0, 0, 458753, 0, 0, 458752, 65536, 0, 524287, 131075, 1, 458751, 65536, 0, 458750, 131075, 2, 524286, 262147, 3, 524285, 131072, 1, 458749, 65539, 2, 393213, 65539, 1, 327677, 0, 0, 262141, 0, 0, 196605, 131072, 0, -65539, 131072, 0, -3, 0, 0, 65533, 0, 0, 131069, 131072, 0, 131070, 0, 0, 65534, 0, 0, -2, 131072, 0, -65538, 0, 0, -131074, 65536, 0, -1, 131072, 0, 65535, 0, 0, 131071, 0, 0, 65536, 65536, 0, 196607, 131072, 0, 262143, 0, 0, 196608, 65536, 0, 262142, 0, 0, 196606, 0, 0, 327678, 131072, 0, 393214, 131075, 1, 393215, 0, 0, 196609, 65536, 0, 131073, 0, 0, 131072, 65536, 0, 327679, 131072, 0, 1, 65536, 0, 65537, 0, 0, 0, 0, 0, -196608, 131072, 0, -196607, 65536, 0, 131074, 0, 0, 196610, 0, 0, 262146, 65536, 0, 393216, 0, 0)
+layer_1/name = "Details"
+layer_1/tile_data = PackedInt32Array(262146, 458752, 0, 393220, 524291, 6, 131069, 65536, 7, 131070, 131072, 6, 131071, 131072, 6, 65536, 131072, 6, 65537, 131072, 9, 65538, 131072, 6, 65539, 196608, 9, 1, 0, 8, -65535, 0, 8, -131071, 0, 8, -196607, 0, 7, 196605, 196608, 9, 196604, 131072, 6, 4, 131072, 6, 3, 65536, 7, 393212, 589826, 6, 327684, 65537, 6, 65535, 589824, 0, -2, 655360, 0, -65536, 720896, 1, 65534, 524288, 1, 2, 786432, 0, 0, 851968, 1, -262144, 327680, 9, -327682, 524291, 7, -262146, 524291, 8, -131076, 655363, 8, -327684, 262147, 0, -262148, 262147, 1, -393219, 262147, 0, -327683, 262147, 1, -393217, 327683, 1, -393220, 327683, 0, -458748, 196611, 0, -393212, 196611, 1, -524285, 196611, 0, -458749, 196611, 1, -393214, 327683, 1, -458751, 262147, 2, -393216, 327683, 2)
+layer_2/name = "Walkways"
+layer_2/tile_data = PackedInt32Array(327682, 393216, 2, -131075, 720896, 3, -65539, 262144, 3, -3, 262144, 3, 65533, 262144, 3, 131069, 720896, 4, 458749, 458752, 3, -131074, 393216, 2, 131070, 393216, 2, 458750, 393216, 2, -131073, 393216, 2, 131071, 655360, 3, 196607, 262144, 3, 262143, 262144, 3, 327679, 262144, 3, 393215, 589824, 3, 458751, 393216, 4, -196608, 393216, 2, 65536, 393216, 2, 327680, 393216, 2, -262143, 327680, 3, -196607, 655360, 4, -131071, 262144, 3, -65535, 262144, 3, 1, 262144, 3, 65537, 589824, 4, 327681, 393216, 2, -262142, 393216, 2, 65538, 393216, 2, -262141, 524288, 3, 65539, 786432, 3, 131075, 262144, 3, 196611, 262144, 3, 262147, 262144, 3, 327683, 655360, 4, 393219, 458752, 4)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(515, 1821)
-script = ExtResource("1_bmus6")
-metadata/_edit_group_ = true
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(919, 1696)
+scale = Vector2(8, 8)
+texture = ExtResource("5_lx6vw")
+hframes = 2
+vframes = 3
+frame = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("2_1n8av")
+[node name="LevelSelectors" type="Node2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("CircleShape2D_7fa6a")
+[node name="Sentar" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 878.0
+offset_top = 1441.0
+offset_right = 1022.0
+offset_bottom = 1585.0
+level = 1
 
-[node name="Fase 1" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(196, 208)
-caminho_do_nivel = "res://Fases/Fase1.tscn"
+[node name="Bola" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 366.0
+offset_top = 1441.0
+offset_right = 510.0
+offset_bottom = 1585.0
+level = 2
 
-[node name="Sprite2D" parent="Fase 1" index="0"]
-position = Vector2(68, -2.38419e-06)
-scale = Vector2(0.0666667, 0.10356)
-texture = ExtResource("6_vnx1w")
+[node name="Praia" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 110.0
+offset_top = 1569.0
+offset_right = 254.0
+offset_bottom = 1713.0
+level = 3
 
-[node name="CollisionShape2D" parent="Fase 1" index="1"]
-position = Vector2(68, 0)
+[node name="Horario" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 878.0
+offset_top = 929.0
+offset_right = 1022.0
+offset_bottom = 1073.0
+level = 4
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Fase 1"]
+[node name="Dormir" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 622.0
+offset_top = 929.0
+offset_right = 766.0
+offset_bottom = 1073.0
+level = 5
 
-[node name="Fase 2" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(597, 604)
-caminho_do_nivel = "res://Fases/Fase2.tscn"
+[node name="Escrever" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 366.0
+offset_top = 929.0
+offset_right = 510.0
+offset_bottom = 1073.0
+level = 6
 
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 2"]
-position = Vector2(1.75001, 1.62501)
-scale = Vector2(0.203906, 0.31089)
-texture = ExtResource("7_50uuc")
+[node name="Bebidas" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 110.0
+offset_top = 929.0
+offset_right = 254.0
+offset_bottom = 1073.0
+level = 7
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Fase 2"]
+[node name="Animal" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 110.0
+offset_top = 417.0
+offset_right = 254.0
+offset_bottom = 561.0
+level = 8
 
-[node name="Fase 3" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(968, 120)
-caminho_do_nivel = "res://Fases/Fase3.tscn"
+[node name="Transporte" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 622.0
+offset_top = 417.0
+offset_right = 766.0
+offset_bottom = 561.0
+level = 9
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Fase 3"]
-
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 3"]
-position = Vector2(-1.57356e-05, -1.5)
-scale = Vector2(0.144, 0.187143)
-texture = ExtResource("8_fjnda")
-
-[node name="Fase 4" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(236, 547)
-caminho_do_nivel = "res://Fases/Fase4.tscn"
-
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 4"]
-position = Vector2(3.00001, 2.12502)
-scale = Vector2(0.108333, 0.185506)
-texture = ExtResource("8_1kpjw")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Fase 4"]
-
-[node name="Fase 5" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(117, 1732)
-caminho_do_nivel = "res://Fases/Fase5.tscn"
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Fase 5"]
-
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 5"]
-position = Vector2(1.25, 2.50002)
-scale = Vector2(0.132028, 0.131526)
-texture = ExtResource("9_g2unl")
-
-[node name="Fase 6" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(957, 782)
-caminho_do_nivel = "res://Fases/Fase6.tscn"
-
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 6"]
-position = Vector2(-0.999996, 0.625009)
-scale = Vector2(0.181333, 0.305488)
-texture = ExtResource("11_y3cnn")
-
-[node name="Fase 7" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(343, 1022)
-caminho_do_nivel = "res://Fases/Fase7.tscn"
-
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 7"]
-position = Vector2(1.5, 2.87499)
-scale = Vector2(0.263636, 0.344431)
-texture = ExtResource("10_aeio6")
-
-[node name="Fase 8" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(742, 1127)
-caminho_do_nivel = "res://Fases/Fase8.tscn"
-
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 8"]
-position = Vector2(3.5, -2.25)
-scale = Vector2(0.297468, 0.368493)
-texture = ExtResource("11_sner1")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Fase 8"]
-
-[node name="Fase 9" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(336, 1424)
-caminho_do_nivel = "res://Fases/Fase9.tscn"
-
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 9"]
-position = Vector2(-2.74999, 0.99999)
-scale = Vector2(0.207958, 0.13)
-texture = ExtResource("10_0ledi")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Fase 9"]
-
-[node name="Fase 10" parent="." instance=ExtResource("3_16ack")]
-position = Vector2(880, 1712)
-caminho_do_nivel = "res://Fases/Fase10.tscn"
-
-[node name="Sprite2D2" type="Sprite2D" parent="Fase 10"]
-position = Vector2(4.00001, 8.7738e-05)
-scale = Vector2(0.2125, 0.299765)
-texture = ExtResource("7_gktgf")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Fase 10"]
-
-[editable path="Fase 1"]
+[node name="Enxergar" parent="LevelSelectors" instance=ExtResource("7_byrbx")]
+offset_left = 878.0
+offset_top = 289.0
+offset_right = 1022.0
+offset_bottom = 433.0
+level = 10

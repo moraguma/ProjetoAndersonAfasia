@@ -12,6 +12,8 @@ const BUS_TO_STRING = {
 
 
 var levels_beat = {}
+var player = 2
+var last_level = "start"
 
 
 ## If the given check is true, pushes a warning message and returns true.

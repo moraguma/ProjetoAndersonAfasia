@@ -1,8 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://kvirj2xj2eet"]
+[gd_scene load_steps=17 format=3 uid="uid://kvirj2xj2eet"]
 
 [ext_resource type="Script" path="res://scenes/scripts/LevelSelector.gd" id="1_mk1qd"]
 [ext_resource type="Texture2D" uid="uid://bli0hywwwmwhv" path="res://resources/images/main/sprites/Flag.png" id="1_o2gwr"]
 [ext_resource type="Theme" uid="uid://yikwyyedwtfw" path="res://resources/themes/main_theme.tres" id="2_mniai"]
+[ext_resource type="Texture2D" uid="uid://bg0dh4520w67g" path="res://resources/images/main/sprites/Play.png" id="4_0t0e5"]
+[ext_resource type="Texture2D" uid="uid://cmu78fl6snup2" path="res://resources/images/main/sprites/PlayPressed.png" id="5_ieqrd"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_20s4g"]
 
@@ -89,9 +91,17 @@ text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Play" type="Button" parent="."]
-layout_mode = 0
-offset_left = -112.0
-offset_top = -184.0
-offset_right = 264.0
-offset_bottom = -16.0
+[node name="PlayHolder" type="Node2D" parent="."]
+position = Vector2(72, -232)
+scale = Vector2(1e-05, 1e-05)
+
+[node name="Play" type="TextureButton" parent="PlayHolder"]
+offset_left = -16.0
+offset_top = -2.0
+offset_right = 16.0
+offset_bottom = 30.0
+texture_normal = ExtResource("4_0t0e5")
+texture_pressed = ExtResource("5_ieqrd")
+texture_hover = ExtResource("4_0t0e5")
+texture_disabled = ExtResource("5_ieqrd")
+texture_focused = ExtResource("4_0t0e5")
