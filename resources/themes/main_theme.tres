@@ -4,6 +4,7 @@
 
 [resource]
 default_font = ExtResource("1_f7iup")
-default_font_size = 90
+default_font_size = 0
 Label/colors/font_color = Color(1, 1, 1, 1)
-Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_outline_color = Color(0.247059, 0.14902, 0.192157, 1)
+Label/constants/outline_size = 8

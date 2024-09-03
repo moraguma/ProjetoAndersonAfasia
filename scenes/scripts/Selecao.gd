@@ -15,7 +15,7 @@ func errou():
 
 
 func sair():
-	get_tree().change_scene_to_file("res://nivel.tscn")
+	SceneManager.goto_scene("res://scenes/Main.tscn")
 
 
 func _on_audio_stream_player_tree_entered():

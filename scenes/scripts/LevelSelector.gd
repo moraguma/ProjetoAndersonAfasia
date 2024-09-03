@@ -5,7 +5,7 @@ class_name LevelSelector
 signal go_here(node)
 
 
-const LERP_WEIGHT = 0.1
+const LERP_WEIGHT = 0.15
 const BASE_PLAY_SCALE = Vector2(8, 8)
 const OFF_PLAY_SCALE = Vector2(0, 0)
 
@@ -17,11 +17,15 @@ var can_play = false
 
 
 @onready var play_holder: Node2D = $PlayHolder
+@onready var play_button: TextureButton = $PlayHolder/Play
 @onready var sprite: AnimatedSprite2D = $Flag
+@onready var label: Label = $LabelHolder/Label
 
 
 func _ready() -> void:
+	label.text = str(level)
 	sprite.play("beat" if Globals.is_level_beat(level) else "not_beat")
+	play_button.pressed.connect(try_play)
 
 
 func _process(delta: float) -> void:
