@@ -1,10 +1,25 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://yikwyyedwtfw"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://yikwyyedwtfw"]
 
-[ext_resource type="FontFile" uid="uid://cv6kluvsgjdfe" path="res://addons/jam_essentials/resources/fonts/NotJamFontPack/Not Jam Laika 11/Not Jam Laika 11.ttf" id="1_f7iup"]
+[ext_resource type="FontFile" uid="uid://dvbh5wlxxmlu3" path="res://addons/jam_essentials/resources/fonts/digital_disco/DigitalDisco.ttf" id="1_ufaaa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_phw0j"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+expand_margin_left = 16.0
+expand_margin_top = 16.0
+expand_margin_right = 16.0
+expand_margin_bottom = 16.0
 
 [resource]
-default_font = ExtResource("1_f7iup")
+default_font = ExtResource("1_ufaaa")
 default_font_size = 0
 Label/colors/font_color = Color(1, 1, 1, 1)
 Label/colors/font_outline_color = Color(0.247059, 0.14902, 0.192157, 1)
 Label/constants/outline_size = 8
+RichTextLabel/colors/default_color = Color(0.14902, 0.168627, 0.266667, 1)
+RichTextLabel/constants/line_separation = 4
+RichTextLabel/font_sizes/normal_font_size = 64
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_phw0j")

@@ -9,11 +9,23 @@ const BUS_TO_STRING = {
 	MUSIC_BUS: "Music",
 	SFX_BUS: "SFX"
 }
+const TTS_VOL = 200
 
 
 var levels_beat = {}
 var player = 2
 var last_level = "start"
+var last_level_int = 0
+
+
+var voice_id = null
+
+
+func _ready() -> void:
+	var voices = DisplayServer.tts_get_voices_for_language("pt")
+	if len(voices) > 0:
+		voice_id = voices[0]
+
 
 
 ## If the given check is true, pushes a warning message and returns true.
@@ -33,3 +45,9 @@ func is_level_beat(level: int):
 	if level in levels_beat:
 		return levels_beat[level]
 	return false
+
+
+func tts(str):
+	if voice_id != null:
+		DisplayServer.tts_stop()
+		DisplayServer.tts_speak(str, voice_id, TTS_VOL)

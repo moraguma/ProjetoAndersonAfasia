@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqip7djlmyyuu"]
+
+[ext_resource type="Script" path="res://scenes/scripts/TTSLabel.gd" id="1_fgcs0"]
+[ext_resource type="Theme" uid="uid://yikwyyedwtfw" path="res://resources/themes/main_theme.tres" id="1_tqkr6"]
+[ext_resource type="Texture2D" uid="uid://c1au40x4e0jqu" path="res://resources/images/main/sprites/sound.png" id="2_e5f8a"]
+
+[node name="TTSLabel" type="HBoxContainer"]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 1016.0
+offset_bottom = 192.0
+alignment = 1
+script = ExtResource("1_fgcs0")
+
+[node name="TextContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(824, 128)
+layout_mode = 2
+theme = ExtResource("1_tqkr6")
+
+[node name="Text" type="RichTextLabel" parent="TextContainer"]
+clip_contents = false
+custom_minimum_size = Vector2(760, 96)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_tqkr6")
+bbcode_enabled = true
+fit_content = true
+
+[node name="SoundButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+size_flags_vertical = 4
+texture_normal = ExtResource("2_e5f8a")
+stretch_mode = 0

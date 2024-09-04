@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://dni702klqguou"]
+
+[ext_resource type="Shader" path="res://resources/shaders/DiscreteSunset.gdshader" id="1_8icjm"]
+[ext_resource type="Script" path="res://scenes/scripts/LevelBase.gd" id="1_pycaa"]
+[ext_resource type="PackedScene" uid="uid://cqip7djlmyyuu" path="res://scenes/TTSLabel.tscn" id="2_fctsm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3ioxp"]
+shader = ExtResource("1_8icjm")
+shader_parameter/bottom_color = Color(0.290232, 0.580165, 0.74687, 1)
+shader_parameter/top_color = Color(0.503848, 0.926266, 1, 1)
+shader_parameter/ray_distance = 0.02
+shader_parameter/ray_width = 0.015
+shader_parameter/ray_length = 0.3
+shader_parameter/ray_spacing = 0.5
+shader_parameter/time_scale = 0.2
+shader_parameter/level_time_diff = 0.3
+shader_parameter/total_phases = 4
+
+[node name="LevelBase" type="Node2D"]
+script = ExtResource("1_pycaa")
+win_color = Color(0.471204, 0.715059, 3.85046e-07, 1)
+lose_color = Color(0.739148, 0.26044, 0.180679, 1)
+win_text = "Bom trabalho!"
+lose_text = "Errou!"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_3ioxp")
+offset_top = 1920.0
+offset_right = 1080.0
+offset_bottom = 3840.0
+scale = Vector2(1, -1)
+
+[node name="TTSLabel" parent="." instance=ExtResource("2_fctsm")]
+text = "Escolha alguma coisa bem legal"
+say_on_ready = false
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Display" type="Polygon2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(0, 256)
+polygon = PackedVector2Array(128, 256, 960, 256, 1024, 288, 1056, 352, 1056, 1024, 1024, 1088, 960, 1120, 128, 1120, 64, 1088, 32, 1024, 32, 352, 64, 288)
+
+[node name="Success" parent="Display" instance=ExtResource("2_fctsm")]
+offset_top = 608.0
+offset_right = 1020.0
+offset_bottom = 736.0
+say_on_ready = false

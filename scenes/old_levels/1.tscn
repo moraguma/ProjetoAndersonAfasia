@@ -1,11 +1,12 @@
-[gd_scene load_steps=21 format=3 uid="uid://hmtuchr7mkg"]
+[gd_scene load_steps=22 format=3 uid="uid://o82jd3w44a5m"]
 
-[ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_3d6lw"]
+[ext_resource type="Script" path="res://scenes/scripts/Selecao.gd" id="1_k0bhy"]
 [ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_5gxyc"]
 [ext_resource type="Texture2D" uid="uid://bly1w3vf7qp4k" path="res://resources/images/levels/level10/espelho.jpg" id="3_nn8ud"]
 [ext_resource type="Texture2D" uid="uid://bn8cii2pnbvko" path="res://resources/images/levels/level10/1216.png" id="4_rdk14"]
 [ext_resource type="Texture2D" uid="uid://ckj6bymajn3ep" path="res://resources/images/levels/level10/1114.jpg" id="5_6bm1x"]
 [ext_resource type="Texture2D" uid="uid://77m48vmqjscw" path="res://resources/images/levels/level10/Arvore.jpg" id="6_8v0nn"]
+[ext_resource type="AudioStream" uid="uid://bunfnennjihoi" path="res://resources/sounds/levels/fase 10 onde eu pode sento.wav" id="6_kxbur"]
 [ext_resource type="Texture2D" uid="uid://bymtpg6tbfeq4" path="res://resources/images/levels/level10/Burger.jpg" id="7_1xder"]
 [ext_resource type="Texture2D" uid="uid://dwfrp4j4wruwg" path="res://resources/images/levels/level10/Caderno.jpg" id="8_8wheq"]
 [ext_resource type="Texture2D" uid="uid://blfwkiv7sbsia" path="res://resources/images/levels/level10/Banco.jpg" id="9_bmhub"]
@@ -21,147 +22,143 @@
 [ext_resource type="Texture2D" uid="uid://bplytr4m8cygj" path="res://resources/images/levels/level10/Barco.jpg" id="19_smdb3"]
 [ext_resource type="Texture2D" uid="uid://csjdsal0o2k8" path="res://resources/images/levels/level10/Bananas.jpg" id="20_utic6"]
 
-[node name="Base" type="Node2D"]
+[node name="Selecao" type="Node2D"]
+script = ExtResource("1_k0bhy")
 
-[node name="LevelBase" parent="." instance=ExtResource("1_3d6lw")]
-win_text = "Parabéns! Dá pra sentar nisso!"
-lose_text = "Não dá pra sentar nisso!"
-prompt = "Onde você pode sentar?"
-
-[node name="Espelho" parent="LevelBase" instance=ExtResource("2_5gxyc")]
+[node name="Espelho" parent="." instance=ExtResource("2_5gxyc")]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = 352.0
-offset_top = 384.0
-offset_right = 652.0
-offset_bottom = 834.0
+offset_left = 416.0
+offset_top = 64.0
+offset_right = 716.0
+offset_bottom = 514.0
 grow_horizontal = 0
 texture_normal = ExtResource("3_nn8ud")
 
-[node name="Comfortable" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 32.0
-offset_top = 384.0
-offset_right = 332.0
-offset_bottom = 684.0
+[node name="Comfortable" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = -1.0
+offset_top = 36.0
+offset_right = -1.0
+offset_bottom = 36.0
 texture_normal = ExtResource("4_rdk14")
 correto = true
 
-[node name="Televisao" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 2124.0
-offset_top = 87.0
-offset_right = 2574.0
-offset_bottom = 387.0
+[node name="Televisao" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 119.0
+offset_right = 780.0
+offset_bottom = 119.0
 texture_normal = ExtResource("5_6bm1x")
 
-[node name="Arvore" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 64.0
-offset_top = 864.0
-offset_right = 515.0
-offset_bottom = 1164.0
+[node name="Arvore" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 419.0
+offset_right = 780.0
+offset_bottom = 419.0
 texture_normal = ExtResource("6_8v0nn")
 correto = true
 
-[node name="Burger" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 1751.0
-offset_top = 333.0
-offset_right = 2200.0
-offset_bottom = 633.0
+[node name="Burger" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 407.0
+offset_top = 365.0
+offset_right = 407.0
+offset_bottom = 365.0
 texture_normal = ExtResource("7_1xder")
 
-[node name="Caderno" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 1856.0
-offset_top = 1536.0
-offset_right = 2305.0
-offset_bottom = 1836.0
+[node name="Caderno" parent="." instance=ExtResource("2_5gxyc")]
+offset_top = 335.0
+offset_right = 0.0
+offset_bottom = 335.0
 texture_normal = ExtResource("8_8wheq")
 
-[node name="Banco" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 544.0
-offset_top = 1440.0
-offset_right = 993.0
-offset_bottom = 1740.0
+[node name="Banco" parent="." instance=ExtResource("2_5gxyc")]
+offset_top = 636.0
+offset_right = 0.0
+offset_bottom = 636.0
 texture_normal = ExtResource("9_bmhub")
 correto = true
 
-[node name="Cachorro" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 2124.0
-offset_top = 687.0
-offset_right = 2574.0
-offset_bottom = 987.0
+[node name="Cachorro" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 719.0
+offset_right = 780.0
+offset_bottom = 719.0
 texture_normal = ExtResource("10_ojrj0")
 
-[node name="Aviao" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 1751.0
-offset_top = 633.0
-offset_right = 2179.0
-offset_bottom = 933.0
+[node name="Aviao" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 407.0
+offset_top = 665.0
+offset_right = 407.0
+offset_bottom = 665.0
 texture_normal = ExtResource("11_yshuj")
 correto = true
 
-[node name="Rocha" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 1750.0
-offset_top = 930.0
-offset_right = 2199.0
-offset_bottom = 1230.0
+[node name="Rocha" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 406.0
+offset_top = 962.0
+offset_right = 406.0
+offset_bottom = 962.0
 texture_normal = ExtResource("12_p2fu1")
 correto = true
 
-[node name="Espinho" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 544.0
-offset_top = 1120.0
-offset_right = 993.0
-offset_bottom = 1420.0
+[node name="Espinho" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 1.0
+offset_top = 935.0
+offset_right = 1.0
+offset_bottom = 935.0
 texture_normal = ExtResource("13_b63gs")
 
-[node name="Cadeira" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 672.0
-offset_top = 384.0
-offset_right = 1067.0
-offset_bottom = 684.0
+[node name="Cadeira" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 1019.0
+offset_right = 780.0
+offset_bottom = 1019.0
 texture_normal = ExtResource("14_cuhn4")
 correto = true
 
-[node name="Sapato" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 64.0
-offset_top = 1184.0
-offset_right = 489.0
-offset_bottom = 1484.0
+[node name="Sapato" parent="." instance=ExtResource("2_5gxyc")]
+offset_top = 1235.0
+offset_right = 0.0
+offset_bottom = 1235.0
 texture_normal = ExtResource("15_0bbhb")
 
-[node name="Carro" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 1472.0
-offset_top = 1088.0
-offset_right = 1881.0
-offset_bottom = 1388.0
+[node name="Carro" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 407.0
+offset_top = 1261.0
+offset_right = 407.0
+offset_bottom = 1261.0
 texture_normal = ExtResource("16_yqa3s")
 correto = true
 
-[node name="Calculador" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 1216.0
-offset_top = 1600.0
-offset_right = 1665.0
-offset_bottom = 1900.0
+[node name="Calculador" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 1319.0
+offset_right = 780.0
+offset_bottom = 1319.0
 texture_normal = ExtResource("17_8gjht")
 
-[node name="Iphone" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 32.0
-offset_top = 1504.0
-offset_right = 481.0
-offset_bottom = 1804.0
+[node name="Iphone" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 407.0
+offset_top = 1556.0
+offset_right = 407.0
+offset_bottom = 1556.0
 texture_normal = ExtResource("18_ej7ra")
 
-[node name="Barco" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 736.0
-offset_top = 704.0
-offset_right = 1036.0
-offset_bottom = 1104.0
+[node name="Barco" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = -1.0
+offset_top = 1532.0
+offset_right = -1.0
+offset_bottom = 1532.0
 texture_normal = ExtResource("19_smdb3")
 correto = true
 
-[node name="Banana" parent="LevelBase" instance=ExtResource("2_5gxyc")]
-offset_left = 2124.0
-offset_top = 1587.0
-offset_right = 2573.0
-offset_bottom = 1887.0
+[node name="Banana" parent="." instance=ExtResource("2_5gxyc")]
+offset_left = 780.0
+offset_top = 1619.0
+offset_right = 780.0
+offset_bottom = 1619.0
 texture_normal = ExtResource("20_utic6")
+
+[node name="Pergunta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_kxbur")

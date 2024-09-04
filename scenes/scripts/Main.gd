@@ -86,25 +86,27 @@ func find_path(destiny):
 
 
 func go_here(level_selector):
-	if not moving:
-		moving = true
-		player_particles.emitting = true
-		
-		if not current_node is String:
-			current_node.disable_play()
-		
-		var path = find_path(level_selector)
-		var tween = create_tween()
-		var past_pos = player.position
-		for i in range(1, len(path)):
-			var node = path[i]
-			var new_pos = node.position + POSITION_DIF
-			tween.tween_property(player, "position", new_pos, (new_pos - past_pos).length() / SPEED)
-			past_pos = new_pos
-		await tween.finished
-		
-		player_particles.emitting = false
-		
-		current_node = level_selector
-		current_node.enable_play()
-		moving = false
+	if (not current_node is String and level_selector == current_node) or moving:
+		return
+	
+	moving = true
+	player_particles.emitting = true
+	
+	if not current_node is String:
+		current_node.disable_play()
+	
+	var path = find_path(level_selector)
+	var tween = create_tween()
+	var past_pos = player.position
+	for i in range(1, len(path)):
+		var node = path[i]
+		var new_pos = node.position + POSITION_DIF
+		tween.tween_property(player, "position", new_pos, (new_pos - past_pos).length() / SPEED)
+		past_pos = new_pos
+	await tween.finished
+	
+	player_particles.emitting = false
+	
+	current_node = level_selector
+	current_node.enable_play()
+	moving = false

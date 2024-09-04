@@ -1,0 +1,244 @@
+[gd_scene load_steps=32 format=3 uid="uid://cwcvjef6a7klo"]
+
+[ext_resource type="Script" path="res://scenes/scripts/Selecao.gd" id="1_j4v42"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_8e6k5"]
+[ext_resource type="Texture2D" uid="uid://btnefgswuaq7m" path="res://resources/images/levels/level8/Suco laranja.jpeg" id="3_our4p"]
+[ext_resource type="Texture2D" uid="uid://d0s7l1k0ndpq3" path="res://resources/images/levels/level8/Toxicopng.png" id="4_jhkbl"]
+[ext_resource type="Texture2D" uid="uid://8qo0bvta6jfm" path="res://resources/images/levels/level8/agua.jpeg" id="5_vqcfy"]
+[ext_resource type="Texture2D" uid="uid://cruvgwbqelssx" path="res://resources/images/levels/level8/Detergente.jpeg" id="6_ddefu"]
+[ext_resource type="Texture2D" uid="uid://3yamxm21tqj7" path="res://resources/images/levels/level8/Querosene.jpeg" id="7_k8yeh"]
+[ext_resource type="Texture2D" uid="uid://dxnggs3ktga1" path="res://resources/images/levels/level8/Caipirinha.jpg" id="8_cb5uj"]
+[ext_resource type="Texture2D" uid="uid://crwd721pw5tji" path="res://resources/images/levels/level8/Medicamentos.jpeg" id="9_bte3x"]
+[ext_resource type="Texture2D" uid="uid://qn4luidaf4j6" path="res://resources/images/levels/level8/Alcool.jpeg" id="10_rekcu"]
+[ext_resource type="Texture2D" uid="uid://qpb7cl1ahs3w" path="res://resources/images/levels/level8/Detergente azul.jpeg" id="11_0taq4"]
+[ext_resource type="Texture2D" uid="uid://ceipc2pw4erm8" path="res://resources/images/levels/level8/isotonico.png" id="12_xuyqk"]
+[ext_resource type="Texture2D" uid="uid://b20yhe00pppv2" path="res://resources/images/levels/level8/Cerveja.jpeg" id="13_to54n"]
+[ext_resource type="Texture2D" uid="uid://bun8ncgupaara" path="res://resources/images/levels/level8/Herbicidas.jpeg" id="14_yq2ak"]
+[ext_resource type="Texture2D" uid="uid://c4vcxxuhb4gbe" path="res://resources/images/levels/level8/Cafe.jpeg" id="15_vi2i0"]
+[ext_resource type="Texture2D" uid="uid://t7ww1yg825u1" path="res://resources/images/levels/level8/Vinho.jpg" id="16_r863o"]
+[ext_resource type="Texture2D" uid="uid://dw08qam8rfplt" path="res://resources/images/levels/level8/Coca.jpeg" id="17_q3i36"]
+[ext_resource type="Texture2D" uid="uid://coln7owhmvrv1" path="res://resources/images/levels/level8/Acetico.jpeg" id="18_0q87c"]
+[ext_resource type="Texture2D" uid="uid://d3gcpb8qdcp0f" path="res://resources/images/levels/level8/Pintura.jpeg" id="19_byjc7"]
+[ext_resource type="Texture2D" uid="uid://dw287v0wtp53w" path="res://resources/images/levels/level8/Alvejantejpg.jpg" id="20_d4js4"]
+[ext_resource type="Texture2D" uid="uid://cd0x4ducu7ich" path="res://resources/images/levels/level8/veja.jpeg" id="21_jobxl"]
+[ext_resource type="Texture2D" uid="uid://63uvn3vxoira" path="res://resources/images/levels/level8/Cloro.jpeg" id="22_gy324"]
+[ext_resource type="Texture2D" uid="uid://cgtfljk0g0e44" path="res://resources/images/levels/level8/Iogurte.jpeg" id="23_p655h"]
+[ext_resource type="Texture2D" uid="uid://c6nnbf7uhropy" path="res://resources/images/levels/level8/Vitaminas.jpeg" id="24_i5wx0"]
+[ext_resource type="Texture2D" uid="uid://ocsqf5fo63mh" path="res://resources/images/levels/level8/Fita-isolante.jpg" id="25_pjfmt"]
+[ext_resource type="Texture2D" uid="uid://b3qdcu8sohbal" path="res://resources/images/levels/level8/Solvente.jpeg" id="26_8gq6n"]
+[ext_resource type="Texture2D" uid="uid://kiuc4smyvuk2" path="res://resources/images/levels/level8/agua com gas.png" id="27_dor6i"]
+[ext_resource type="Texture2D" uid="uid://d1kinog0thlmn" path="res://resources/images/levels/level8/Benzeno.jpg" id="28_fi6av"]
+[ext_resource type="Texture2D" uid="uid://caixa1wsujroi" path="res://resources/images/levels/level8/Cha.jpeg" id="29_qc8jj"]
+[ext_resource type="Texture2D" uid="uid://hctfdq2jtog" path="res://resources/images/levels/level8/coco.jpeg" id="30_oq4fg"]
+[ext_resource type="AudioStream" uid="uid://s76w3ehrvcqd" path="res://resources/sounds/levels/casa fase 8.wav" id="31_h4bn8"]
+
+[node name="Selecao" type="Node2D"]
+position = Vector2(6, 0)
+script = ExtResource("1_j4v42")
+
+[node name="Suco Laranja" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 299.0
+offset_top = 299.0
+offset_right = 605.0
+offset_bottom = 606.0
+texture_normal = ExtResource("3_our4p")
+correto = true
+
+[node name="Toxico" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 299.0
+offset_top = 1.0
+offset_right = 599.0
+offset_bottom = 301.0
+texture_normal = ExtResource("4_jhkbl")
+
+[node name="Agua" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = -6.0
+offset_top = 2.0
+offset_bottom = 302.0
+texture_normal = ExtResource("5_vqcfy")
+correto = true
+
+[node name="Detergente" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 585.0
+offset_top = 1.0
+offset_right = 885.0
+offset_bottom = 305.0
+texture_normal = ExtResource("6_ddefu")
+
+[node name="Querosene" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 296.0
+offset_top = 601.0
+offset_right = 602.0
+offset_bottom = 901.0
+texture_normal = ExtResource("7_k8yeh")
+
+[node name="Caipirinha" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = -6.0
+offset_top = 1485.0
+offset_right = 299.0
+offset_bottom = 1783.0
+texture_normal = ExtResource("8_cb5uj")
+correto = true
+
+[node name="Medicamentos" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = -7.0
+offset_top = 1194.0
+offset_right = 299.0
+offset_bottom = 1490.0
+texture_normal = ExtResource("9_bte3x")
+
+[node name="Alcool" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = -6.0
+offset_top = 299.0
+offset_bottom = 599.0
+texture_normal = ExtResource("10_rekcu")
+
+[node name="Detergente Azul" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 885.0
+offset_right = 1071.0
+offset_bottom = 302.0
+texture_normal = ExtResource("11_0taq4")
+
+[node name="Isotonico" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = -5.0
+offset_top = 1782.0
+offset_right = 301.0
+offset_bottom = 1917.0
+texture_normal = ExtResource("12_xuyqk")
+correto = true
+
+[node name="Cerveja" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 589.0
+offset_top = 600.0
+offset_right = 895.0
+offset_bottom = 900.0
+texture_normal = ExtResource("13_to54n")
+correto = true
+
+[node name="Herbicidas" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 891.0
+offset_top = 605.0
+offset_right = 1078.0
+offset_bottom = 905.0
+texture_normal = ExtResource("14_yq2ak")
+
+[node name="Cafe" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = -6.0
+offset_top = 596.0
+offset_bottom = 896.0
+texture_normal = ExtResource("15_vi2i0")
+correto = true
+
+[node name="Vinho" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 295.0
+offset_top = 894.0
+offset_right = 601.0
+offset_bottom = 1194.0
+texture_normal = ExtResource("16_r863o")
+correto = true
+
+[node name="Coca" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 895.0
+offset_top = 901.0
+offset_right = 1075.0
+offset_bottom = 1196.0
+texture_normal = ExtResource("17_q3i36")
+correto = true
+
+[node name="Acetico" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 599.0
+offset_top = 898.0
+offset_right = 895.0
+offset_bottom = 1198.0
+texture_normal = ExtResource("18_0q87c")
+
+[node name="Pintura" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 589.0
+offset_top = 302.0
+offset_right = 895.0
+offset_bottom = 603.0
+texture_normal = ExtResource("19_byjc7")
+
+[node name="Alvejante" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 893.0
+offset_top = 299.0
+offset_right = 1070.0
+offset_bottom = 605.0
+texture_normal = ExtResource("20_d4js4")
+
+[node name="Veja" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 891.0
+offset_top = 1785.0
+offset_right = 1075.0
+offset_bottom = 1921.0
+texture_normal = ExtResource("21_jobxl")
+
+[node name="Cloro" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 599.0
+offset_top = 1196.0
+offset_right = 908.0
+offset_bottom = 1489.0
+texture_normal = ExtResource("22_gy324")
+
+[node name="Iogurte" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 895.0
+offset_top = 1197.0
+offset_right = 1074.0
+offset_bottom = 1494.0
+texture_normal = ExtResource("23_p655h")
+correto = true
+
+[node name="Vitaminas" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 895.0
+offset_top = 1487.0
+offset_right = 1074.0
+offset_bottom = 1790.0
+texture_normal = ExtResource("24_i5wx0")
+correto = true
+
+[node name="Fita Isolante" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 599.0
+offset_top = 1489.0
+offset_right = 895.0
+offset_bottom = 1789.0
+texture_normal = ExtResource("25_pjfmt")
+
+[node name="Solvente" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 295.0
+offset_top = 1489.0
+offset_right = 599.0
+offset_bottom = 1784.0
+texture_normal = ExtResource("26_8gq6n")
+
+[node name="Agua com gas" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 606.0
+offset_top = 1788.0
+offset_right = 893.0
+offset_bottom = 1920.0
+texture_normal = ExtResource("27_dor6i")
+correto = true
+
+[node name="Benzeno" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = -6.0
+offset_top = 893.0
+offset_bottom = 1193.0
+texture_normal = ExtResource("28_fi6av")
+
+[node name="Cha" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 299.0
+offset_top = 1192.0
+offset_right = 599.0
+offset_bottom = 1489.0
+texture_normal = ExtResource("29_qc8jj")
+correto = true
+
+[node name="Coco" parent="." instance=ExtResource("2_8e6k5")]
+offset_left = 300.0
+offset_top = 1786.0
+offset_right = 606.0
+offset_bottom = 1920.0
+texture_normal = ExtResource("30_oq4fg")
+correto = true
+
+[node name="Pergunta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_h4bn8")

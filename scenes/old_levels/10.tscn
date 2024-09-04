@@ -1,0 +1,194 @@
+[gd_scene load_steps=28 format=3 uid="uid://cg3rg74ll0b3h"]
+
+[ext_resource type="Script" path="res://scenes/scripts/Selecao.gd" id="1_fxv75"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_0yyio"]
+[ext_resource type="Texture2D" uid="uid://dk2h2ufn2ux0h" path="res://resources/images/levels/level2/Camera.jpg" id="3_dlpyg"]
+[ext_resource type="Texture2D" uid="uid://bbpeatm27wcfq" path="res://resources/images/levels/level2/Flor.jpg" id="4_5mhto"]
+[ext_resource type="Texture2D" uid="uid://dvly32g7pjo5n" path="res://resources/images/levels/level2/Mao.jpg" id="5_ucjrl"]
+[ext_resource type="AudioStream" uid="uid://bvmuqmh4t1tm6" path="res://resources/sounds/levels/Fase 9 o que eu uso para enxergar.wav" id="6_pewvg"]
+[ext_resource type="Texture2D" uid="uid://dlxjkfjspxr64" path="res://resources/images/levels/level2/1 Oculo.jpg" id="6_swp5n"]
+[ext_resource type="Texture2D" uid="uid://bnuy60q61xc6p" path="res://resources/images/levels/level2/Fogo.jpg" id="7_4f18y"]
+[ext_resource type="Texture2D" uid="uid://bon4vet4jh1y3" path="res://resources/images/levels/level2/binoculo.jpg" id="8_ma8w2"]
+[ext_resource type="Texture2D" uid="uid://dwkv4ixu1qj3d" path="res://resources/images/levels/level2/Gata.png" id="9_fdhq4"]
+[ext_resource type="Texture2D" uid="uid://bf327pthqoe6u" path="res://resources/images/levels/level2/Lupa.jpg" id="10_i101m"]
+[ext_resource type="Texture2D" uid="uid://b3kmfndoqupjr" path="res://resources/images/levels/level2/Chocolate.jpg" id="11_4ee3h"]
+[ext_resource type="Texture2D" uid="uid://b7or38npr2iyo" path="res://resources/images/levels/level2/Natal.jpg" id="12_qiqac"]
+[ext_resource type="Texture2D" uid="uid://geppcg5rx8e5" path="res://resources/images/levels/level2/Vela.jpg" id="13_0aq8r"]
+[ext_resource type="Texture2D" uid="uid://cv1je4namxyot" path="res://resources/images/levels/level2/Lapis.jpg" id="14_0mrfj"]
+[ext_resource type="Texture2D" uid="uid://hbl4fr54dtyo" path="res://resources/images/levels/level2/Borracha.jpg" id="15_hjvqk"]
+[ext_resource type="Texture2D" uid="uid://iilpror3ve8i" path="res://resources/images/levels/level2/Solar.jpg" id="16_6ei53"]
+[ext_resource type="Texture2D" uid="uid://c1tquegnal0k0" path="res://resources/images/levels/level2/Pipoca.jpg" id="17_jvq50"]
+[ext_resource type="Texture2D" uid="uid://4b26ksu17d5k" path="res://resources/images/levels/level2/Bulldog.jpg" id="18_0moj3"]
+[ext_resource type="Texture2D" uid="uid://c1656ne3psxot" path="res://resources/images/levels/level2/Crocodile.jpg" id="19_24rlq"]
+[ext_resource type="Texture2D" uid="uid://bnkl36q6ck3eq" path="res://resources/images/levels/level2/Balloons.jpg" id="20_3jnsq"]
+[ext_resource type="Texture2D" uid="uid://c17xt4ly88fi4" path="res://resources/images/levels/level2/Celebration.jpg" id="21_l63jl"]
+[ext_resource type="Texture2D" uid="uid://o0uldjrimiso" path="res://resources/images/levels/level2/Faca.jpg" id="22_dwq3h"]
+[ext_resource type="Texture2D" uid="uid://7w56i1y3e67k" path="res://resources/images/levels/level2/Joia.jpg" id="23_gdoyc"]
+[ext_resource type="Texture2D" uid="uid://cwebofq8b7u23" path="res://resources/images/levels/level2/Sapo.jpg" id="24_dsle5"]
+[ext_resource type="Texture2D" uid="uid://b48nrc303smfl" path="res://resources/images/levels/level2/Queijo.jpg" id="25_cr2jd"]
+[ext_resource type="Texture2D" uid="uid://bvncg8mp204gm" path="res://resources/images/levels/level2/Coruja.png" id="26_f8bl2"]
+
+[node name="Selecao" type="Node2D"]
+script = ExtResource("1_fxv75")
+
+[node name="Camera" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 3.0
+offset_top = 900.0
+offset_right = 298.0
+offset_bottom = 1199.0
+texture_normal = ExtResource("3_dlpyg")
+correto = true
+
+[node name="Flor" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 299.0
+offset_top = 300.0
+offset_right = 599.0
+offset_bottom = 600.0
+texture_normal = ExtResource("4_5mhto")
+
+[node name="Mao" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 600.0
+offset_right = 900.0
+texture_normal = ExtResource("5_ucjrl")
+
+[node name="Oculo" parent="." instance=ExtResource("2_0yyio")]
+texture_normal = ExtResource("6_swp5n")
+correto = true
+
+[node name="Fogo" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 300.0
+offset_right = 600.0
+texture_normal = ExtResource("7_4f18y")
+
+[node name="Binoculo" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 899.0
+offset_top = 1.0
+offset_right = 1080.0
+texture_normal = ExtResource("8_ma8w2")
+correto = true
+
+[node name="Gato" parent="." instance=ExtResource("2_0yyio")]
+offset_top = 300.0
+offset_bottom = 600.0
+texture_normal = ExtResource("9_fdhq4")
+
+[node name="Lupa" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 599.0
+offset_top = 299.0
+offset_right = 899.0
+offset_bottom = 599.0
+texture_normal = ExtResource("10_i101m")
+correto = true
+
+[node name="Chocolate" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 899.0
+offset_top = 299.0
+offset_right = 1080.0
+offset_bottom = 599.0
+texture_normal = ExtResource("11_4ee3h")
+
+[node name="Natal" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 599.0
+offset_top = 599.0
+offset_right = 899.0
+offset_bottom = 899.0
+texture_normal = ExtResource("12_qiqac")
+
+[node name="Vela" parent="." instance=ExtResource("2_0yyio")]
+offset_top = 600.0
+offset_bottom = 900.0
+texture_normal = ExtResource("13_0aq8r")
+
+[node name="Lapis" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 298.0
+offset_top = 600.0
+offset_right = 599.0
+offset_bottom = 900.0
+texture_normal = ExtResource("14_0mrfj")
+
+[node name="Borracha" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 899.0
+offset_top = 599.0
+offset_right = 1080.0
+offset_bottom = 899.0
+texture_normal = ExtResource("15_hjvqk")
+
+[node name="Solar" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 598.0
+offset_top = 899.0
+offset_right = 898.0
+offset_bottom = 1199.0
+texture_normal = ExtResource("16_6ei53")
+
+[node name="Pipoca" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 298.0
+offset_top = 901.0
+offset_right = 599.0
+offset_bottom = 1201.0
+texture_normal = ExtResource("17_jvq50")
+
+[node name="Bulldog" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 896.0
+offset_top = 900.0
+offset_right = 1077.0
+offset_bottom = 1200.0
+texture_normal = ExtResource("18_0moj3")
+
+[node name="Crocodile" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 6.0
+offset_top = 1195.0
+offset_right = 301.0
+offset_bottom = 1494.0
+texture_normal = ExtResource("19_24rlq")
+
+[node name="Balao" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 297.0
+offset_top = 1193.0
+offset_right = 598.0
+offset_bottom = 1493.0
+texture_normal = ExtResource("20_3jnsq")
+
+[node name="Celebration" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 599.0
+offset_top = 1193.0
+offset_right = 899.0
+offset_bottom = 1493.0
+texture_normal = ExtResource("21_l63jl")
+
+[node name="Faca" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 2.0
+offset_top = 1493.0
+offset_right = 297.0
+offset_bottom = 1792.0
+texture_normal = ExtResource("22_dwq3h")
+
+[node name="Joia" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 898.0
+offset_top = 1196.0
+offset_right = 1079.0
+offset_bottom = 1492.0
+texture_normal = ExtResource("23_gdoyc")
+
+[node name="Queijo" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 295.0
+offset_top = 1493.0
+offset_right = 596.0
+offset_bottom = 1793.0
+texture_normal = ExtResource("25_cr2jd")
+
+[node name="Coruja" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 596.0
+offset_top = 1492.0
+offset_right = 896.0
+offset_bottom = 1792.0
+texture_normal = ExtResource("26_f8bl2")
+
+[node name="Sapo" parent="." instance=ExtResource("2_0yyio")]
+offset_left = 900.0
+offset_top = 1492.0
+offset_right = 1081.0
+offset_bottom = 1788.0
+texture_normal = ExtResource("24_dsle5")
+
+[node name="Pergunta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_pewvg")
