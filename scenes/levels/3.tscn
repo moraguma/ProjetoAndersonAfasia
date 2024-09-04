@@ -1,10 +1,135 @@
-[gd_scene load_steps=2 format=3 uid="uid://cyiedtb70rrol"]
+[gd_scene load_steps=18 format=3 uid="uid://cyiedtb70rrol"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_7joyc"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_ypuds"]
+[ext_resource type="Texture2D" uid="uid://djdg8gip5ejsp" path="res://resources/images/levels/level1/bald-head-154500_1280.png" id="3_pmbnk"]
+[ext_resource type="Texture2D" uid="uid://b6ywmrrxs1ama" path="res://resources/images/levels/level1/1.3 Bone.png" id="4_q7a86"]
+[ext_resource type="Texture2D" uid="uid://b88h5kllfsqgb" path="res://resources/images/levels/level1/1.11 Cocoagua.png" id="5_ak2cx"]
+[ext_resource type="Texture2D" uid="uid://drvnu7y6jmal2" path="res://resources/images/levels/level1/1.10 chinelo.png" id="6_2ye8c"]
+[ext_resource type="Texture2D" uid="uid://cekg7ugmq35lq" path="res://resources/images/levels/level1/1.14 Bola.png" id="7_ehv3w"]
+[ext_resource type="Texture2D" uid="uid://clrpy1emj7rf" path="res://resources/images/levels/level1/1.13 cadeira.png" id="8_hkum3"]
+[ext_resource type="Texture2D" uid="uid://cgv8p3pf0fg3h" path="res://resources/images/levels/level1/1.21 cadeira 2.png" id="9_ipx4o"]
+[ext_resource type="Texture2D" uid="uid://y7sv3q524x05" path="res://resources/images/levels/level1/1.12 Sorvete.png" id="10_tvrjw"]
+[ext_resource type="Texture2D" uid="uid://c03dlwxitn5ye" path="res://resources/images/levels/level1/1.1 protetor solar.png" id="11_gqanp"]
+[ext_resource type="Texture2D" uid="uid://d3w6t7iqaa61p" path="res://resources/images/levels/level1/1.17 ca.png" id="12_p0x2p"]
+[ext_resource type="Texture2D" uid="uid://1lqmik77d2id" path="res://resources/images/levels/level1/1.15 peixe.png" id="13_g7sca"]
+[ext_resource type="Texture2D" uid="uid://bt6lw0u7u0a55" path="res://resources/images/levels/level1/1.18 pool.png" id="14_i5o53"]
+[ext_resource type="Texture2D" uid="uid://b1tfdplhoobro" path="res://resources/images/levels/level1/1.8 Guada sol 3.png" id="15_jllvw"]
+[ext_resource type="Texture2D" uid="uid://c1mjo4p2i5hfm" path="res://resources/images/levels/level1/1.20 celular.png" id="16_si0ff"]
+[ext_resource type="Texture2D" uid="uid://g4egtcgop3vf" path="res://resources/images/levels/level1/1.2 Chapeu vermelho.png" id="17_wqdtp"]
 
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_7joyc")]
-win_text = "Parabéns! Dá pra sentar nisso!"
-lose_text = "Não dá pra sentar nisso!"
-prompt = "Onde você pode sentar?"
+win_text = "Parabéns! Isso protege do sol!"
+lose_text = "Isso não protege do sol!"
+prompt = "O que ajuda a proteger do sol na cabeça?"
+
+[node name="Homem careca" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 1306.0
+offset_top = 1507.0
+offset_right = 1624.0
+offset_bottom = 1890.0
+texture_normal = ExtResource("3_pmbnk")
+
+[node name="Bone" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 64.0
+offset_top = 352.0
+offset_right = 364.0
+offset_bottom = 652.0
+texture_normal = ExtResource("4_q7a86")
+correto = true
+
+[node name="Cocoagua" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 64.0
+offset_top = 704.0
+offset_right = 364.0
+offset_bottom = 1004.0
+texture_normal = ExtResource("5_ak2cx")
+
+[node name="Chinelo" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 2336.0
+offset_top = 320.0
+offset_right = 2636.0
+offset_bottom = 887.0
+texture_normal = ExtResource("6_2ye8c")
+
+[node name="Bola" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 384.0
+offset_top = 352.0
+offset_right = 684.0
+offset_bottom = 659.0
+texture_normal = ExtResource("7_ehv3w")
+
+[node name="Estrela" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 96.0
+offset_top = 1056.0
+offset_right = 443.0
+offset_bottom = 1356.0
+texture_normal = ExtResource("8_hkum3")
+
+[node name="Cocacola" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 704.0
+offset_top = 352.0
+offset_right = 1004.0
+offset_bottom = 952.0
+texture_normal = ExtResource("9_ipx4o")
+
+[node name="Sorvete" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 1185.0
+offset_top = 650.0
+offset_right = 1485.0
+offset_bottom = 1250.0
+texture_normal = ExtResource("10_tvrjw")
+
+[node name="Protertor Solar" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 384.0
+offset_top = 704.0
+offset_right = 684.0
+offset_bottom = 1004.0
+texture_normal = ExtResource("11_gqanp")
+correto = true
+
+[node name="Caranguejos" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 1809.0
+offset_top = 658.0
+offset_right = 2318.0
+offset_bottom = 958.0
+texture_normal = ExtResource("12_p0x2p")
+
+[node name="Peixe" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 576.0
+offset_top = 1024.0
+offset_right = 1002.0
+offset_bottom = 1324.0
+texture_normal = ExtResource("13_g7sca")
+
+[node name="Boia" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 1760.0
+offset_top = 960.0
+offset_right = 2060.0
+offset_bottom = 1260.0
+texture_normal = ExtResource("14_i5o53")
+
+[node name="Guardapraia" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 704.0
+offset_top = 1376.0
+offset_right = 1004.0
+offset_bottom = 1697.0
+texture_normal = ExtResource("15_jllvw")
+correto = true
+
+[node name="Celular" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 1829.0
+offset_top = 1290.0
+offset_right = 2129.0
+offset_bottom = 1650.0
+texture_normal = ExtResource("16_si0ff")
+
+[node name="Mergulhar" parent="LevelBase" instance=ExtResource("2_ypuds")]
+offset_left = 96.0
+offset_top = 1408.0
+offset_right = 440.0
+offset_bottom = 1708.0
+texture_normal = ExtResource("17_wqdtp")
+correto = true

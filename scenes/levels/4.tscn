@@ -1,10 +1,240 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxt72ykjw3nf3"]
+[gd_scene load_steps=31 format=3 uid="uid://cxt72ykjw3nf3"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_qt2dl"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_j6560"]
+[ext_resource type="Texture2D" uid="uid://bvald32hiif15" path="res://resources/images/levels/level6/Alexa.png" id="3_jg7an"]
+[ext_resource type="Texture2D" uid="uid://c0evck2045xbn" path="res://resources/images/levels/level6/relogio ponto.jpeg" id="4_kwfvm"]
+[ext_resource type="Texture2D" uid="uid://cew2dxyagpc0r" path="res://resources/images/levels/level6/Cinema.png" id="5_7h8o3"]
+[ext_resource type="Texture2D" uid="uid://b1v8xd62wjvdr" path="res://resources/images/levels/level6/relogio.jpg" id="6_p5o3h"]
+[ext_resource type="Texture2D" uid="uid://c4w4x3tudlfbt" path="res://resources/images/levels/level6/orquestra.jpeg" id="7_0wjjo"]
+[ext_resource type="Texture2D" uid="uid://daispgmpkasdl" path="res://resources/images/levels/level6/enem-2023.jpg" id="8_3wn30"]
+[ext_resource type="Texture2D" uid="uid://mocfkmq2gpp5" path="res://resources/images/levels/level6/Exercito.jpg" id="9_n2tr3"]
+[ext_resource type="Texture2D" uid="uid://dhblwtsdhta0n" path="res://resources/images/levels/level6/sol.jpeg" id="10_5oyrm"]
+[ext_resource type="Texture2D" uid="uid://dw4106aoaos0j" path="res://resources/images/levels/level6/Alarme.png" id="11_t4oor"]
+[ext_resource type="Texture2D" uid="uid://6p6e4komv6er" path="res://resources/images/levels/level6/Lua.jpeg" id="12_hqxcy"]
+[ext_resource type="Texture2D" uid="uid://dm1soeh1uv7m0" path="res://resources/images/levels/level6/Estrela.jpg" id="13_n00an"]
+[ext_resource type="Texture2D" uid="uid://bchmfihbvs73a" path="res://resources/images/levels/level6/Carteria.jpeg" id="14_yi8ra"]
+[ext_resource type="Texture2D" uid="uid://dmrsa7nijhd70" path="res://resources/images/levels/level6/homem.jpeg" id="15_2soyy"]
+[ext_resource type="Texture2D" uid="uid://kyue6patq4j0" path="res://resources/images/levels/level6/Pix.png" id="16_hafgy"]
+[ext_resource type="Texture2D" uid="uid://svtntnh2bxgn" path="res://resources/images/levels/level6/tenis.jpeg" id="17_0w2vy"]
+[ext_resource type="Texture2D" uid="uid://d15vouud8af0j" path="res://resources/images/levels/level6/pedra.jpeg" id="18_edyor"]
+[ext_resource type="Texture2D" uid="uid://d0s27fstk72oy" path="res://resources/images/levels/level6/sino.png" id="19_eggxv"]
+[ext_resource type="Texture2D" uid="uid://c16mum4i6cfsj" path="res://resources/images/levels/level6/areia.jpg" id="20_xquj8"]
+[ext_resource type="Texture2D" uid="uid://vsn8lakyrmw8" path="res://resources/images/levels/level6/Papagaia.jpeg" id="21_ug640"]
+[ext_resource type="Texture2D" uid="uid://cyqt1kwt4p6er" path="res://resources/images/levels/level6/chefe.jpg" id="22_454ei"]
+[ext_resource type="Texture2D" uid="uid://g4o87mq0s8f5" path="res://resources/images/levels/level6/Cidade.jpg" id="23_vl0wp"]
+[ext_resource type="Texture2D" uid="uid://dg31mxm3r756u" path="res://resources/images/levels/level6/Natacao.jpeg" id="24_gncay"]
+[ext_resource type="Texture2D" uid="uid://cglh2t2qmlomp" path="res://resources/images/levels/level6/medico.jpeg" id="25_hwf1y"]
+[ext_resource type="Texture2D" uid="uid://cvks4q1g1f1yk" path="res://resources/images/levels/level6/Grama.jpeg" id="26_hebgv"]
+[ext_resource type="Texture2D" uid="uid://8vcoxxfhcr4j" path="res://resources/images/levels/level6/criancao.jpg" id="27_1r2to"]
+[ext_resource type="Texture2D" uid="uid://bb5bi20jooh0v" path="res://resources/images/levels/level6/tempera.jpg" id="28_dm4nt"]
+[ext_resource type="Texture2D" uid="uid://cvlo01ae12ip5" path="res://resources/images/levels/level6/Rei.jpeg" id="29_2svgb"]
+[ext_resource type="Texture2D" uid="uid://c2200vpap6m2a" path="res://resources/images/levels/level6/smartphones.png" id="30_do7cj"]
 
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_qt2dl")]
-win_text = "Parabéns! Dá pra sentar nisso!"
-lose_text = "Não dá pra sentar nisso!"
-prompt = "Onde você pode sentar?"
+win_text = "Parabéns! Isso se usa pra ver as horas!"
+lose_text = "Isso não ajuda a ver as horas!"
+prompt = "O que eu posso usar para ver as horas"
+
+[node name="Alexa" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 64.0
+offset_top = 992.0
+offset_right = 573.0
+offset_bottom = 1292.0
+texture_normal = ExtResource("3_jg7an")
+correto = true
+
+[node name="Trabalho hora" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 736.0
+offset_top = 256.0
+offset_right = 1065.0
+offset_bottom = 556.0
+texture_normal = ExtResource("4_kwfvm")
+correto = true
+
+[node name="Velho" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1677.0
+offset_right = 1977.0
+offset_bottom = 303.0
+texture_normal = ExtResource("5_7h8o3")
+
+[node name="Relogio" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 64.0
+offset_top = 256.0
+offset_right = 364.0
+offset_bottom = 556.0
+texture_normal = ExtResource("6_p5o3h")
+correto = true
+
+[node name="Orquestra" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1976.0
+offset_right = 2376.0
+texture_normal = ExtResource("7_0wjjo")
+
+[node name="ENEM" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 2275.0
+offset_top = 2.0
+offset_right = 2808.0
+offset_bottom = 302.0
+texture_normal = ExtResource("8_3wn30")
+
+[node name="Exercito" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 512.0
+offset_top = 608.0
+offset_right = 1012.0
+offset_bottom = 908.0
+texture_normal = ExtResource("9_n2tr3")
+
+[node name="Sol" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1676.0
+offset_top = 299.0
+offset_right = 2178.0
+offset_bottom = 599.0
+texture_normal = ExtResource("10_5oyrm")
+
+[node name="Alarme" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 736.0
+offset_top = 1344.0
+offset_right = 1036.0
+offset_bottom = 1759.0
+texture_normal = ExtResource("11_t4oor")
+correto = true
+
+[node name="Lua" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 2271.0
+offset_top = 302.0
+offset_right = 2571.0
+offset_bottom = 653.0
+texture_normal = ExtResource("12_hqxcy")
+
+[node name="Estrela" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 384.0
+offset_top = 256.0
+offset_right = 714.0
+offset_bottom = 556.0
+texture_normal = ExtResource("13_n00an")
+
+[node name="Carteira" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1976.0
+offset_top = 599.0
+offset_right = 2288.0
+offset_bottom = 899.0
+texture_normal = ExtResource("14_yi8ra")
+
+[node name="Homem relogio" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 2271.0
+offset_top = 602.0
+offset_right = 2571.0
+offset_bottom = 993.0
+texture_normal = ExtResource("15_2soyy")
+correto = true
+
+[node name="Pix" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1672.0
+offset_top = 904.0
+offset_right = 2178.0
+offset_bottom = 1204.0
+texture_normal = ExtResource("16_hafgy")
+
+[node name="Tenis" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1972.0
+offset_top = 904.0
+offset_right = 2483.0
+offset_bottom = 1204.0
+texture_normal = ExtResource("17_0w2vy")
+
+[node name="Pedra" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 128.0
+offset_top = 608.0
+offset_right = 428.0
+offset_bottom = 915.0
+texture_normal = ExtResource("18_edyor")
+
+[node name="Igreja Sino" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 416.0
+offset_top = 1344.0
+offset_right = 716.0
+offset_bottom = 1644.0
+texture_normal = ExtResource("19_eggxv")
+correto = true
+
+[node name="Areia" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 2267.0
+offset_top = 907.0
+offset_right = 2711.0
+offset_bottom = 1207.0
+texture_normal = ExtResource("20_xquj8")
+
+[node name="Papagaia" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 96.0
+offset_top = 1344.0
+offset_right = 396.0
+offset_bottom = 1644.0
+texture_normal = ExtResource("21_ug640")
+
+[node name="Chefe" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 640.0
+offset_top = 992.0
+offset_right = 940.0
+offset_bottom = 1292.0
+texture_normal = ExtResource("22_454ei")
+
+[node name="Cidade" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1380.0
+offset_top = 1493.0
+offset_right = 1830.0
+offset_bottom = 1793.0
+texture_normal = ExtResource("23_vl0wp")
+correto = true
+
+[node name="Natacao" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1680.0
+offset_top = 1492.0
+offset_right = 2129.0
+offset_bottom = 1792.0
+texture_normal = ExtResource("24_gncay")
+
+[node name="Medico" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1980.0
+offset_top = 1492.0
+offset_right = 2430.0
+offset_bottom = 1792.0
+texture_normal = ExtResource("25_hwf1y")
+
+[node name="Grama" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 2275.0
+offset_top = 1495.0
+offset_right = 2848.0
+offset_bottom = 1795.0
+texture_normal = ExtResource("26_hebgv")
+
+[node name="Criancao brinquedo" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1380.0
+offset_top = 1793.0
+offset_right = 1720.0
+offset_bottom = 2093.0
+texture_normal = ExtResource("27_1r2to")
+
+[node name="Cozinha" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1680.0
+offset_top = 1791.0
+offset_right = 1980.0
+offset_bottom = 2091.0
+texture_normal = ExtResource("28_dm4nt")
+
+[node name="Rei" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 1980.0
+offset_top = 1790.0
+offset_right = 2372.0
+offset_bottom = 2090.0
+texture_normal = ExtResource("29_2svgb")
+
+[node name="Smartphones" parent="LevelBase" instance=ExtResource("2_j6560")]
+offset_left = 2274.0
+offset_top = 1791.0
+offset_right = 2674.0
+offset_bottom = 2091.0
+texture_normal = ExtResource("30_do7cj")
+correto = true

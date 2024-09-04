@@ -6,10 +6,11 @@ extends Node2D
 
 
 @onready var base_pos = position
+@onready var offset = randf() * frequency
 var time = 0
 
 
 func _process(delta):
 	time += delta
 	
-	position = base_pos + amplitude * sin(2 * PI * frequency * time)
+	position = base_pos + amplitude * (sin(2 * PI * frequency * time + offset))

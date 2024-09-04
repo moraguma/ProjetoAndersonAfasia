@@ -1,0 +1,88 @@
+[gd_scene load_steps=12 format=3 uid="uid://2uajy750q88p"]
+
+[ext_resource type="Shader" path="res://resources/shaders/DiscreteSunset.gdshader" id="1_5ppv0"]
+[ext_resource type="Script" path="res://scenes/scripts/PlayerSelection.gd" id="1_yvksv"]
+[ext_resource type="PackedScene" uid="uid://cqip7djlmyyuu" path="res://scenes/TTSLabel.tscn" id="2_4lcs8"]
+[ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/WavingElement.gd" id="3_873d3"]
+[ext_resource type="Texture2D" uid="uid://dltevnvxgpj46" path="res://resources/images/main/sprites/player0.png" id="4_878s8"]
+[ext_resource type="Texture2D" uid="uid://csn85dofe8mit" path="res://resources/images/main/sprites/player1.png" id="5_rt5sy"]
+[ext_resource type="Texture2D" uid="uid://cw6qjlau4b6ji" path="res://resources/images/main/sprites/player2.png" id="6_j8ukn"]
+[ext_resource type="Texture2D" uid="uid://dv3t71sm3eo5g" path="res://resources/images/main/sprites/player3.png" id="7_p7yiu"]
+[ext_resource type="Texture2D" uid="uid://cph4tg884cx0r" path="res://resources/images/main/sprites/player4.png" id="8_31t86"]
+[ext_resource type="Texture2D" uid="uid://do0k5owj2qf74" path="res://resources/images/main/sprites/player5.png" id="9_oniad"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uuut5"]
+shader = ExtResource("1_5ppv0")
+shader_parameter/bottom_color = Color(0.290232, 0.580165, 0.74687, 1)
+shader_parameter/top_color = Color(0.503848, 0.926266, 1, 1)
+shader_parameter/ray_distance = 0.02
+shader_parameter/ray_width = 0.015
+shader_parameter/ray_length = 0.3
+shader_parameter/ray_spacing = 0.5
+shader_parameter/time_scale = 0.2
+shader_parameter/level_time_diff = 0.3
+shader_parameter/total_phases = 4
+
+[node name="PlayerSelection" type="Node2D"]
+script = ExtResource("1_yvksv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_uuut5")
+offset_top = 1920.0
+offset_right = 1080.0
+offset_bottom = 3840.0
+scale = Vector2(1, -1)
+
+[node name="TTSLabel" parent="." instance=ExtResource("2_4lcs8")]
+text = "Escolha seu personagem"
+
+[node name="Players" type="Node2D" parent="."]
+script = ExtResource("3_873d3")
+
+[node name="0" type="TextureButton" parent="Players"]
+offset_left = 256.0
+offset_top = 416.0
+offset_right = 512.0
+offset_bottom = 672.0
+texture_normal = ExtResource("4_878s8")
+stretch_mode = 0
+
+[node name="1" type="TextureButton" parent="Players"]
+offset_left = 576.0
+offset_top = 416.0
+offset_right = 832.0
+offset_bottom = 672.0
+texture_normal = ExtResource("5_rt5sy")
+stretch_mode = 0
+
+[node name="2" type="TextureButton" parent="Players"]
+offset_left = 256.0
+offset_top = 736.0
+offset_right = 512.0
+offset_bottom = 992.0
+texture_normal = ExtResource("6_j8ukn")
+stretch_mode = 0
+
+[node name="3" type="TextureButton" parent="Players"]
+offset_left = 576.0
+offset_top = 736.0
+offset_right = 832.0
+offset_bottom = 992.0
+texture_normal = ExtResource("7_p7yiu")
+stretch_mode = 0
+
+[node name="4" type="TextureButton" parent="Players"]
+offset_left = 256.0
+offset_top = 1056.0
+offset_right = 512.0
+offset_bottom = 1312.0
+texture_normal = ExtResource("8_31t86")
+stretch_mode = 0
+
+[node name="5" type="TextureButton" parent="Players"]
+offset_left = 576.0
+offset_top = 1056.0
+offset_right = 832.0
+offset_bottom = 1312.0
+texture_normal = ExtResource("9_oniad")
+stretch_mode = 0

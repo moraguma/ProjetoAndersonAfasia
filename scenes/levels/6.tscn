@@ -1,10 +1,239 @@
-[gd_scene load_steps=2 format=3 uid="uid://v0kqwtwuklou"]
+[gd_scene load_steps=31 format=3 uid="uid://v0kqwtwuklou"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_2vsbv"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_okf8t"]
+[ext_resource type="Texture2D" uid="uid://bi4ea33dmwet1" path="res://resources/images/levels/level9/Celular.jpeg" id="3_f4ul5"]
+[ext_resource type="Texture2D" uid="uid://cuoieexlye2eo" path="res://resources/images/levels/level9/Meia.jpeg" id="4_fpqeg"]
+[ext_resource type="Texture2D" uid="uid://c38dl6sit8a7o" path="res://resources/images/levels/level9/Jaula.jpeg" id="5_b2kfq"]
+[ext_resource type="Texture2D" uid="uid://bt0gy28jn3mft" path="res://resources/images/levels/level9/lapis.png" id="6_4ri3t"]
+[ext_resource type="Texture2D" uid="uid://mfy6etrkypfo" path="res://resources/images/levels/level9/notebook.jpeg" id="7_yc5li"]
+[ext_resource type="Texture2D" uid="uid://clsruffedb3fx" path="res://resources/images/levels/level9/pendrive.jpeg" id="8_5xdqd"]
+[ext_resource type="Texture2D" uid="uid://bwcdt3vox2sg2" path="res://resources/images/levels/level9/disco.jpeg" id="9_cpyo4"]
+[ext_resource type="Texture2D" uid="uid://ccwefh2kefshs" path="res://resources/images/levels/level9/Light.jpeg" id="10_lut66"]
+[ext_resource type="Texture2D" uid="uid://khuf145blb3b" path="res://resources/images/levels/level9/Livro.jpg" id="11_lyv1d"]
+[ext_resource type="Texture2D" uid="uid://d626rs40y6ju" path="res://resources/images/levels/level9/Almoco.jpeg" id="12_1y6vp"]
+[ext_resource type="Texture2D" uid="uid://qkhaumuhwkt0" path="res://resources/images/levels/level9/Moto.jpeg" id="13_5buwh"]
+[ext_resource type="Texture2D" uid="uid://c7ovp2ghp8asn" path="res://resources/images/levels/level9/Dinheiro.jpeg" id="14_v7oc1"]
+[ext_resource type="Texture2D" uid="uid://cn36tqt2vd37l" path="res://resources/images/levels/level9/magico.jpeg" id="15_y6hj5"]
+[ext_resource type="Texture2D" uid="uid://kp8ri505p5ov" path="res://resources/images/levels/level9/Concha.jpeg" id="16_o0c3n"]
+[ext_resource type="Texture2D" uid="uid://chetc0nex5sfq" path="res://resources/images/levels/level9/Cavete.jpeg" id="17_4hmqq"]
+[ext_resource type="Texture2D" uid="uid://4g7qdjwskooj" path="res://resources/images/levels/level9/Leao.png" id="18_mvend"]
+[ext_resource type="Texture2D" uid="uid://0eib3tntooql" path="res://resources/images/levels/level9/BURACO.jpg" id="19_4equy"]
+[ext_resource type="Texture2D" uid="uid://dqxplmw1i18ee" path="res://resources/images/levels/level9/Ovos.jpg" id="20_21v0l"]
+[ext_resource type="Texture2D" uid="uid://rasycu86sxpi" path="res://resources/images/levels/level9/Sorvete.jpeg" id="21_cm5bj"]
+[ext_resource type="Texture2D" uid="uid://ohu4xfjf74u8" path="res://resources/images/levels/level9/Diario.jpeg" id="22_w3c7e"]
+[ext_resource type="Texture2D" uid="uid://chwi7d8algw52" path="res://resources/images/levels/level9/carne.jpeg" id="23_xjl4r"]
+[ext_resource type="Texture2D" uid="uid://bto6vhilrulrx" path="res://resources/images/levels/level9/Natal.jpeg" id="24_le5on"]
+[ext_resource type="Texture2D" uid="uid://cn2x7fsyay75a" path="res://resources/images/levels/level9/Bolo.jpg" id="25_cp37a"]
+[ext_resource type="Texture2D" uid="uid://nswvi3cx8foq" path="res://resources/images/levels/level9/Dado.jpeg" id="26_hwayi"]
+[ext_resource type="Texture2D" uid="uid://cu2mpfehxs82f" path="res://resources/images/levels/level9/Cachorra.jpeg" id="27_folwj"]
+[ext_resource type="Texture2D" uid="uid://dm2njh04sh8n2" path="res://resources/images/levels/level9/Ar-Condicionado.jpeg" id="28_aix3e"]
+[ext_resource type="Texture2D" uid="uid://b4ml1swnnylnw" path="res://resources/images/levels/level9/Pia.jpeg" id="29_5eu64"]
+[ext_resource type="Texture2D" uid="uid://ubbksr0uqcsd" path="res://resources/images/levels/level9/F1.jpeg" id="30_ctcfe"]
 
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_2vsbv")]
-win_text = "Parabéns! Dá pra sentar nisso!"
-lose_text = "Não dá pra sentar nisso!"
-prompt = "Onde você pode sentar?"
+win_text = "Parabéns! Dá pra escrever nisso!"
+lose_text = "Não dá pra escrever nisso!"
+prompt = "Onde você pode escrever?"
+
+[node name="Celular" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 704.0
+offset_top = 1344.0
+offset_right = 1031.0
+offset_bottom = 1644.0
+texture_normal = ExtResource("3_f4ul5")
+correto = true
+
+[node name="Meia" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 416.0
+offset_top = 288.0
+offset_right = 716.0
+offset_bottom = 588.0
+texture_normal = ExtResource("4_fpqeg")
+
+[node name="Jaula" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1250.0
+offset_top = 1.0
+offset_right = 1550.0
+offset_bottom = 338.0
+texture_normal = ExtResource("5_b2kfq")
+
+[node name="Lapeis" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1547.0
+offset_top = 299.0
+offset_right = 2024.0
+offset_bottom = 601.0
+texture_normal = ExtResource("6_4ri3t")
+
+[node name="Notebook" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 96.0
+offset_top = 288.0
+offset_right = 396.0
+offset_bottom = 588.0
+texture_normal = ExtResource("7_yc5li")
+correto = true
+
+[node name="Pendrive" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 2272.0
+offset_top = 192.0
+offset_right = 2714.0
+offset_bottom = 492.0
+texture_normal = ExtResource("8_5xdqd")
+
+[node name="Disco" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1249.0
+offset_top = 301.0
+offset_right = 1559.0
+offset_bottom = 601.0
+texture_normal = ExtResource("9_cpyo4")
+
+[node name="Light" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 736.0
+offset_top = 288.0
+offset_right = 1036.0
+offset_bottom = 588.0
+texture_normal = ExtResource("10_lut66")
+
+[node name="Livro" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 64.0
+offset_top = 640.0
+offset_right = 364.0
+offset_bottom = 940.0
+texture_normal = ExtResource("11_lyv1d")
+correto = true
+
+[node name="Almoco" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 384.0
+offset_top = 640.0
+offset_right = 797.0
+offset_bottom = 942.0
+texture_normal = ExtResource("12_1y6vp")
+
+[node name="Moto" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 576.0
+offset_top = 992.0
+offset_right = 1018.0
+offset_bottom = 1292.0
+texture_normal = ExtResource("13_5buwh")
+
+[node name="Dinheiro" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 2208.0
+offset_top = 512.0
+offset_right = 2741.0
+offset_bottom = 813.0
+texture_normal = ExtResource("14_v7oc1")
+
+[node name="Magico" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1547.0
+offset_top = 900.0
+offset_right = 1998.0
+offset_bottom = 1202.0
+texture_normal = ExtResource("15_y6hj5")
+
+[node name="Concha" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1248.0
+offset_top = 1201.0
+offset_right = 1698.0
+offset_bottom = 1501.0
+texture_normal = ExtResource("16_o0c3n")
+
+[node name="Cavete" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1247.0
+offset_top = 901.0
+offset_right = 1699.0
+offset_bottom = 1201.0
+texture_normal = ExtResource("17_4hmqq")
+
+[node name="Chave" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 384.0
+offset_top = 1344.0
+offset_right = 688.0
+offset_bottom = 1644.0
+texture_normal = ExtResource("18_mvend")
+
+[node name="Buraco" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 2144.0
+offset_top = 901.0
+offset_right = 2593.0
+offset_bottom = 1201.0
+texture_normal = ExtResource("19_4equy")
+
+[node name="Ovos" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1548.0
+offset_top = 1201.0
+offset_right = 1992.0
+offset_bottom = 1503.0
+texture_normal = ExtResource("20_21v0l")
+
+[node name="Sorvete" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 64.0
+offset_top = 1344.0
+offset_right = 364.0
+offset_bottom = 1785.0
+texture_normal = ExtResource("21_cm5bj")
+
+[node name="Diario" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 96.0
+offset_top = 992.0
+offset_right = 546.0
+offset_bottom = 1294.0
+texture_normal = ExtResource("22_w3c7e")
+correto = true
+
+[node name="Carne" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1247.0
+offset_top = 1501.0
+offset_right = 1697.0
+offset_bottom = 1802.0
+texture_normal = ExtResource("23_xjl4r")
+
+[node name="Natal" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1549.0
+offset_top = 1501.0
+offset_right = 1849.0
+offset_bottom = 1869.0
+texture_normal = ExtResource("24_le5on")
+
+[node name="Bolo" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1847.0
+offset_top = 1501.0
+offset_right = 2147.0
+offset_bottom = 1803.0
+texture_normal = ExtResource("25_cp37a")
+
+[node name="Dado" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1247.0
+offset_top = 1801.0
+offset_right = 1549.0
+offset_bottom = 2101.0
+texture_normal = ExtResource("26_hwayi")
+
+[node name="Cachorro" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 1546.0
+offset_top = 1803.0
+offset_right = 1924.0
+offset_bottom = 2103.0
+texture_normal = ExtResource("27_folwj")
+
+[node name="Arcondicionado" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 2304.0
+offset_top = 1216.0
+offset_right = 2704.0
+offset_bottom = 1516.0
+texture_normal = ExtResource("28_aix3e")
+
+[node name="Pia" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 2142.0
+offset_top = 1804.0
+offset_right = 2442.0
+offset_bottom = 2104.0
+texture_normal = ExtResource("29_5eu64")
+
+[node name="F1" parent="LevelBase" instance=ExtResource("2_okf8t")]
+offset_left = 2147.0
+offset_top = 1501.0
+offset_right = 2680.0
+offset_bottom = 1804.0
+texture_normal = ExtResource("30_ctcfe")

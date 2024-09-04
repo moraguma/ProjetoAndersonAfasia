@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b1bpqhru7ygn"]
+[gd_scene load_steps=16 format=3 uid="uid://b1bpqhru7ygn"]
 
 [ext_resource type="Script" path="res://scenes/scripts/Main.gd" id="1_evt1u"]
 [ext_resource type="Texture2D" uid="uid://dx13xw7qa7876" path="res://resources/images/main/tilesets/TinyBattle.png" id="1_xb4hn"]
@@ -8,8 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://4xgbu6eh4x44" path="res://resources/images/main/sprites/player.png" id="5_lx6vw"]
 [ext_resource type="PackedScene" uid="uid://kvirj2xj2eet" path="res://scenes/LevelSelector.tscn" id="7_byrbx"]
 [ext_resource type="Texture2D" uid="uid://cs5rfptbmaac0" path="res://resources/images/main/sprites/particle.png" id="8_0me5y"]
+[ext_resource type="Texture2D" uid="uid://drvjsea84uajw" path="res://resources/images/main/sprites/exit.png" id="9_uyqsb"]
+[ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/TransitionButton.gd" id="10_v85qk"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fjqj1"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14s73"]
 texture = ExtResource("1_xb4hn")
 0:0/0 = 0
 1:0/0 = 0
@@ -210,7 +212,7 @@ texture = ExtResource("1_xb4hn")
 16:10/0 = 0
 17:10/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_34jnn"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_apv4h"]
 texture = ExtResource("2_e5j22")
 0:0/0 = 0
 1:0/0 = 0
@@ -345,7 +347,7 @@ texture = ExtResource("2_e5j22")
 10:10/0 = 0
 11:10/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t21jd"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vdhiq"]
 texture = ExtResource("3_6d666")
 0:0/0 = 0
 1:0/0 = 0
@@ -480,7 +482,7 @@ texture = ExtResource("3_6d666")
 10:10/0 = 0
 11:10/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bq1sk"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m8p48"]
 texture = ExtResource("4_7e6i2")
 0:0/0 = 0
 1:0/0 = 0
@@ -616,10 +618,10 @@ texture = ExtResource("4_7e6i2")
 11:10/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_ddkrf"]
-sources/0 = SubResource("TileSetAtlasSource_fjqj1")
-sources/1 = SubResource("TileSetAtlasSource_34jnn")
-sources/2 = SubResource("TileSetAtlasSource_t21jd")
-sources/3 = SubResource("TileSetAtlasSource_bq1sk")
+sources/0 = SubResource("TileSetAtlasSource_14s73")
+sources/1 = SubResource("TileSetAtlasSource_apv4h")
+sources/2 = SubResource("TileSetAtlasSource_vdhiq")
+sources/3 = SubResource("TileSetAtlasSource_m8p48")
 
 [node name="Nivel" type="Node2D"]
 script = ExtResource("1_evt1u")
@@ -730,3 +732,13 @@ initial_velocity_min = 40.0
 initial_velocity_max = 40.0
 scale_amount_min = 8.0
 scale_amount_max = 8.0
+
+[node name="Menu" type="TextureButton" parent="."]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 160.0
+offset_bottom = 160.0
+texture_normal = ExtResource("9_uyqsb")
+stretch_mode = 0
+script = ExtResource("10_v85qk")
+transition_path = "res://scenes/Menu.tscn"

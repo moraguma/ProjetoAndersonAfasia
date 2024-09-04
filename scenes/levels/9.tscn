@@ -1,10 +1,328 @@
-[gd_scene load_steps=2 format=3 uid="uid://db28w1mdwbyyq"]
+[gd_scene load_steps=27 format=3 uid="uid://db28w1mdwbyyq"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_11eo3"]
+[ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_8lh3d"]
+[ext_resource type="Texture2D" uid="uid://bvqyycceq0sjs" path="res://resources/images/levels/level5/carro.jpeg" id="3_gknku"]
+[ext_resource type="Texture2D" uid="uid://cgo0siinege1u" path="res://resources/images/levels/level5/Casa.jpeg" id="4_uy3f5"]
+[ext_resource type="Texture2D" uid="uid://mdryfcauayuw" path="res://resources/images/levels/level5/cinema.jpg" id="5_twidb"]
+[ext_resource type="Texture2D" uid="uid://dsslvcbut47mt" path="res://resources/images/levels/level5/Pintura.jpg" id="6_uwpea"]
+[ext_resource type="Texture2D" uid="uid://ialwslqjru2m" path="res://resources/images/levels/level5/aviao.jpg" id="7_yq2r2"]
+[ext_resource type="Texture2D" uid="uid://dusp14gn15vjk" path="res://resources/images/levels/level5/Corda.jpeg" id="8_vybke"]
+[ext_resource type="Texture2D" uid="uid://cljy12eg5slbk" path="res://resources/images/levels/level5/prego.jpeg" id="9_2rok1"]
+[ext_resource type="Texture2D" uid="uid://c7e5ti8klhqks" path="res://resources/images/levels/level5/Chuveiro.jpeg" id="10_87sf3"]
+[ext_resource type="Texture2D" uid="uid://bxegujs344wwu" path="res://resources/images/levels/level5/amigo.jpeg" id="11_hcbf1"]
+[ext_resource type="Texture2D" uid="uid://dck2m5cr83e1m" path="res://resources/images/levels/level5/onibus.jpeg" id="12_43c4u"]
+[ext_resource type="Texture2D" uid="uid://bgfci03udr3y0" path="res://resources/images/levels/level5/predio.jpeg" id="13_8lw4e"]
+[ext_resource type="Texture2D" uid="uid://nvsdingdj0dt" path="res://resources/images/levels/level5/arvore.jpeg" id="14_s5p71"]
+[ext_resource type="Texture2D" uid="uid://b85tlhm307ivx" path="res://resources/images/levels/level5/Escada.jpeg" id="15_ju7n0"]
+[ext_resource type="Texture2D" uid="uid://d1n6wk6b8k2se" path="res://resources/images/levels/level5/Quadro.png" id="16_rtdq5"]
+[ext_resource type="Texture2D" uid="uid://dsbk56q7ywllh" path="res://resources/images/levels/level5/Predetresjpg.jpg" id="17_kh50w"]
+[ext_resource type="Texture2D" uid="uid://bx51fpgpmignu" path="res://resources/images/levels/level5/Bicicleta.png" id="18_nxjrf"]
+[ext_resource type="Texture2D" uid="uid://b0jwaqs3cbukg" path="res://resources/images/levels/level5/caneta.jpg" id="19_m4cvg"]
+[ext_resource type="Texture2D" uid="uid://cy7lhj1a1px57" path="res://resources/images/levels/level5/Refrigerador.jpeg" id="20_di7n3"]
+[ext_resource type="Texture2D" uid="uid://dvjdiw1neviyu" path="res://resources/images/levels/level5/trem.jpg" id="21_cosms"]
+[ext_resource type="Texture2D" uid="uid://dxvnlicx4dyg" path="res://resources/images/levels/level5/Mesa.jpeg" id="22_w81g6"]
+[ext_resource type="Texture2D" uid="uid://dic23a2xiemlw" path="res://resources/images/levels/level5/bau.jpeg" id="23_tuhim"]
+[ext_resource type="Texture2D" uid="uid://1x8otekn50oo" path="res://resources/images/levels/level5/Lampada.jpeg" id="24_kd300"]
+[ext_resource type="Texture2D" uid="uid://co185ixrci28k" path="res://resources/images/levels/level5/navio.jpg" id="25_kdosu"]
+[ext_resource type="Texture2D" uid="uid://bfq2rjw7wn403" path="res://resources/images/levels/level5/Cadeira.png" id="26_difcd"]
 
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_11eo3")]
-win_text = "Parabéns! Dá pra sentar nisso!"
-lose_text = "Não dá pra sentar nisso!"
-prompt = "Onde você pode sentar?"
+win_text = "Parabéns! Dá pra se locomover nisso!"
+lose_text = "Não dá pra se locomover nisso!"
+prompt = "O que você pode usar para se locomover?"
+
+[node name="Carro" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+offset_left = 32.0
+offset_top = 960.0
+offset_right = 659.0
+offset_bottom = 1263.0
+texture_normal = ExtResource("3_gknku")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Casa" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+offset_left = 1814.0
+offset_right = 2114.0
+offset_bottom = 303.0
+texture_normal = ExtResource("4_uy3f5")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cinema" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+offset_left = 64.0
+offset_top = 256.0
+offset_right = 364.0
+offset_bottom = 559.0
+texture_normal = ExtResource("5_twidb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Pintura" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+offset_left = 2109.0
+offset_right = 2409.0
+offset_bottom = 473.0
+texture_normal = ExtResource("6_uwpea")
+metadata/_edit_use_anchors_ = true
+
+[node name="Aviao" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 416.0
+offset_top = 256.0
+offset_right = 949.0
+offset_bottom = 559.0
+grow_vertical = 0
+texture_normal = ExtResource("7_yq2r2")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Corda" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 0.993333
+anchor_top = 1.0
+anchor_right = 0.993333
+anchor_bottom = 1.0
+offset_left = 704.0
+offset_top = 608.0
+offset_right = 1004.0
+offset_bottom = 911.0
+texture_normal = ExtResource("8_vybke")
+metadata/_edit_use_anchors_ = true
+
+[node name="Prego" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = -2.01678
+anchor_top = 1.0
+anchor_right = -2.01678
+anchor_bottom = 1.0
+offset_left = 1814.0
+offset_top = 303.0
+offset_right = 2284.0
+offset_bottom = 606.0
+texture_normal = ExtResource("9_2rok1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Chuveiro" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+offset_left = 2109.0
+offset_top = 302.0
+offset_right = 2414.0
+offset_bottom = 606.0
+texture_normal = ExtResource("10_87sf3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Amigos" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = -1.99
+anchor_top = -0.00990099
+anchor_right = -1.98
+anchor_bottom = -0.00990099
+offset_left = 384.0
+offset_top = 608.0
+offset_right = 684.0
+offset_bottom = 911.0
+texture_normal = ExtResource("11_hcbf1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Onibus" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 1.01
+anchor_top = -0.00660066
+anchor_right = 1.01
+anchor_bottom = -0.00660066
+offset_left = 64.0
+offset_top = 1376.0
+offset_right = 635.0
+offset_bottom = 1679.0
+texture_normal = ExtResource("12_43c4u")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Predio" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.01
+anchor_bottom = 0.00330033
+offset_left = 64.0
+offset_top = 608.0
+offset_right = 364.0
+offset_bottom = 934.0
+texture_normal = ExtResource("13_8lw4e")
+metadata/_edit_use_anchors_ = true
+
+[node name="Arvore" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = -0.0569805
+anchor_top = -2.967
+anchor_right = -0.0469134
+anchor_bottom = -2.60726
+offset_left = 1214.0
+offset_top = 1493.0
+offset_right = 1514.0
+offset_bottom = 1796.0
+scale = Vector2(1.11617, 1.38748)
+texture_normal = ExtResource("14_s5p71")
+metadata/_edit_use_anchors_ = true
+
+[node name="Escada" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = -0.0436241
+anchor_top = -2.9703
+anchor_right = -0.0335568
+anchor_bottom = -2.60726
+offset_left = 1535.0
+offset_top = 1498.0
+offset_right = 1835.0
+offset_bottom = 1880.0
+scale = Vector2(1, 1.36795)
+texture_normal = ExtResource("15_ju7n0")
+metadata/_edit_use_anchors_ = true
+
+[node name="Quadro" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 0.0436242
+anchor_top = -3.30033
+anchor_right = 0.0436242
+anchor_bottom = -2.9703
+offset_left = 2113.0
+offset_top = 1504.0
+offset_right = 2454.0
+offset_bottom = 1808.0
+scale = Vector2(0.950595, 1.34748)
+texture_normal = ExtResource("16_rtdq5")
+metadata/_edit_use_anchors_ = true
+
+[node name="Pedestres" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = -0.00666667
+anchor_top = -0.00660066
+anchor_right = -0.00666667
+anchor_bottom = -0.00660066
+offset_left = 1440.0
+offset_top = 448.0
+offset_right = 1740.0
+offset_bottom = 752.0
+texture_normal = ExtResource("17_kh50w")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bicliceta" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = -0.0402021
+anchor_top = -2.967
+anchor_right = -0.0402021
+anchor_bottom = -2.62046
+offset_left = 1808.0
+offset_top = 1484.0
+offset_right = 2361.0
+offset_bottom = 1787.0
+scale = Vector2(1, 1.41322)
+texture_normal = ExtResource("18_nxjrf")
+metadata/_edit_use_anchors_ = true
+
+[node name="Caneta" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 0.00664496
+anchor_top = -1.0198
+anchor_right = 0.0166451
+anchor_bottom = -1.0198
+offset_left = 704.0
+offset_top = 992.0
+offset_right = 1004.0
+offset_bottom = 1309.0
+scale = Vector2(1, 1.04)
+texture_normal = ExtResource("19_m4cvg")
+metadata/_edit_use_anchors_ = true
+
+[node name="Refrigerador" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 0.00671141
+anchor_top = -1.0066
+anchor_right = 0.00671141
+anchor_bottom = -1.0066
+offset_left = 1184.0
+offset_top = 672.0
+offset_right = 1484.0
+offset_bottom = 1126.0
+texture_normal = ExtResource("20_di7n3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Trem" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = -0.0536913
+anchor_top = -1.0066
+anchor_right = -0.0536913
+anchor_bottom = -1.0066
+offset_left = 2111.0
+offset_top = 899.0
+offset_right = 2411.0
+offset_bottom = 1203.0
+texture_normal = ExtResource("21_cosms")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Mesa" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 0.0201342
+anchor_top = -1.0231
+anchor_right = 0.0301342
+anchor_bottom = -1.0198
+offset_left = 1524.0
+offset_top = 902.0
+offset_right = 1966.0
+offset_bottom = 1205.0
+texture_normal = ExtResource("22_w81g6")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bau" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 0.00664496
+anchor_top = -2.0099
+anchor_right = 0.00664496
+anchor_bottom = -2.0099
+offset_left = 1831.98
+offset_top = 1200.0
+offset_right = 2131.98
+offset_bottom = 1503.0
+texture_normal = ExtResource("23_tuhim")
+metadata/_edit_use_anchors_ = true
+
+[node name="Lampada" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = -0.083062
+anchor_top = -2.0264
+anchor_right = -0.083062
+anchor_bottom = -2.0264
+offset_left = 2016.0
+offset_top = 768.0
+offset_right = 2316.0
+offset_bottom = 1072.0
+texture_normal = ExtResource("24_kd300")
+metadata/_edit_use_anchors_ = true
+
+[node name="Navio" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 0.0199349
+anchor_top = -1.0231
+anchor_right = 0.0299348
+anchor_bottom = -1.0198
+offset_left = 1528.0
+offset_top = 1199.0
+offset_right = 2025.0
+offset_bottom = 1502.0
+texture_normal = ExtResource("25_kdosu")
+correto = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Algema" parent="LevelBase" instance=ExtResource("2_8lh3d")]
+anchors_preset = -1
+anchor_left = 0.00671141
+anchor_top = -1.0198
+anchor_right = 0.0167115
+anchor_bottom = -1.0198
+offset_left = 672.0
+offset_top = 1376.0
+offset_right = 1044.0
+offset_bottom = 1679.0
+texture_normal = ExtResource("26_difcd")
+metadata/_edit_use_anchors_ = true
