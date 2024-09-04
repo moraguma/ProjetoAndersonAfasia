@@ -10,5 +10,6 @@ func _ready() -> void:
 
 
 func start(val): 
+	SoundController.play_sfx("Button")
 	Globals.player = val
 	SceneManager.goto_scene("res://scenes/Main.tscn")

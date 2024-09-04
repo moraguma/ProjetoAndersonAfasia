@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b1bpqhru7ygn"]
+[gd_scene load_steps=17 format=3 uid="uid://b1bpqhru7ygn"]
 
 [ext_resource type="Script" path="res://scenes/scripts/Main.gd" id="1_evt1u"]
 [ext_resource type="Texture2D" uid="uid://dx13xw7qa7876" path="res://resources/images/main/tilesets/TinyBattle.png" id="1_xb4hn"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cs5rfptbmaac0" path="res://resources/images/main/sprites/particle.png" id="8_0me5y"]
 [ext_resource type="Texture2D" uid="uid://drvjsea84uajw" path="res://resources/images/main/sprites/exit.png" id="9_uyqsb"]
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/TransitionButton.gd" id="10_v85qk"]
+[ext_resource type="AudioStream" uid="uid://de72w7ij3j5g3" path="res://resources/sounds/sfx/footstep.wav" id="11_rwjl0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14s73"]
 texture = ExtResource("1_xb4hn")
@@ -742,3 +743,7 @@ texture_normal = ExtResource("9_uyqsb")
 stretch_mode = 0
 script = ExtResource("10_v85qk")
 transition_path = "res://scenes/Menu.tscn"
+
+[node name="Footstep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_rwjl0")
+volume_db = -10.0

@@ -24,6 +24,7 @@ const ANGLE = PI/12
 	$LevelSelectors/Enxergar: [$LevelSelectors/Transporte]
 }
 @onready var level_selector_container = $LevelSelectors
+@onready var footstep_sound = $Footstep
 
 var current_node = null
 var moving = false
@@ -90,6 +91,7 @@ func go_here(level_selector):
 		return
 	
 	moving = true
+	footstep_sound.play()
 	player_particles.emitting = true
 	
 	if not current_node is String:
@@ -110,3 +112,5 @@ func go_here(level_selector):
 	current_node = level_selector
 	current_node.enable_play()
 	moving = false
+	footstep_sound.stop()
+	SoundController.play_sfx("Level")

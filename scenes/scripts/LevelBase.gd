@@ -29,11 +29,13 @@ func _ready() -> void:
 func acertou():
 	if not played:
 		Globals.beat_level(Globals.last_level_int)
+		SoundController.play_sfx("Win")
 		end(win_color, win_text)
 
 
 func errou():
 	if not played:
+		SoundController.play_sfx("Lose")
 		end(lose_color, lose_text)
 
 

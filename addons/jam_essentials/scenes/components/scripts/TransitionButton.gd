@@ -5,4 +5,5 @@ extends BaseButton
 
 
 func _pressed():
+	SoundController.play_sfx("Button")
 	SceneManager.goto_scene(transition_path)
