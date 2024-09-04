@@ -18,12 +18,19 @@ var played = false
 @onready var success = $Display/Success
 @onready var timer = $Timer
 @onready var tts = $TTSLabel
+@onready var item_container: ScrollContainer = $ItemContainer
 
 
 func _ready() -> void:
+	randomize_scroll.call_deferred()
+	
 	tts.text = prompt
 	tts.update_text()
 	tts.say()
+
+
+func randomize_scroll():
+	item_container.scroll_horizontal = randi() % int(item_container.get_h_scroll_bar().max_value)
 
 
 func acertou():
@@ -41,7 +48,7 @@ func errou():
 
 func end(color, text):
 	played = true
-		
+	
 	display.show()
 	display.color = color
 	success.text = text

@@ -25,111 +25,113 @@ win_text = "Parabéns! Isso protege do sol!"
 lose_text = "Isso não protege do sol!"
 prompt = "O que ajuda a proteger do sol na cabeça?"
 
-[node name="Homem careca" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 1306.0
-offset_top = 1507.0
-offset_right = 1624.0
-offset_bottom = 1890.0
+[node name="Homem careca" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_ypuds")]
+offset_left = 1768.0
+offset_top = 448.0
+offset_right = 2086.0
+offset_bottom = 831.0
 texture_normal = ExtResource("3_pmbnk")
 
-[node name="Bone" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 64.0
-offset_top = 352.0
-offset_right = 364.0
-offset_bottom = 652.0
+[node name="Bone" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_ypuds")]
+offset_left = 1576.0
+offset_top = 864.0
+offset_right = 1876.0
+offset_bottom = 1164.0
 texture_normal = ExtResource("4_q7a86")
 correto = true
 
-[node name="Cocoagua" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 64.0
-offset_top = 704.0
-offset_right = 364.0
-offset_bottom = 1004.0
+[node name="Cocoagua" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_ypuds")]
+offset_left = 1800.0
+offset_top = 1184.0
+offset_right = 2100.0
+offset_bottom = 1484.0
 texture_normal = ExtResource("5_ak2cx")
 
-[node name="Chinelo" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 2336.0
-offset_top = 320.0
-offset_right = 2636.0
-offset_bottom = 887.0
+[node name="Chinelo" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_ypuds")]
+offset_left = 40.0
+offset_top = 96.0
+offset_right = 340.0
+offset_bottom = 663.0
 texture_normal = ExtResource("6_2ye8c")
 
-[node name="Bola" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 384.0
-offset_top = 352.0
-offset_right = 684.0
-offset_bottom = 659.0
+[node name="Bola" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_ypuds")]
+offset_left = 424.0
+offset_top = 64.0
+offset_right = 724.0
+offset_bottom = 371.0
 texture_normal = ExtResource("7_ehv3w")
 
-[node name="Estrela" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 96.0
-offset_top = 1056.0
-offset_right = 443.0
-offset_bottom = 1356.0
+[node name="Estrela" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_ypuds")]
+offset_left = 232.0
+offset_top = 800.0
+offset_right = 579.0
+offset_bottom = 1100.0
 texture_normal = ExtResource("8_hkum3")
 
-[node name="Cocacola" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 704.0
-offset_top = 352.0
-offset_right = 1004.0
-offset_bottom = 952.0
+[node name="Cocacola" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_ypuds")]
+offset_left = 808.0
+offset_top = 96.0
+offset_right = 1108.0
+offset_bottom = 696.0
 texture_normal = ExtResource("9_ipx4o")
 
-[node name="Sorvete" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 1185.0
-offset_top = 650.0
-offset_right = 1485.0
-offset_bottom = 1250.0
+[node name="Sorvete" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_ypuds")]
+offset_left = 1224.0
+offset_top = 896.0
+offset_right = 1524.0
+offset_bottom = 1496.0
 texture_normal = ExtResource("10_tvrjw")
 
-[node name="Protertor Solar" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 384.0
-offset_top = 704.0
-offset_right = 684.0
-offset_bottom = 1004.0
+[node name="Protertor Solar" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_ypuds")]
+offset_left = 456.0
+offset_top = 448.0
+offset_right = 756.0
+offset_bottom = 748.0
 texture_normal = ExtResource("11_gqanp")
 correto = true
 
-[node name="Caranguejos" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 1809.0
-offset_top = 658.0
-offset_right = 2318.0
-offset_bottom = 958.0
+[node name="Caranguejos" parent="LevelBase/ItemContainer/Container" index="9" instance=ExtResource("2_ypuds")]
+offset_left = 1192.0
+offset_top = 416.0
+offset_right = 1701.0
+offset_bottom = 716.0
 texture_normal = ExtResource("12_p0x2p")
 
-[node name="Peixe" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 576.0
-offset_top = 1024.0
-offset_right = 1002.0
-offset_bottom = 1324.0
+[node name="Peixe" parent="LevelBase/ItemContainer/Container" index="10" instance=ExtResource("2_ypuds")]
+offset_left = 712.0
+offset_top = 800.0
+offset_right = 1138.0
+offset_bottom = 1100.0
 texture_normal = ExtResource("13_g7sca")
 
-[node name="Boia" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 1760.0
-offset_top = 960.0
-offset_right = 2060.0
-offset_bottom = 1260.0
+[node name="Boia" parent="LevelBase/ItemContainer/Container" index="11" instance=ExtResource("2_ypuds")]
+offset_left = 520.0
+offset_top = 1152.0
+offset_right = 820.0
+offset_bottom = 1452.0
 texture_normal = ExtResource("14_i5o53")
 
-[node name="Guardapraia" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 704.0
-offset_top = 1376.0
-offset_right = 1004.0
-offset_bottom = 1697.0
+[node name="Guardapraia" parent="LevelBase/ItemContainer/Container" index="12" instance=ExtResource("2_ypuds")]
+offset_left = 1256.0
+offset_top = 32.0
+offset_right = 1556.0
+offset_bottom = 353.0
 texture_normal = ExtResource("15_jllvw")
 correto = true
 
-[node name="Celular" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 1829.0
-offset_top = 1290.0
-offset_right = 2129.0
-offset_bottom = 1650.0
+[node name="Celular" parent="LevelBase/ItemContainer/Container" index="13" instance=ExtResource("2_ypuds")]
+offset_left = 1640.0
+offset_top = 32.0
+offset_right = 1940.0
+offset_bottom = 392.0
 texture_normal = ExtResource("16_si0ff")
 
-[node name="Mergulhar" parent="LevelBase" instance=ExtResource("2_ypuds")]
-offset_left = 96.0
-offset_top = 1408.0
-offset_right = 440.0
-offset_bottom = 1708.0
+[node name="Mergulhar" parent="LevelBase/ItemContainer/Container" index="14" instance=ExtResource("2_ypuds")]
+offset_left = 72.0
+offset_top = 1152.0
+offset_right = 416.0
+offset_bottom = 1452.0
 texture_normal = ExtResource("17_wqdtp")
 correto = true
+
+[editable path="LevelBase"]

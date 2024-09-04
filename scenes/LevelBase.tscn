@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dni702klqguou"]
+[gd_scene load_steps=6 format=3 uid="uid://dni702klqguou"]
 
 [ext_resource type="Shader" path="res://resources/shaders/DiscreteSunset.gdshader" id="1_8icjm"]
 [ext_resource type="Script" path="res://scenes/scripts/LevelBase.gd" id="1_pycaa"]
 [ext_resource type="PackedScene" uid="uid://cqip7djlmyyuu" path="res://scenes/TTSLabel.tscn" id="2_fctsm"]
+[ext_resource type="Theme" uid="uid://yikwyyedwtfw" path="res://resources/themes/main_theme.tres" id="4_kqesr"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3ioxp"]
 shader = ExtResource("1_8icjm")
@@ -47,3 +48,15 @@ offset_top = 608.0
 offset_right = 1020.0
 offset_bottom = 736.0
 say_on_ready = false
+
+[node name="ItemContainer" type="ScrollContainer" parent="."]
+clip_contents = false
+offset_left = 24.0
+offset_top = 256.0
+offset_right = 1064.0
+offset_bottom = 1880.0
+theme = ExtResource("4_kqesr")
+
+[node name="Container" type="Control" parent="ItemContainer"]
+custom_minimum_size = Vector2(2160, 1536)
+layout_mode = 2
