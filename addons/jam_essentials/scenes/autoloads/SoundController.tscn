@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqkx1bmvj3rym"]
+[gd_scene load_steps=7 format=3 uid="uid://bqkx1bmvj3rym"]
 
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/autoloads/scripts/SoundController.gd" id="1_lfq44"]
 [ext_resource type="AudioStream" uid="uid://dekd2aol3iwnx" path="res://resources/sounds/sfx/button.wav" id="2_8xcm2"]
 [ext_resource type="AudioStream" uid="uid://cuke6n1iow6ng" path="res://resources/sounds/sfx/win.wav" id="3_sf4ql"]
 [ext_resource type="AudioStream" uid="uid://cdf0pr6qtwpbi" path="res://resources/sounds/sfx/lose.wav" id="4_icl0v"]
 [ext_resource type="AudioStream" uid="uid://d18kllrk8j7aq" path="res://resources/sounds/sfx/level.wav" id="5_7hp6j"]
+[ext_resource type="AudioStream" uid="uid://de6udmyev2uny" path="res://resources/sounds/Music.ogg" id="6_ww02v"]
 
 [node name="SoundController" type="Node"]
 script = ExtResource("1_lfq44")
@@ -28,3 +29,7 @@ volume_db = -12.0
 pitch_scale = 0.5
 
 [node name="Music" type="Node" parent="."]
+
+[node name="Music" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("6_ww02v")
+volume_db = -20.0

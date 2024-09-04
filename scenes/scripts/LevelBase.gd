@@ -1,7 +1,7 @@
 extends Node2D
 
 
-const DELAY = 3.0
+const DELAY = 4.0
 
 
 @export var win_color: Color

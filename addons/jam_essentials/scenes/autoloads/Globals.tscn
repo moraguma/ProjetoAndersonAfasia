@@ -4,3 +4,5 @@
 
 [node name="Globals" type="Node"]
 script = ExtResource("1_068b6")
+
+[node name="TTSFallback" type="AudioStreamPlayer" parent="."]

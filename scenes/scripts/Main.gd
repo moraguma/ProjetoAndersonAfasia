@@ -37,6 +37,7 @@ func _ready() -> void:
 		current_node = "start" 
 	else: 
 		current_node = get_node("LevelSelectors/%s" % [Globals.last_level])
+		current_node.enable_play()
 		player.position = current_node.position + POSITION_DIF
 	player.frame = Globals.player
 	past_player_pos = player.position

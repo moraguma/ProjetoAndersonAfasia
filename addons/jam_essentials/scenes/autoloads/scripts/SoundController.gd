@@ -2,7 +2,7 @@ extends Node
 
 
 const OFF_DB = -80.0
-const ON_DB = 0.0
+const ON_DB = -20.0
 
 
 const LERP_WEIGHT = 0.05
@@ -21,6 +21,8 @@ var current_music
 func _ready():
 	populate_sound_dict(music_container, music, Globals.MUSIC_BUS)
 	populate_sound_dict(sfx_container, sfx, Globals.SFX_BUS)
+	
+	play_music("Music")
 
 
 func populate_sound_dict(container: Node, dict: Dictionary, bus: int, prefix: String=""):
