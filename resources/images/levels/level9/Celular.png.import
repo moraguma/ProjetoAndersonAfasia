@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bja74jkwe0qex"
-valid=false
+path="res://.godot/imported/Celular.png-e8055627638c8e95c41225d54b10e984.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://resources/images/levels/level9/Celular.png"
+dest_files=["res://.godot/imported/Celular.png-e8055627638c8e95c41225d54b10e984.ctex"]
 
 [params]
 
