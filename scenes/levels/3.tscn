@@ -21,8 +21,6 @@
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_7joyc")]
-win_text = "Parabéns! Isso protege do sol!"
-lose_text = "Isso não protege do sol!"
 prompt = "O que ajuda a proteger do sol na cabeça?"
 
 [node name="Homem careca" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_ypuds")]

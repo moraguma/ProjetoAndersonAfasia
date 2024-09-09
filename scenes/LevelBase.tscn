@@ -21,8 +21,6 @@ shader_parameter/total_phases = 4
 script = ExtResource("1_pycaa")
 win_color = Color(0.471204, 0.715059, 3.85046e-07, 1)
 lose_color = Color(0.739148, 0.26044, 0.180679, 1)
-win_text = "Bom trabalho!"
-lose_text = "Errou!"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_3ioxp")
@@ -41,13 +39,20 @@ say_on_ready = false
 visible = false
 z_index = 1
 position = Vector2(0, 256)
+color = Color(0, 0, 0, 1)
 polygon = PackedVector2Array(128, 256, 960, 256, 1024, 288, 1056, 352, 1056, 1024, 1024, 1088, 960, 1120, 128, 1120, 64, 1088, 32, 1024, 32, 352, 64, 288)
 
-[node name="Success" parent="Display" instance=ExtResource("2_fctsm")]
-offset_top = 608.0
-offset_right = 1020.0
-offset_bottom = 736.0
-say_on_ready = false
+[node name="Win" type="Polygon2D" parent="Display"]
+visible = false
+z_index = 1
+position = Vector2(-96, -32)
+polygon = PackedVector2Array(320, 704, 512, 896, 960, 448, 1024, 512, 512, 1024, 256, 768)
+
+[node name="Lose" type="Polygon2D" parent="Display"]
+visible = false
+z_index = 1
+position = Vector2(32, -96)
+polygon = PackedVector2Array(352, 512, 512, 704, 672, 512, 768, 512, 576, 768, 768, 1024, 672, 1024, 512, 832, 352, 1024, 256, 1024, 448, 768, 256, 512)
 
 [node name="ItemContainer" type="ScrollContainer" parent="."]
 clip_contents = false

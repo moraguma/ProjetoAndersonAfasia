@@ -34,8 +34,6 @@
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_2vsbv")]
-win_text = "Parabéns! Dá pra escrever nisso!"
-lose_text = "Não dá pra escrever nisso!"
 prompt = "Onde você pode escrever?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]

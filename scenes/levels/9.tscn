@@ -30,8 +30,6 @@
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_11eo3")]
-win_text = "Parabéns! Dá pra se locomover nisso!"
-lose_text = "Não dá pra se locomover nisso!"
 prompt = "O que você pode usar para se locomover?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]

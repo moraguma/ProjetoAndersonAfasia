@@ -6,8 +6,6 @@ const DELAY = 4.0
 
 @export var win_color: Color
 @export var lose_color: Color
-@export var win_text: String
-@export var lose_text: String
 @export var prompt: String
 
 
@@ -15,7 +13,8 @@ var played = false
 
 
 @onready var display = $Display
-@onready var success = $Display/Success
+@onready var win_indicator = $Display/Win
+@onready var lose_indicator = $Display/Lose
 @onready var timer = $Timer
 @onready var tts = $TTSLabel
 @onready var item_container: ScrollContainer = $ItemContainer
@@ -37,23 +36,24 @@ func acertou():
 	if not played:
 		Globals.beat_level(Globals.last_level_int)
 		SoundController.play_sfx("Win")
-		end(win_color, win_text)
+		end(win_color, true)
 
 
 func errou():
 	if not played:
 		SoundController.play_sfx("Lose")
-		end(lose_color, lose_text)
+		end(lose_color, false)
 
 
-func end(color, text):
+func end(color, won):
 	played = true
 	
 	display.show()
 	display.color = color
-	success.text = text
-	success.update_text()
-	success.say()
+	if won:
+		win_indicator.show()
+	else:
+		lose_indicator.show()
 	
 	timer.start(DELAY)
 	await timer.timeout

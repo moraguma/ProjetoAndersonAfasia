@@ -34,8 +34,6 @@
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_4e1bn")]
-win_text = "Parabéns! Dá pra beber isso!"
-lose_text = "Não dá pra beber isso!"
 prompt = "O que você pode beber?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
