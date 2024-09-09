@@ -8,7 +8,7 @@ const FREQUENCY = 0.5
 const MOVING_TIME_MULT = 4
 const ANGLE = PI/12
 const WIN_WAIT_TIME = 5.0
-const MAX_LEVELS = 1
+const MAX_LEVELS = 10
 
 @onready var player_particles: CPUParticles2D = $Player/Particles
 @onready var player: Sprite2D = $Player

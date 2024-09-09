@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://dgm2b3pqqr1wn"]
+[gd_scene load_steps=21 format=4 uid="uid://dgm2b3pqqr1wn"]
 
 [ext_resource type="Texture2D" uid="uid://dx13xw7qa7876" path="res://resources/images/main/tilesets/TinyBattle.png" id="1_sfp2d"]
 [ext_resource type="Texture2D" uid="uid://cc4d4vghmhl2y" path="res://resources/images/main/tilesets/TinyDungeon.png" id="2_opqc1"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dbwbn7qmmkpmg" path="res://resources/images/main/sprites/SoundOff.png" id="11_2og1i"]
 [ext_resource type="Texture2D" uid="uid://pr8umowxfyes" path="res://resources/images/main/sprites/TTSOn.png" id="12_72861"]
 [ext_resource type="Texture2D" uid="uid://b4renglug0hwb" path="res://resources/images/main/sprites/TTSOff.png" id="13_qcvsq"]
+[ext_resource type="Theme" uid="uid://yikwyyedwtfw" path="res://resources/themes/main_theme.tres" id="14_fgbjh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kj72y"]
 texture = ExtResource("1_sfp2d")
@@ -626,6 +627,8 @@ sources/1 = SubResource("TileSetAtlasSource_kdlhm")
 sources/2 = SubResource("TileSetAtlasSource_kktr7")
 sources/3 = SubResource("TileSetAtlasSource_6rb5u")
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4o6xn"]
+
 [node name="Menu" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -713,9 +716,9 @@ amplitude = Vector2(0, 2)
 
 [node name="Play" type="TextureButton" parent="."]
 offset_left = 284.0
-offset_top = 1312.0
+offset_top = 1184.0
 offset_right = 796.0
-offset_bottom = 1824.0
+offset_bottom = 1696.0
 texture_normal = ExtResource("5_dmh0f")
 stretch_mode = 0
 script = ExtResource("8_7uuix")
@@ -745,3 +748,21 @@ offset_bottom = 160.0
 texture_normal = ExtResource("12_72861")
 texture_pressed = ExtResource("13_qcvsq")
 bus = 3
+
+[node name="Credits" type="RichTextLabel" parent="."]
+modulate = Color(1, 1, 1, 0.615686)
+clip_contents = false
+offset_left = 32.0
+offset_top = 1760.0
+offset_right = 363.0
+offset_bottom = 1856.0
+scale = Vector2(3, 3)
+theme = ExtResource("14_fgbjh")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.14902, 0.168627, 0.266667, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/normal_font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4o6xn")
+bbcode_enabled = true
+text = "[center]Jogo de Anderson Alberto Ramos
+Desenvolvido por Gustavo Araújo Morais"
