@@ -44,6 +44,7 @@ grow_horizontal = 0
 texture_normal = ExtResource("3_nn8ud")
 
 [node name="Comfortable" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 8.0
 offset_top = 128.0
 offset_right = 308.0
@@ -52,6 +53,7 @@ texture_normal = ExtResource("4_rdk14")
 correto = true
 
 [node name="Televisao" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 1608.0
 offset_top = 192.0
 offset_right = 2058.0
@@ -59,6 +61,7 @@ offset_bottom = 492.0
 texture_normal = ExtResource("5_6bm1x")
 
 [node name="Arvore" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 8.0
 offset_top = 544.0
 offset_right = 459.0
@@ -67,6 +70,7 @@ texture_normal = ExtResource("6_8v0nn")
 correto = true
 
 [node name="Burger" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 488.0
 offset_top = 1248.0
 offset_right = 937.0
@@ -74,6 +78,7 @@ offset_bottom = 1548.0
 texture_normal = ExtResource("7_1xder")
 
 [node name="Caderno" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 1480.0
 offset_top = 1216.0
 offset_right = 1929.0
@@ -81,6 +86,7 @@ offset_bottom = 1516.0
 texture_normal = ExtResource("8_8wheq")
 
 [node name="Banco" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 968.0
 offset_top = 1216.0
 offset_right = 1417.0
@@ -89,6 +95,7 @@ texture_normal = ExtResource("9_bmhub")
 correto = true
 
 [node name="Cachorro" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 1800.0
 offset_top = 544.0
 offset_right = 2250.0
@@ -96,6 +103,7 @@ offset_bottom = 844.0
 texture_normal = ExtResource("10_ojrj0")
 
 [node name="Aviao" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 1128.0
 offset_top = 96.0
 offset_right = 1556.0
@@ -103,6 +111,7 @@ offset_bottom = 396.0
 texture_normal = ExtResource("11_yshuj")
 
 [node name="Rocha" parent="LevelBase/ItemContainer/Container" index="9" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 1288.0
 offset_top = 544.0
 offset_right = 1737.0
@@ -111,6 +120,7 @@ texture_normal = ExtResource("12_p2fu1")
 correto = true
 
 [node name="Espinho" parent="LevelBase/ItemContainer/Container" index="10" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 488.0
 offset_top = 544.0
 offset_right = 937.0
@@ -118,6 +128,7 @@ offset_bottom = 844.0
 texture_normal = ExtResource("13_b63gs")
 
 [node name="Cadeira" parent="LevelBase/ItemContainer/Container" index="11" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 680.0
 offset_top = 128.0
 offset_right = 1075.0
@@ -126,6 +137,7 @@ texture_normal = ExtResource("14_cuhn4")
 correto = true
 
 [node name="Sapato" parent="LevelBase/ItemContainer/Container" index="12" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 8.0
 offset_top = 864.0
 offset_right = 433.0
@@ -133,6 +145,7 @@ offset_bottom = 1164.0
 texture_normal = ExtResource("15_0bbhb")
 
 [node name="Carro" parent="LevelBase/ItemContainer/Container" index="13" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 968.0
 offset_top = 896.0
 offset_right = 1377.0
@@ -141,6 +154,7 @@ texture_normal = ExtResource("16_yqa3s")
 correto = true
 
 [node name="Calculador" parent="LevelBase/ItemContainer/Container" index="14" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 1480.0
 offset_top = 896.0
 offset_right = 1929.0
@@ -148,6 +162,7 @@ offset_bottom = 1196.0
 texture_normal = ExtResource("17_8gjht")
 
 [node name="Iphone" parent="LevelBase/ItemContainer/Container" index="15" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 8.0
 offset_top = 1216.0
 offset_right = 457.0
@@ -155,6 +170,7 @@ offset_bottom = 1516.0
 texture_normal = ExtResource("18_ej7ra")
 
 [node name="Barco" parent="LevelBase/ItemContainer/Container" index="16" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 968.0
 offset_top = 448.0
 offset_right = 1268.0
@@ -163,6 +179,7 @@ texture_normal = ExtResource("19_smdb3")
 correto = true
 
 [node name="Banana" parent="LevelBase/ItemContainer/Container" index="17" instance=ExtResource("2_5gxyc")]
+layout_mode = 0
 offset_left = 488.0
 offset_top = 896.0
 offset_right = 937.0

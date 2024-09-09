@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://dgm2b3pqqr1wn"]
+[gd_scene load_steps=19 format=4 uid="uid://dgm2b3pqqr1wn"]
 
 [ext_resource type="Texture2D" uid="uid://dx13xw7qa7876" path="res://resources/images/main/tilesets/TinyBattle.png" id="1_sfp2d"]
 [ext_resource type="Texture2D" uid="uid://cc4d4vghmhl2y" path="res://resources/images/main/tilesets/TinyDungeon.png" id="2_opqc1"]
@@ -8,6 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://4xgbu6eh4x44" path="res://resources/images/main/sprites/player.png" id="5_u8sye"]
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/WavingElement.gd" id="6_21xle"]
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/TransitionButton.gd" id="8_7uuix"]
+[ext_resource type="PackedScene" uid="uid://cbntc72e3rngf" path="res://scenes/MuteButton.tscn" id="9_mjhou"]
+[ext_resource type="Texture2D" uid="uid://b5ppdchjawtu5" path="res://resources/images/main/sprites/SoundOn.png" id="10_eq6rv"]
+[ext_resource type="Texture2D" uid="uid://dbwbn7qmmkpmg" path="res://resources/images/main/sprites/SoundOff.png" id="11_2og1i"]
+[ext_resource type="Texture2D" uid="uid://pr8umowxfyes" path="res://resources/images/main/sprites/TTSOn.png" id="12_72861"]
+[ext_resource type="Texture2D" uid="uid://b4renglug0hwb" path="res://resources/images/main/sprites/TTSOff.png" id="13_qcvsq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kj72y"]
 texture = ExtResource("1_sfp2d")
@@ -715,3 +720,28 @@ texture_normal = ExtResource("5_dmh0f")
 stretch_mode = 0
 script = ExtResource("8_7uuix")
 transition_path = "res://scenes/PlayerSelection.tscn"
+
+[node name="MuteMusic" parent="." instance=ExtResource("9_mjhou")]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 160.0
+offset_bottom = 160.0
+bus = 1
+
+[node name="MuteSFX" parent="." instance=ExtResource("9_mjhou")]
+offset_left = 448.0
+offset_top = 32.0
+offset_right = 576.0
+offset_bottom = 160.0
+texture_normal = ExtResource("10_eq6rv")
+texture_pressed = ExtResource("11_2og1i")
+bus = 2
+
+[node name="MuteTTS" parent="." instance=ExtResource("9_mjhou")]
+offset_left = 896.0
+offset_top = 32.0
+offset_right = 1024.0
+offset_bottom = 160.0
+texture_normal = ExtResource("12_72861")
+texture_pressed = ExtResource("13_qcvsq")
+bus = 3

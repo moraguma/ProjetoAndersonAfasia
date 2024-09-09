@@ -16,20 +16,25 @@ script = ExtResource("1_lfq44")
 stream = ExtResource("2_8xcm2")
 volume_db = -10.0
 pitch_scale = 0.2
+bus = &"SFX"
 
 [node name="Win" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("3_sf4ql")
+bus = &"SFX"
 
 [node name="Lose" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("4_icl0v")
+bus = &"SFX"
 
 [node name="Level" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("5_7hp6j")
 volume_db = -12.0
 pitch_scale = 0.5
+bus = &"SFX"
 
 [node name="Music" type="Node" parent="."]
 
 [node name="Music" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource("6_ww02v")
 volume_db = -20.0
+bus = &"Music"

@@ -60,3 +60,4 @@ theme = ExtResource("4_kqesr")
 [node name="Container" type="Control" parent="ItemContainer"]
 custom_minimum_size = Vector2(2160, 1536)
 layout_mode = 2
+mouse_filter = 1

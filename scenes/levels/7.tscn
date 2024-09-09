@@ -42,6 +42,7 @@ prompt = "O que você pode beber?"
 custom_minimum_size = Vector2(3650, 1536)
 
 [node name="Suco Laranja" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 680.0
 offset_top = 32.0
 offset_right = 986.0
@@ -50,6 +51,7 @@ texture_normal = ExtResource("3_nr7mo")
 correto = true
 
 [node name="Toxico" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 40.0
 offset_top = 32.0
 offset_right = 340.0
@@ -57,6 +59,7 @@ offset_bottom = 332.0
 texture_normal = ExtResource("4_s10qi")
 
 [node name="Agua" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 40.0
 offset_top = 352.0
 offset_right = 346.0
@@ -65,6 +68,7 @@ texture_normal = ExtResource("5_dmfha")
 correto = true
 
 [node name="Detergente" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 2504.0
 offset_top = 128.0
 offset_right = 2804.0
@@ -72,6 +76,7 @@ offset_bottom = 651.0
 texture_normal = ExtResource("6_kyo86")
 
 [node name="Querosene" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 360.0
 offset_top = 448.0
 offset_right = 666.0
@@ -79,6 +84,7 @@ offset_bottom = 748.0
 texture_normal = ExtResource("7_s7cfg")
 
 [node name="Caipirinha" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 72.0
 offset_top = 1152.0
 offset_right = 377.0
@@ -87,6 +93,7 @@ texture_normal = ExtResource("8_8otrl")
 correto = true
 
 [node name="Medicamentos" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 680.0
 offset_top = 1152.0
 offset_right = 1202.0
@@ -94,6 +101,7 @@ offset_bottom = 1452.0
 texture_normal = ExtResource("9_0k2qm")
 
 [node name="Alcool" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1448.0
 offset_top = 416.0
 offset_right = 1777.0
@@ -101,6 +109,7 @@ offset_bottom = 716.0
 texture_normal = ExtResource("10_p8ln0")
 
 [node name="Detergente Azul" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 360.0
 offset_top = 32.0
 offset_right = 660.0
@@ -108,6 +117,7 @@ offset_bottom = 334.0
 texture_normal = ExtResource("11_2j5hi")
 
 [node name="Isotonico" parent="LevelBase/ItemContainer/Container" index="9" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1864.0
 offset_top = 64.0
 offset_right = 2397.0
@@ -116,6 +126,7 @@ texture_normal = ExtResource("12_m5t5e")
 correto = true
 
 [node name="Cerveja" parent="LevelBase/ItemContainer/Container" index="10" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1800.0
 offset_top = 416.0
 offset_right = 2106.0
@@ -124,6 +135,7 @@ texture_normal = ExtResource("13_wdakb")
 correto = true
 
 [node name="Herbicidas" parent="LevelBase/ItemContainer/Container" index="11" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 2088.0
 offset_top = 800.0
 offset_right = 3048.0
@@ -131,6 +143,7 @@ offset_bottom = 1100.0
 texture_normal = ExtResource("14_oau4x")
 
 [node name="Cafe" parent="LevelBase/ItemContainer/Container" index="12" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1224.0
 offset_top = 800.0
 offset_right = 1627.0
@@ -139,6 +152,7 @@ texture_normal = ExtResource("15_6wvns")
 correto = true
 
 [node name="Vinho" parent="LevelBase/ItemContainer/Container" index="13" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1960.0
 offset_top = 1184.0
 offset_right = 2514.0
@@ -147,6 +161,7 @@ texture_normal = ExtResource("16_v8vhv")
 correto = true
 
 [node name="Coca" parent="LevelBase/ItemContainer/Container" index="14" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 680.0
 offset_top = 800.0
 offset_right = 1130.0
@@ -155,6 +170,7 @@ texture_normal = ExtResource("17_7vb8e")
 correto = true
 
 [node name="Acetico" parent="LevelBase/ItemContainer/Container" index="15" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 680.0
 offset_top = 448.0
 offset_right = 980.0
@@ -162,6 +178,7 @@ offset_bottom = 748.0
 texture_normal = ExtResource("18_ha7nc")
 
 [node name="Pintura" parent="LevelBase/ItemContainer/Container" index="16" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 3208.0
 offset_top = 448.0
 offset_right = 3608.0
@@ -169,6 +186,7 @@ offset_bottom = 749.0
 texture_normal = ExtResource("19_s3pwb")
 
 [node name="Alvejante" parent="LevelBase/ItemContainer/Container" index="17" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 2152.0
 offset_top = 416.0
 offset_right = 2452.0
@@ -176,6 +194,7 @@ offset_bottom = 722.0
 texture_normal = ExtResource("20_xbc7w")
 
 [node name="Veja" parent="LevelBase/ItemContainer/Container" index="18" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1704.0
 offset_top = 800.0
 offset_right = 2004.0
@@ -183,6 +202,7 @@ offset_bottom = 1100.0
 texture_normal = ExtResource("21_fpqyn")
 
 [node name="Cloro" parent="LevelBase/ItemContainer/Container" index="19" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 2856.0
 offset_top = 448.0
 offset_right = 3165.0
@@ -190,6 +210,7 @@ offset_bottom = 748.0
 texture_normal = ExtResource("22_hpi74")
 
 [node name="Iogurte" parent="LevelBase/ItemContainer/Container" index="20" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 168.0
 offset_top = 800.0
 offset_right = 618.0
@@ -198,6 +219,7 @@ texture_normal = ExtResource("23_nyeb7")
 correto = true
 
 [node name="Vitaminas" parent="LevelBase/ItemContainer/Container" index="21" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1032.0
 offset_top = 160.0
 offset_right = 1332.0
@@ -206,6 +228,7 @@ texture_normal = ExtResource("24_7w42d")
 correto = true
 
 [node name="Fita Isolante" parent="LevelBase/ItemContainer/Container" index="22" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 2568.0
 offset_top = 1184.0
 offset_right = 2868.0
@@ -213,6 +236,7 @@ offset_bottom = 1484.0
 texture_normal = ExtResource("25_krgg3")
 
 [node name="Solvente" parent="LevelBase/ItemContainer/Container" index="23" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1448.0
 offset_top = 64.0
 offset_right = 1752.0
@@ -220,6 +244,7 @@ offset_bottom = 364.0
 texture_normal = ExtResource("26_yb1dp")
 
 [node name="Agua com gas" parent="LevelBase/ItemContainer/Container" index="24" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 3080.0
 offset_top = 832.0
 offset_right = 3380.0
@@ -228,6 +253,7 @@ texture_normal = ExtResource("27_ctk4m")
 correto = true
 
 [node name="Benzeno" parent="LevelBase/ItemContainer/Container" index="25" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 1352.0
 offset_top = 1184.0
 offset_right = 1892.0
@@ -235,6 +261,7 @@ offset_bottom = 1484.0
 texture_normal = ExtResource("28_yt8iq")
 
 [node name="Cha" parent="LevelBase/ItemContainer/Container" index="26" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 3016.0
 offset_top = 96.0
 offset_right = 3449.0
@@ -243,6 +270,7 @@ texture_normal = ExtResource("29_xemxc")
 correto = true
 
 [node name="Coco" parent="LevelBase/ItemContainer/Container" index="27" instance=ExtResource("2_bdicd")]
+layout_mode = 0
 offset_left = 2952.0
 offset_top = 1184.0
 offset_right = 3486.0

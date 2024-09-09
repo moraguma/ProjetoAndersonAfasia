@@ -4,6 +4,7 @@ extends Node
 const MASTER_BUS = 0
 const MUSIC_BUS = 1
 const SFX_BUS = 2
+const TTS_BUS = 3
 const BUS_TO_STRING = {
 	MASTER_BUS: "Master",
 	MUSIC_BUS: "Music",
@@ -12,6 +13,8 @@ const BUS_TO_STRING = {
 const TTS_VOL = 200
 const TTS_FALLBACK = {
 	"Escolha seu personagem": preload("res://resources/sounds/tts/playerselection.mp3"),
+	"Assistente de voz habilitado": preload("res://resources/sounds/tts/ttsenabled.mp3"),
+	"Assistente de voz desabilitado": preload("res://resources/sounds/tts/ttsdisabled.mp3"),
 	"Onde você pode sentar?": preload("res://resources/sounds/tts/1prompt.mp3"),
 	"Parabéns! Dá pra sentar nisso!": preload("res://resources/sounds/tts/1win.mp3"),
 	"Não dá pra sentar nisso!": preload("res://resources/sounds/tts/1lose.mp3"),
@@ -49,6 +52,11 @@ var levels_beat = {}
 var player = 2
 var last_level = "start"
 var last_level_int = 0
+var bus_status = {
+	MUSIC_BUS: true,
+	SFX_BUS: true,
+	TTS_BUS: true
+}
 
 
 var voice_id = null
@@ -61,6 +69,7 @@ func _ready() -> void:
 	var voices = DisplayServer.tts_get_voices_for_language("pt")
 	if len(voices) > 0:
 		voice_id = voices[0]
+		voice_id = null
 
 
 
@@ -83,7 +92,10 @@ func is_level_beat(level: int):
 	return false
 
 
-func tts(str):
+func tts(str, force=false):
+	if not bus_status[TTS_BUS] and not force:
+		return 
+	
 	if voice_id != null:
 		DisplayServer.tts_stop()
 		DisplayServer.tts_speak(str, voice_id, TTS_VOL)
@@ -91,3 +103,15 @@ func tts(str):
 		tts_fallback.stop()
 		tts_fallback.stream = TTS_FALLBACK[str]
 		tts_fallback.play()
+
+
+func set_bus(bus: int, status):
+	if bus != TTS_BUS:
+		SoundController.set_volume(bus, 1.0 if status else 0.0)
+	else:
+		tts("Assistente de voz habilitado" if status else "Assistente de voz desabilitado", true)
+	bus_status[bus] = status
+
+
+func get_bus(bus: int):
+	return bus_status[bus]

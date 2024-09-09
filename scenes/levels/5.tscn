@@ -67,6 +67,7 @@ correto = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Coador de Cafe" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_aak82")]
+layout_mode = 0
 offset_left = 40.0
 offset_top = 96.0
 offset_right = 347.0

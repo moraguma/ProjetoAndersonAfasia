@@ -42,6 +42,7 @@ prompt = "O que eu posso usar para ver as horas"
 custom_minimum_size = Vector2(3634, 1536)
 
 [node name="Alexa" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 104.0
 offset_top = 704.0
 offset_right = 613.0
@@ -50,24 +51,28 @@ texture_normal = ExtResource("3_jg7an")
 correto = true
 
 [node name="Trabalho hora" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 808.0
 offset_right = 1137.0
 texture_normal = ExtResource("4_kwfvm")
 correto = true
 
 [node name="Velho" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 1736.0
 offset_right = 2036.0
 offset_bottom = 303.0
 texture_normal = ExtResource("5_7h8o3")
 
 [node name="Relogio" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 40.0
 offset_right = 340.0
 texture_normal = ExtResource("6_p5o3h")
 correto = true
 
 [node name="Orquestra" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 1320.0
 offset_top = 1088.0
 offset_right = 1720.0
@@ -75,6 +80,7 @@ offset_bottom = 1388.0
 texture_normal = ExtResource("7_0wjjo")
 
 [node name="ENEM" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 2280.0
 offset_top = 1120.0
 offset_right = 2813.0
@@ -82,6 +88,7 @@ offset_bottom = 1420.0
 texture_normal = ExtResource("8_3wn30")
 
 [node name="Exercito" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 744.0
 offset_top = 352.0
 offset_right = 1244.0
@@ -89,11 +96,13 @@ offset_bottom = 652.0
 texture_normal = ExtResource("9_n2tr3")
 
 [node name="Sol" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 1192.0
 offset_right = 1694.0
 texture_normal = ExtResource("10_5oyrm")
 
 [node name="Alarme" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 424.0
 offset_top = 1056.0
 offset_right = 724.0
@@ -102,6 +111,7 @@ texture_normal = ExtResource("11_t4oor")
 correto = true
 
 [node name="Lua" parent="LevelBase/ItemContainer/Container" index="9" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 2280.0
 offset_top = 320.0
 offset_right = 2580.0
@@ -109,11 +119,13 @@ offset_bottom = 671.0
 texture_normal = ExtResource("12_hqxcy")
 
 [node name="Estrela" parent="LevelBase/ItemContainer/Container" index="10" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 424.0
 offset_right = 754.0
 texture_normal = ExtResource("13_n00an")
 
 [node name="Carteira" parent="LevelBase/ItemContainer/Container" index="11" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 1768.0
 offset_top = 704.0
 offset_right = 2080.0
@@ -121,6 +133,7 @@ offset_bottom = 1004.0
 texture_normal = ExtResource("14_yi8ra")
 
 [node name="Homem relogio" parent="LevelBase/ItemContainer/Container" index="12" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 2632.0
 offset_top = 32.0
 offset_right = 2932.0
@@ -129,6 +142,7 @@ texture_normal = ExtResource("15_2soyy")
 correto = true
 
 [node name="Pix" parent="LevelBase/ItemContainer/Container" index="13" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 1192.0
 offset_top = 704.0
 offset_right = 1698.0
@@ -136,6 +150,7 @@ offset_bottom = 1004.0
 texture_normal = ExtResource("16_hafgy")
 
 [node name="Tenis" parent="LevelBase/ItemContainer/Container" index="14" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 1320.0
 offset_top = 352.0
 offset_right = 1831.0
@@ -143,6 +158,7 @@ offset_bottom = 652.0
 texture_normal = ExtResource("17_0w2vy")
 
 [node name="Pedra" parent="LevelBase/ItemContainer/Container" index="15" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 392.0
 offset_top = 352.0
 offset_right = 692.0
@@ -150,6 +166,7 @@ offset_bottom = 659.0
 texture_normal = ExtResource("18_edyor")
 
 [node name="Igreja Sino" parent="LevelBase/ItemContainer/Container" index="16" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 72.0
 offset_top = 352.0
 offset_right = 372.0
@@ -158,6 +175,7 @@ texture_normal = ExtResource("19_eggxv")
 correto = true
 
 [node name="Areia" parent="LevelBase/ItemContainer/Container" index="17" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 1768.0
 offset_top = 1120.0
 offset_right = 2212.0
@@ -165,6 +183,7 @@ offset_bottom = 1420.0
 texture_normal = ExtResource("20_xquj8")
 
 [node name="Papagaia" parent="LevelBase/ItemContainer/Container" index="18" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 72.0
 offset_top = 1120.0
 offset_right = 372.0
@@ -172,6 +191,7 @@ offset_bottom = 1420.0
 texture_normal = ExtResource("21_ug640")
 
 [node name="Chefe" parent="LevelBase/ItemContainer/Container" index="19" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 808.0
 offset_top = 704.0
 offset_right = 1108.0
@@ -179,6 +199,7 @@ offset_bottom = 1004.0
 texture_normal = ExtResource("22_454ei")
 
 [node name="Cidade" parent="LevelBase/ItemContainer/Container" index="20" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 808.0
 offset_top = 1056.0
 offset_right = 1258.0
@@ -187,6 +208,7 @@ texture_normal = ExtResource("23_vl0wp")
 correto = true
 
 [node name="Natacao" parent="LevelBase/ItemContainer/Container" index="21" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 3144.0
 offset_top = 672.0
 offset_right = 3593.0
@@ -194,6 +216,7 @@ offset_bottom = 972.0
 texture_normal = ExtResource("24_gncay")
 
 [node name="Medico" parent="LevelBase/ItemContainer/Container" index="22" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 2152.0
 offset_top = 704.0
 offset_right = 2602.0
@@ -201,6 +224,7 @@ offset_bottom = 1004.0
 texture_normal = ExtResource("25_hwf1y")
 
 [node name="Grama" parent="LevelBase/ItemContainer/Container" index="23" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 3016.0
 offset_top = 160.0
 offset_right = 3589.0
@@ -208,6 +232,7 @@ offset_bottom = 460.0
 texture_normal = ExtResource("26_hebgv")
 
 [node name="Criancao brinquedo" parent="LevelBase/ItemContainer/Container" index="24" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 1896.0
 offset_top = 352.0
 offset_right = 2236.0
@@ -215,6 +240,7 @@ offset_bottom = 652.0
 texture_normal = ExtResource("27_1r2to")
 
 [node name="Cozinha" parent="LevelBase/ItemContainer/Container" index="25" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 2696.0
 offset_top = 608.0
 offset_right = 2996.0
@@ -222,6 +248,7 @@ offset_bottom = 908.0
 texture_normal = ExtResource("28_dm4nt")
 
 [node name="Rei" parent="LevelBase/ItemContainer/Container" index="26" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 2984.0
 offset_top = 1120.0
 offset_right = 3376.0
@@ -229,6 +256,7 @@ offset_bottom = 1420.0
 texture_normal = ExtResource("29_2svgb")
 
 [node name="Smartphones" parent="LevelBase/ItemContainer/Container" index="27" instance=ExtResource("2_j6560")]
+layout_mode = 0
 offset_left = 2088.0
 offset_right = 2488.0
 texture_normal = ExtResource("30_do7cj")

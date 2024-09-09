@@ -31,7 +31,7 @@ func populate_sound_dict(container: Node, dict: Dictionary, bus: int, prefix: St
 			populate_sound_dict(node, dict, bus, prefix + node.name + "/")
 		else:
 			dict[prefix + node.name] = node
-			node.set_bus(Globals.BUS_TO_STRING[bus])
+			#node.set_bus(Globals.BUS_TO_STRING[bus])
 
 
 func get_audio_player(dict: Dictionary, path: String) -> AudioStreamPlayer:
