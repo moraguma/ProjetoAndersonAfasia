@@ -7,6 +7,8 @@ const PLAYER_AMPLITUDE = 2
 const FREQUENCY = 0.5
 const MOVING_TIME_MULT = 4
 const ANGLE = PI/12
+const WIN_WAIT_TIME = 5.0
+const MAX_LEVELS = 1
 
 @onready var player_particles: CPUParticles2D = $Player/Particles
 @onready var player: Sprite2D = $Player
@@ -25,25 +27,40 @@ const ANGLE = PI/12
 }
 @onready var level_selector_container = $LevelSelectors
 @onready var footstep_sound = $Footstep
+@onready var win_display = $Display
 
 var current_node = null
 var moving = false
 var past_player_pos
 var time_passed = 0
+var won = false
 
 
 func _ready() -> void:
+	won = Globals.get_beat_counter() >= MAX_LEVELS
+	
 	if Globals.last_level == "start":
 		current_node = "start" 
 	else: 
 		current_node = get_node("LevelSelectors/%s" % [Globals.last_level])
-		current_node.enable_play()
+		if not won:
+			current_node.enable_play()
 		player.position = current_node.position + POSITION_DIF
 	player.frame = Globals.player
 	past_player_pos = player.position
 	
 	for level_selector: LevelSelector in level_selector_container.get_children():
 		level_selector.go_here.connect(go_here)
+	
+	if won:
+		win_display.show()
+		SoundController.play_sfx("Win")
+		
+		await get_tree().create_timer(WIN_WAIT_TIME).timeout
+		
+		Globals.reset()
+		SceneManager.goto_scene("res://scenes/Menu.tscn")
+		return
 
 
 func _process(delta: float) -> void:
@@ -88,7 +105,7 @@ func find_path(destiny):
 
 
 func go_here(level_selector):
-	if (not current_node is String and level_selector == current_node) or moving:
+	if (not current_node is String and level_selector == current_node) or moving or won:
 		return
 	
 	moving = true

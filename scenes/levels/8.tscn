@@ -136,6 +136,7 @@ offset_top = 736.0
 offset_right = 1524.0
 offset_bottom = 1087.0
 texture_normal = ExtResource("14_t7sx5")
+correto = true
 
 [node name="Morcego" parent="LevelBase/ItemContainer/Container" index="12" instance=ExtResource("2_2whqj")]
 layout_mode = 0

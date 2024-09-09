@@ -37,6 +37,7 @@ var bus_status = {
 	SFX_BUS: true,
 	TTS_BUS: true
 }
+var beat_counter = 0
 
 
 var voice_id = null
@@ -63,6 +64,9 @@ func check_and_error(check: bool, message: String):
 
 
 func beat_level(level: int):
+	if not is_level_beat(level):
+		beat_counter += 1
+	
 	levels_beat[level] = true
 
 
@@ -70,6 +74,16 @@ func is_level_beat(level: int):
 	if level in levels_beat:
 		return levels_beat[level]
 	return false
+
+
+func get_beat_counter():
+	return beat_counter
+
+
+func reset():
+	beat_counter = 0
+	levels_beat = {}
+	last_level = "start"
 
 
 func tts(str, force=false):

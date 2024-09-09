@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b1bpqhru7ygn"]
+[gd_scene load_steps=18 format=3 uid="uid://b1bpqhru7ygn"]
 
 [ext_resource type="Script" path="res://scenes/scripts/Main.gd" id="1_evt1u"]
 [ext_resource type="Texture2D" uid="uid://dx13xw7qa7876" path="res://resources/images/main/tilesets/TinyBattle.png" id="1_xb4hn"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://drvjsea84uajw" path="res://resources/images/main/sprites/exit.png" id="9_uyqsb"]
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/TransitionButton.gd" id="10_v85qk"]
 [ext_resource type="AudioStream" uid="uid://de72w7ij3j5g3" path="res://resources/sounds/sfx/footstep.wav" id="11_rwjl0"]
+[ext_resource type="Texture2D" uid="uid://beio2xxoxirln" path="res://resources/images/main/sprites/trophy.png" id="12_usxbn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14s73"]
 texture = ExtResource("1_xb4hn")
@@ -747,3 +748,15 @@ transition_path = "res://scenes/Menu.tscn"
 [node name="Footstep" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_rwjl0")
 volume_db = -10.0
+
+[node name="Display" type="Polygon2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(0, 256)
+color = Color(0.470588, 0.713726, 0, 1)
+polygon = PackedVector2Array(128, 256, 960, 256, 1024, 288, 1056, 352, 1056, 1024, 1024, 1088, 960, 1120, 128, 1120, 64, 1088, 32, 1024, 32, 352, 64, 288)
+
+[node name="Trophy" type="Sprite2D" parent="Display"]
+position = Vector2(544, 640)
+scale = Vector2(32, 32)
+texture = ExtResource("12_usxbn")
