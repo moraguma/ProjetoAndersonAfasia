@@ -764,9 +764,9 @@ bus = 3
 modulate = Color(1, 1, 1, 0.615686)
 clip_contents = false
 offset_left = 32.0
-offset_top = 1760.0
+offset_top = 1728.0
 offset_right = 363.0
-offset_bottom = 1856.0
+offset_bottom = 1824.0
 scale = Vector2(3, 3)
 theme = ExtResource("14_fgbjh")
 theme_override_colors/default_color = Color(1, 1, 1, 1)
@@ -776,4 +776,5 @@ theme_override_font_sizes/normal_font_size = 16
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4o6xn")
 bbcode_enabled = true
 text = "[center]Jogo de Anderson Alberto Ramos
-Desenvolvido por Gustavo Araújo Morais"
+Desenvolvido por Gustavo Araújo Morais
+Unicamp 2024"
