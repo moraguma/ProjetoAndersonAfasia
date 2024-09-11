@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://dgm2b3pqqr1wn"]
+[gd_scene load_steps=22 format=4 uid="uid://dgm2b3pqqr1wn"]
 
 [ext_resource type="Texture2D" uid="uid://dx13xw7qa7876" path="res://resources/images/main/tilesets/TinyBattle.png" id="1_sfp2d"]
 [ext_resource type="Texture2D" uid="uid://cc4d4vghmhl2y" path="res://resources/images/main/tilesets/TinyDungeon.png" id="2_opqc1"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://4xgbu6eh4x44" path="res://resources/images/main/sprites/player.png" id="5_u8sye"]
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/WavingElement.gd" id="6_21xle"]
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/TransitionButton.gd" id="8_7uuix"]
+[ext_resource type="Texture2D" uid="uid://c05e37erw7gfj" path="res://resources/images/main/sprites/Tutorial.png" id="9_hcylw"]
 [ext_resource type="PackedScene" uid="uid://cbntc72e3rngf" path="res://scenes/MuteButton.tscn" id="9_mjhou"]
 [ext_resource type="Texture2D" uid="uid://b5ppdchjawtu5" path="res://resources/images/main/sprites/SoundOn.png" id="10_eq6rv"]
 [ext_resource type="Texture2D" uid="uid://dbwbn7qmmkpmg" path="res://resources/images/main/sprites/SoundOff.png" id="11_2og1i"]
@@ -716,13 +717,23 @@ amplitude = Vector2(0, 2)
 
 [node name="Play" type="TextureButton" parent="."]
 offset_left = 284.0
-offset_top = 1184.0
+offset_top = 928.0
 offset_right = 796.0
-offset_bottom = 1696.0
+offset_bottom = 1440.0
 texture_normal = ExtResource("5_dmh0f")
 stretch_mode = 0
 script = ExtResource("8_7uuix")
 transition_path = "res://scenes/PlayerSelection.tscn"
+
+[node name="Tutorial" type="TextureButton" parent="."]
+offset_left = 416.0
+offset_top = 1440.0
+offset_right = 672.0
+offset_bottom = 1696.0
+texture_normal = ExtResource("9_hcylw")
+stretch_mode = 0
+script = ExtResource("8_7uuix")
+transition_path = "res://scenes/Tutorial.tscn"
 
 [node name="MuteMusic" parent="." instance=ExtResource("9_mjhou")]
 offset_left = 32.0
