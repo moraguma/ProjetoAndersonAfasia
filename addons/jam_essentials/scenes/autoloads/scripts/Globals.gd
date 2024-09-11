@@ -28,6 +28,11 @@ const TTS_FALLBACK = {
 }
 
 
+const MAX_COINS = 69
+
+
+var levels_completed = {}
+var complete_counter = 0
 var levels_beat = {}
 var player = 2
 var last_level = "start"
@@ -65,6 +70,23 @@ func check_and_error(check: bool, message: String):
 	return false
 
 
+func complete_level(level: int):
+	if not is_level_complete(level):
+		complete_counter += 1
+	
+	levels_completed[level] = true
+
+
+func is_level_complete(level: int):
+	if level in levels_completed:
+		return levels_completed[level]
+	return false
+
+
+func get_complete_counter():
+	return complete_counter
+
+
 func beat_level(level: int):
 	if not is_level_beat(level):
 		beat_counter += 1
@@ -82,10 +104,12 @@ func get_beat_counter():
 	return beat_counter
 
 
-func reset():
-	beat_counter = 0
-	levels_beat = {}
-	last_level = "start"
+func finish_beat():
+	beat_counter = -1
+
+
+func finish_complete():
+	complete_counter = -1
 
 
 func tts(str, force=false):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://b1bpqhru7ygn"]
+[gd_scene load_steps=19 format=3 uid="uid://b1bpqhru7ygn"]
 
 [ext_resource type="Script" path="res://scenes/scripts/Main.gd" id="1_evt1u"]
 [ext_resource type="Texture2D" uid="uid://dx13xw7qa7876" path="res://resources/images/main/tilesets/TinyBattle.png" id="1_xb4hn"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/TransitionButton.gd" id="10_v85qk"]
 [ext_resource type="AudioStream" uid="uid://de72w7ij3j5g3" path="res://resources/sounds/sfx/footstep.wav" id="11_rwjl0"]
 [ext_resource type="Texture2D" uid="uid://beio2xxoxirln" path="res://resources/images/main/sprites/trophy.png" id="12_usxbn"]
+[ext_resource type="PackedScene" uid="uid://ujs0vdrj6dio" path="res://scenes/CoinDisplay.tscn" id="13_0nh7i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14s73"]
 texture = ExtResource("1_xb4hn")
@@ -627,6 +628,8 @@ sources/3 = SubResource("TileSetAtlasSource_m8p48")
 
 [node name="Nivel" type="Node2D"]
 script = ExtResource("1_evt1u")
+win_color = Color(0.470588, 0.713726, 0, 1)
+complete_color = Color(0.960784, 0.6, 0.301961, 1)
 metadata/_edit_horizontal_guides_ = [-120.0]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -760,3 +763,6 @@ polygon = PackedVector2Array(128, 256, 960, 256, 1024, 288, 1056, 352, 1056, 102
 position = Vector2(544, 640)
 scale = Vector2(32, 32)
 texture = ExtResource("12_usxbn")
+
+[node name="CoinDisplay" parent="." instance=ExtResource("13_0nh7i")]
+position = Vector2(640, 1792)

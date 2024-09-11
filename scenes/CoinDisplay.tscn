@@ -1,0 +1,86 @@
+[gd_scene load_steps=7 format=3 uid="uid://ujs0vdrj6dio"]
+
+[ext_resource type="Theme" uid="uid://yikwyyedwtfw" path="res://resources/themes/main_theme.tres" id="1_ak4og"]
+[ext_resource type="Script" path="res://scenes/scripts/CoinDisplay.gd" id="1_jrm8u"]
+[ext_resource type="Texture2D" uid="uid://c5w4j35q08544" path="res://resources/images/main/sprites/Coin.png" id="2_qcdsd"]
+
+[sub_resource type="Animation" id="Animation_k6cor"]
+resource_name = "gain"
+length = 0.4
+step = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(320, -0.2, 0, 0.2, 0, 320, -0.2, 0, 0.2, 0, 320, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0, 0.2, 0.4)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0, -40, -0.2, 0, 0.2, 0, 0, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0, 0.2, 0.4)
+}
+
+[sub_resource type="Animation" id="Animation_s0aam"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(320, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t8i1b"]
+_data = {
+"RESET": SubResource("Animation_s0aam"),
+"gain": SubResource("Animation_k6cor")
+}
+
+[node name="CoinDisplay" type="Node2D"]
+script = ExtResource("1_jrm8u")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 16.0
+scale = Vector2(8, 8)
+theme = ExtResource("1_ak4og")
+theme_override_colors/font_outline_color = Color(0.14902, 0.168627, 0.266667, 1)
+text = "0/3"
+horizontal_alignment = 2
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(320, 0)
+scale = Vector2(8, 8)
+texture = ExtResource("2_qcdsd")
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_t8i1b")
+}

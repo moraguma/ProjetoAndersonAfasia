@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://scenes/scripts/LevelBase.gd" id="1_pycaa"]
 [ext_resource type="PackedScene" uid="uid://cqip7djlmyyuu" path="res://scenes/TTSLabel.tscn" id="2_fctsm"]
 [ext_resource type="Theme" uid="uid://yikwyyedwtfw" path="res://resources/themes/main_theme.tres" id="4_kqesr"]
+[ext_resource type="PackedScene" uid="uid://ujs0vdrj6dio" path="res://scenes/CoinDisplay.tscn" id="5_pbrw4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3ioxp"]
 shader = ExtResource("1_8icjm")
@@ -17,12 +18,11 @@ shader_parameter/time_scale = 0.2
 shader_parameter/level_time_diff = 0.3
 shader_parameter/total_phases = 4
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0wvnc"]
-
 [node name="LevelBase" type="Node2D"]
 script = ExtResource("1_pycaa")
 win_color = Color(0.471204, 0.715059, 3.85046e-07, 1)
 lose_color = Color(0.739148, 0.26044, 0.180679, 1)
+complete_color = Color(0.960379, 0.600941, 0.302159, 1)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_3ioxp")
@@ -37,10 +37,23 @@ say_on_ready = false
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="ItemContainer" type="ScrollContainer" parent="."]
+clip_contents = false
+offset_left = 24.0
+offset_top = 256.0
+offset_right = 1064.0
+offset_bottom = 1880.0
+theme = ExtResource("4_kqesr")
+
+[node name="Container" type="Control" parent="ItemContainer"]
+custom_minimum_size = Vector2(2160, 1536)
+layout_mode = 2
+mouse_filter = 1
+
 [node name="Display" type="Polygon2D" parent="."]
 visible = false
 z_index = 1
-position = Vector2(0, 256)
+position = Vector2(-4, 256)
 color = Color(0, 0, 0, 1)
 polygon = PackedVector2Array(128, 256, 960, 256, 1024, 288, 1056, 352, 1056, 1024, 1024, 1088, 960, 1120, 128, 1120, 64, 1088, 32, 1024, 32, 352, 64, 288)
 
@@ -56,29 +69,59 @@ z_index = 1
 position = Vector2(32, -96)
 polygon = PackedVector2Array(352, 512, 512, 704, 672, 512, 768, 512, 576, 768, 768, 1024, 672, 1024, 512, 832, 352, 1024, 256, 1024, 448, 768, 256, 512)
 
-[node name="ItemContainer" type="ScrollContainer" parent="."]
-clip_contents = false
-offset_left = 24.0
-offset_top = 256.0
-offset_right = 1064.0
-offset_bottom = 1880.0
-theme = ExtResource("4_kqesr")
+[node name="TryAgain" type="Polygon2D" parent="Display"]
+polygon = PackedVector2Array(512, 1184, 480, 1152, 64, 1152, 32, 1184, 32, 1280, 64, 1312, 480, 1312, 512, 1280)
 
-[node name="Container" type="Control" parent="ItemContainer"]
-custom_minimum_size = Vector2(2160, 1536)
-layout_mode = 2
-mouse_filter = 1
+[node name="P1" type="Polygon2D" parent="Display/TryAgain"]
+position = Vector2(-8, 16)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(244, 1264, 244, 1200, 292, 1200, 292, 1216, 324, 1184, 292, 1152, 292, 1168, 212, 1168, 212, 1264)
 
-[node name="Coins" type="Label" parent="."]
-offset_left = 480.0
-offset_top = 1739.0
-offset_right = 552.0
-offset_bottom = 1766.0
-scale = Vector2(8, 8)
+[node name="P2" type="Polygon2D" parent="Display/TryAgain"]
+position = Vector2(568, 2448)
+rotation = 3.14159
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(244, 1264, 244, 1200, 292, 1200, 292, 1216, 324, 1184, 292, 1152, 292, 1168, 212, 1168, 212, 1264)
+
+[node name="Button" type="Button" parent="Display/TryAgain"]
+offset_left = 20.0
+offset_top = 1152.0
+offset_right = 532.0
+offset_bottom = 1312.0
 theme = ExtResource("4_kqesr")
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0.14902, 0.168627, 0.266667, 1)
-theme_override_constants/outline_size = 4
-theme_override_styles/normal = SubResource("StyleBoxEmpty_0wvnc")
-text = "0/3"
-horizontal_alignment = 2
+flat = true
+
+[node name="TryAgainShadow" type="Polygon2D" parent="Display/TryAgain"]
+show_behind_parent = true
+position = Vector2(0, 16)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(512, 1184, 480, 1152, 64, 1152, 32, 1184, 32, 1280, 64, 1312, 480, 1312, 512, 1280)
+
+[node name="Exit" type="Polygon2D" parent="Display"]
+position = Vector2(544, 0)
+polygon = PackedVector2Array(512, 1184, 480, 1152, 64, 1152, 32, 1184, 32, 1280, 64, 1312, 480, 1312, 512, 1280)
+
+[node name="P1" type="Polygon2D" parent="Display/Exit"]
+position = Vector2(8, 0)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(228, 1184, 228, 1280, 308, 1232)
+
+[node name="Button" type="Button" parent="Display/Exit"]
+offset_left = 20.0
+offset_top = 1152.0
+offset_right = 532.0
+offset_bottom = 1312.0
+theme = ExtResource("4_kqesr")
+flat = true
+
+[node name="ExitShadow" type="Polygon2D" parent="Display/Exit"]
+show_behind_parent = true
+position = Vector2(0, 16)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(512, 1184, 480, 1152, 64, 1152, 32, 1184, 32, 1280, 64, 1312, 480, 1312, 512, 1280)
+
+[node name="CoinDisplay" parent="." instance=ExtResource("5_pbrw4")]
+position = Vector2(608, 1728)
+
+[connection signal="pressed" from="Display/TryAgain/Button" to="." method="try_again"]
+[connection signal="pressed" from="Display/Exit/Button" to="." method="back"]

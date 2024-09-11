@@ -1,6 +1,16 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://yikwyyedwtfw"]
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://yikwyyedwtfw"]
 
 [ext_resource type="FontFile" uid="uid://dvbh5wlxxmlu3" path="res://addons/jam_essentials/resources/fonts/digital_disco/DigitalDisco.ttf" id="1_ufaaa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oh6ew"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jjlgk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wii7x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6xuj1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7k36i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvwvm"]
 bg_color = Color(1, 1, 1, 1)
@@ -50,6 +60,11 @@ expand_margin_bottom = 16.0
 [resource]
 default_font = ExtResource("1_ufaaa")
 default_font_size = 0
+Button/styles/disabled = SubResource("StyleBoxEmpty_oh6ew")
+Button/styles/focus = SubResource("StyleBoxEmpty_jjlgk")
+Button/styles/hover = SubResource("StyleBoxEmpty_wii7x")
+Button/styles/normal = SubResource("StyleBoxEmpty_6xuj1")
+Button/styles/pressed = SubResource("StyleBoxEmpty_7k36i")
 HScrollBar/styles/grabber = SubResource("StyleBoxFlat_hvwvm")
 HScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_t3d8s")
 HScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_brtd2")

@@ -24,7 +24,10 @@ var can_play = false
 
 func _ready() -> void:
 	label.text = str(level)
-	sprite.play("beat" if Globals.is_level_beat(level) else "not_beat")
+	if Globals.is_level_complete(level):
+		sprite.play("complete")
+	else:
+		sprite.play("beat" if Globals.is_level_beat(level) else "not_beat")
 	play_button.pressed.connect(try_play)
 
 

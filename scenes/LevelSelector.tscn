@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://kvirj2xj2eet"]
+[gd_scene load_steps=19 format=3 uid="uid://kvirj2xj2eet"]
 
 [ext_resource type="Script" path="res://scenes/scripts/LevelSelector.gd" id="1_mk1qd"]
 [ext_resource type="Texture2D" uid="uid://bli0hywwwmwhv" path="res://resources/images/main/sprites/Flag.png" id="1_o2gwr"]
@@ -31,6 +31,14 @@ region = Rect2(0, 0, 16, 16)
 atlas = ExtResource("1_o2gwr")
 region = Rect2(16, 0, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_umkxo"]
+atlas = ExtResource("1_o2gwr")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8e0e"]
+atlas = ExtResource("1_o2gwr")
+region = Rect2(16, 32, 16, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_insoi"]
 atlas = ExtResource("1_o2gwr")
 region = Rect2(0, 16, 16, 16)
@@ -50,6 +58,17 @@ animations = [{
 }],
 "loop": true,
 "name": &"beat",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umkxo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8e0e")
+}],
+"loop": true,
+"name": &"complete",
 "speed": 2.0
 }, {
 "frames": [{
@@ -77,8 +96,7 @@ script = ExtResource("1_mk1qd")
 position = Vector2(72, 72)
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_ll8lf")
-animation = &"beat"
-frame_progress = 0.98845
+animation = &"complete"
 
 [node name="LabelHolder" type="Node2D" parent="."]
 position = Vector2(40, -88)
