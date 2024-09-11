@@ -12,7 +12,7 @@ const BUS_TO_STRING = {
 }
 const TTS_VOL = 200
 const TTS_FALLBACK = {
-	"Escolha seu personagem": preload("res://resources/sounds/tts/playerselection.mp3"),
+	"Escolha seu personagem": preload("res://resources/sounds/tts/player_selection.wav"),
 	"Assistente de voz habilitado": preload("res://resources/sounds/tts/ttsenabled.mp3"),
 	"Assistente de voz desabilitado": preload("res://resources/sounds/tts/ttsdisabled.mp3"),
 	"Onde você pode sentar?": preload("res://resources/sounds/tts/p1.wav"),
