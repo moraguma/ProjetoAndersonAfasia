@@ -34,7 +34,7 @@
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_dqe5e")]
-prompt = "Qual esporte usa bola?"
+prompt = "Qual esporte é possível se você joga com uma bola?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
 custom_minimum_size = Vector2(3869, 1536)

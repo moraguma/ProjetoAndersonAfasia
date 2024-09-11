@@ -16,7 +16,7 @@ const TTS_FALLBACK = {
 	"Assistente de voz habilitado": preload("res://resources/sounds/tts/ttsenabled.mp3"),
 	"Assistente de voz desabilitado": preload("res://resources/sounds/tts/ttsdisabled.mp3"),
 	"Onde você pode sentar?": preload("res://resources/sounds/tts/p1.wav"),
-	"Qual esporte usa bola?": preload("res://resources/sounds/tts/p2.wav"),
+	"Qual esporte é possível se você joga com uma bola?": preload("res://resources/sounds/tts/p2.wav"),
 	"O que ajuda a proteger do sol na cabeça?": preload("res://resources/sounds/tts/p3.wav"),
 	"O que eu posso usar para ver as horas": preload("res://resources/sounds/tts/p4.wav"),
 	"Onde você pode deitar para dormir?": preload("res://resources/sounds/tts/p5.wav"),
