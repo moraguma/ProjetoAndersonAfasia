@@ -9,5 +9,5 @@ func exit(button=false):
 	if button:
 		SoundController.play_sfx("Button")
 		$VideoStreamPlayer.stop()
-	SoundController.play_music("Music")
+	SoundController.unmute_music()
 	SceneManager.goto_scene("res://scenes/Menu.tscn")

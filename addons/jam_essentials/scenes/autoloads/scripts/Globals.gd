@@ -90,6 +90,7 @@ func tts(str, force=false):
 	if not bus_status[TTS_BUS] and not force:
 		return 
 	
+	SoundController.mute_music()
 	if voice_id != null:
 		DisplayServer.tts_stop()
 		DisplayServer.tts_speak(str, voice_id, TTS_VOL)
@@ -109,3 +110,7 @@ func set_bus(bus: int, status):
 
 func get_bus(bus: int):
 	return bus_status[bus]
+
+
+func tts_finished() -> void:
+	SoundController.unmute_music()

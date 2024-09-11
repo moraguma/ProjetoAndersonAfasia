@@ -6,3 +6,5 @@
 script = ExtResource("1_068b6")
 
 [node name="TTSFallback" type="AudioStreamPlayer" parent="."]
+
+[connection signal="finished" from="TTSFallback" to="." method="tts_finished"]

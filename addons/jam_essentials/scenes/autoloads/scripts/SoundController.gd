@@ -2,7 +2,8 @@ extends Node
 
 
 const OFF_DB = -80.0
-const ON_DB = -20.0
+const FIXED_ON_DB = -20.0
+var ON_DB = FIXED_ON_DB
 
 
 const LERP_WEIGHT = 0.05
@@ -44,9 +45,6 @@ func _process(delta):
 	for music_name in music:
 		if music[music_name].playing:
 			music[music_name].volume_db = lerp(music[music_name].volume_db, ON_DB if music_name == current_music else OFF_DB, LERP_WEIGHT)
-			
-			if abs(music[music_name].volume_db - OFF_DB) < VOLUME_TOLERANCE:
-				music[music_name].stop()
 
 
 ## Plays music in given path. Should be nodepath from Music node
@@ -59,7 +57,12 @@ func play_music(path):
 
 ## Stops playing current music
 func mute_music():
-	current_music = null
+	ON_DB = OFF_DB
+
+
+## Makes music normal volume
+func unmute_music():
+	ON_DB = FIXED_ON_DB
 
 
 ## Plays sfx in given path. Should be nodepath from SFX node
