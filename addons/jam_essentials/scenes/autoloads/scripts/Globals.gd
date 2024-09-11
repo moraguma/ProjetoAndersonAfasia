@@ -40,6 +40,8 @@ var bus_status = {
 var beat_counter = 0
 
 
+var total_coins = 0
+var correct_guesses = {}
 var voice_id = null
 
 
@@ -114,3 +116,15 @@ func get_bus(bus: int):
 
 func tts_finished() -> void:
 	SoundController.unmute_music()
+
+
+func try_guess(guess):
+	if not guess in correct_guesses:
+		correct_guesses[guess] = true
+		total_coins += 1
+
+
+func has_guessed(guess):
+	if guess in correct_guesses:
+		return correct_guesses[guess]
+	return false

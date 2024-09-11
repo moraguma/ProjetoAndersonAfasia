@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://xafc2mspuy6h"]
+[gd_scene load_steps=8 format=3 uid="uid://xafc2mspuy6h"]
 
 [ext_resource type="Script" path="res://scenes/scripts/Item.gd" id="1_d6ti5"]
 [ext_resource type="Shader" path="res://resources/shaders/CornerRadius.gdshader" id="1_wlpey"]
+[ext_resource type="Shader" path="res://resources/shaders/CornerRadiusWin.gdshader" id="4_603hx"]
 [ext_resource type="Shader" path="res://resources/shaders/CornerRadiusShadow.gdshader" id="4_w3yyd"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mpfnm"]
@@ -11,6 +12,11 @@ shader_parameter/corner_radius = 60.0
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_t46w0"]
 shader = ExtResource("4_w3yyd")
 shader_parameter/corner_radius = 60.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bmayf"]
+shader = ExtResource("4_603hx")
+shader_parameter/corner_radius = 60.0
+shader_parameter/color = Color(0.79884, 0.591609, 0.0417068, 1)
 
 [node name="Item" type="TextureButton"]
 material = SubResource("ShaderMaterial_mpfnm")
@@ -22,5 +28,12 @@ script = ExtResource("1_d6ti5")
 [node name="Shadow" type="Sprite2D" parent="."]
 show_behind_parent = true
 material = SubResource("ShaderMaterial_t46w0")
+centered = false
+offset = Vector2(0, 12)
+
+[node name="Win" type="Sprite2D" parent="."]
+visible = false
+show_behind_parent = true
+material = SubResource("ShaderMaterial_bmayf")
 centered = false
 offset = Vector2(0, 12)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dni702klqguou"]
+[gd_scene load_steps=7 format=3 uid="uid://dni702klqguou"]
 
 [ext_resource type="Shader" path="res://resources/shaders/DiscreteSunset.gdshader" id="1_8icjm"]
 [ext_resource type="Script" path="res://scenes/scripts/LevelBase.gd" id="1_pycaa"]
@@ -16,6 +16,8 @@ shader_parameter/ray_spacing = 0.5
 shader_parameter/time_scale = 0.2
 shader_parameter/level_time_diff = 0.3
 shader_parameter/total_phases = 4
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0wvnc"]
 
 [node name="LevelBase" type="Node2D"]
 script = ExtResource("1_pycaa")
@@ -66,3 +68,17 @@ theme = ExtResource("4_kqesr")
 custom_minimum_size = Vector2(2160, 1536)
 layout_mode = 2
 mouse_filter = 1
+
+[node name="Coins" type="Label" parent="."]
+offset_left = 480.0
+offset_top = 1739.0
+offset_right = 552.0
+offset_bottom = 1766.0
+scale = Vector2(8, 8)
+theme = ExtResource("4_kqesr")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.14902, 0.168627, 0.266667, 1)
+theme_override_constants/outline_size = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0wvnc")
+text = "0/3"
+horizontal_alignment = 2

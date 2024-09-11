@@ -10,6 +10,8 @@ const DELAY = 4.0
 
 
 var played = false
+var total_correct_guesses = 0
+var total_correct_answers = 0
 
 
 @onready var display = $Display
@@ -18,14 +20,27 @@ var played = false
 @onready var timer = $Timer
 @onready var tts = $TTSLabel
 @onready var item_container: ScrollContainer = $ItemContainer
+@onready var items = $ItemContainer/Container.get_children()
+@onready var coins = $Coins
 
 
 func _ready() -> void:
+	for item in items:
+		if item.correto:
+			total_correct_answers += 1
+			if item.guessed:
+				total_correct_guesses += 1
+	update_coins()
+	
 	randomize_scroll.call_deferred()
 	
 	tts.text = prompt
 	tts.update_text()
 	tts.say()
+
+
+func update_coins():
+	coins.text = str(total_correct_guesses) + "/" + str(total_correct_answers)
 
 
 func randomize_scroll():
@@ -37,6 +52,7 @@ func acertou():
 		Globals.beat_level(Globals.last_level_int)
 		SoundController.play_sfx("Win")
 		end(win_color, true)
+		update_coins()
 
 
 func errou():
