@@ -31,6 +31,7 @@ const MAX_LEVELS = 10
 @onready var level_selector_container = $LevelSelectors
 @onready var footstep_sound = $Footstep
 @onready var win_display = $Display
+@onready var win_tts = $Display/TTSLabel
 @onready var coin_display = $CoinDisplay
 
 var current_node = null
@@ -70,6 +71,7 @@ func _ready() -> void:
 		Globals.finish_beat()
 		
 		win_display.show()
+		win_tts.say()
 		SoundController.play_sfx("Win")
 		
 		await get_tree().create_timer(WIN_WAIT_TIME).timeout

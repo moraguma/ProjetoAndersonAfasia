@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://drvjsea84uajw" path="res://resources/images/main/sprites/exit.png" id="9_uyqsb"]
 [ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/TransitionButton.gd" id="10_v85qk"]
 [ext_resource type="AudioStream" uid="uid://de72w7ij3j5g3" path="res://resources/sounds/sfx/footstep.wav" id="11_rwjl0"]
-[ext_resource type="Texture2D" uid="uid://beio2xxoxirln" path="res://resources/images/main/sprites/trophy.png" id="12_usxbn"]
+[ext_resource type="PackedScene" uid="uid://cqip7djlmyyuu" path="res://scenes/TTSLabel.tscn" id="12_2eewt"]
 [ext_resource type="PackedScene" uid="uid://ujs0vdrj6dio" path="res://scenes/CoinDisplay.tscn" id="13_0nh7i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14s73"]
@@ -759,10 +759,12 @@ position = Vector2(0, 256)
 color = Color(0.470588, 0.713726, 0, 1)
 polygon = PackedVector2Array(128, 256, 960, 256, 1024, 288, 1056, 352, 1056, 1024, 1024, 1088, 960, 1120, 128, 1120, 64, 1088, 32, 1024, 32, 352, 64, 288)
 
-[node name="Trophy" type="Sprite2D" parent="Display"]
-position = Vector2(544, 640)
-scale = Vector2(32, 32)
-texture = ExtResource("12_usxbn")
+[node name="TTSLabel" parent="Display" instance=ExtResource("12_2eewt")]
+offset_top = 608.0
+offset_right = 1020.0
+offset_bottom = 736.0
+text = "Parabéns, você terminou o jogo!"
+say_on_ready = false
 
 [node name="CoinDisplay" parent="." instance=ExtResource("13_0nh7i")]
 position = Vector2(640, 1792)

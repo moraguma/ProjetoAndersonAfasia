@@ -66,7 +66,7 @@ _data = {
 script = ExtResource("1_jrm8u")
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
+offset_right = 52.0
 offset_bottom = 16.0
 scale = Vector2(8, 8)
 theme = ExtResource("1_ak4og")
@@ -75,6 +75,7 @@ text = "0/3"
 horizontal_alignment = 2
 
 [node name="Sprite" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(320, 0)
 scale = Vector2(8, 8)
 texture = ExtResource("2_qcdsd")

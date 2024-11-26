@@ -25,6 +25,7 @@ const TTS_FALLBACK = {
 	"Que animal vive no mar?": preload("res://resources/sounds/tts/p8.wav"),
 	"O que você pode usar para se locomover?": preload("res://resources/sounds/tts/p9.wav"),
 	"O que te ajuda a enxergar melhor?": preload("res://resources/sounds/tts/p10.wav"),
+	"Parabéns, você terminou o jogo!": preload("res://resources/sounds/tts/ending.mp3")
 }
 
 
