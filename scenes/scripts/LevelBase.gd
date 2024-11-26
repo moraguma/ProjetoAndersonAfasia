@@ -58,7 +58,7 @@ func acertou(node):
 			
 			node.display_win()
 		
-		Globals.beat_level(Globals.last_level_int)
+		Globals.beat_level(Globals.get_last_level_int())
 		SoundController.play_sfx("Win")
 		end(win_color, true)
 		
@@ -81,7 +81,7 @@ func end(color, won):
 		lose_indicator.show()
 	
 	if total_correct_answers == total_correct_guesses and won:
-		Globals.complete_level(Globals.last_level_int)
+		Globals.complete_level(Globals.get_last_level_int())
 		
 		display.color = complete_color
 		try_again_display.hide()

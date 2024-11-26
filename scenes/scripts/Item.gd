@@ -26,4 +26,4 @@ func display_win():
 
 
 func get_id():
-	return Globals.last_level + "/" + name 
+	return Globals.get_last_level() + "/" + name 

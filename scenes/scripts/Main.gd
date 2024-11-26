@@ -42,16 +42,16 @@ var interrupt = false
 
 func _ready() -> void:
 	coin_display.set_max(Globals.MAX_COINS)
-	coin_display.set_val(Globals.total_coins)
+	coin_display.set_val(Globals.get_total_coins())
 	
 	var won = Globals.get_beat_counter() >= MAX_LEVELS
 	var completed = Globals.get_complete_counter() >= MAX_LEVELS
 	interrupt = won or completed
 	
-	if Globals.last_level == "start":
+	if Globals.get_last_level() == "start":
 		current_node = "start" 
 	else: 
-		current_node = get_node("LevelSelectors/%s" % [Globals.last_level])
+		current_node = get_node("LevelSelectors/%s" % [Globals.get_last_level()])
 		if not interrupt:
 			current_node.enable_play()
 		player.position = current_node.position + POSITION_DIF

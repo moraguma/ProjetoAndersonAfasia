@@ -28,32 +28,28 @@ const TTS_FALLBACK = {
 }
 
 
+const SAVE_PATH = "user://save.tres"
+
+
 const MAX_COINS = 69
 
 
-var levels_completed = {}
-var complete_counter = 0
-var levels_beat = {}
 var player = 2
-var last_level = "start"
-var last_level_int = 0
 var bus_status = {
 	MUSIC_BUS: true,
 	SFX_BUS: true,
 	TTS_BUS: true
 }
-var beat_counter = 0
-
-
-var total_coins = 0
-var correct_guesses = {}
 var voice_id = null
+
+var save: SaveFile
 
 
 @onready var tts_fallback: AudioStreamPlayer = $TTSFallback
 
 
 func _ready() -> void:
+	load_game()
 	var voices = DisplayServer.tts_get_voices_for_language("pt")
 	if len(voices) > 0:
 		voice_id = voices[0]
@@ -68,48 +64,6 @@ func check_and_error(check: bool, message: String):
 		push_error(message)
 		return true
 	return false
-
-
-func complete_level(level: int):
-	if not is_level_complete(level):
-		complete_counter += 1
-	
-	levels_completed[level] = true
-
-
-func is_level_complete(level: int):
-	if level in levels_completed:
-		return levels_completed[level]
-	return false
-
-
-func get_complete_counter():
-	return complete_counter
-
-
-func beat_level(level: int):
-	if not is_level_beat(level):
-		beat_counter += 1
-	
-	levels_beat[level] = true
-
-
-func is_level_beat(level: int):
-	if level in levels_beat:
-		return levels_beat[level]
-	return false
-
-
-func get_beat_counter():
-	return beat_counter
-
-
-func finish_beat():
-	beat_counter = -1
-
-
-func finish_complete():
-	complete_counter = -1
 
 
 func tts(str, force=false):
@@ -142,13 +96,95 @@ func tts_finished() -> void:
 	SoundController.unmute_music()
 
 
+# --------------------------------------------------------------------------------------------------
+# SAVE
+# --------------------------------------------------------------------------------------------------
+func load_game():
+	if not FileAccess.file_exists(SAVE_PATH):
+		save = SaveFile.new()
+		save_game()
+	
+	save = load(SAVE_PATH)
+
+
+func save_game():
+	ResourceSaver.save(save, SAVE_PATH)
+
+
+func complete_level(level: int):
+	if not is_level_complete(level):
+		save.complete_counter += 1
+	
+	save.levels_completed[level] = true
+	save_game()
+
+
+func is_level_complete(level: int):
+	if level in save.levels_completed:
+		return save.levels_completed[level]
+	return false
+
+
+func get_complete_counter():
+	return save.complete_counter
+
+
+func beat_level(level: int):
+	if not is_level_beat(level):
+		save.beat_counter += 1
+	
+	save.levels_beat[level] = true
+	save_game()
+
+
+func is_level_beat(level: int):
+	if level in save.levels_beat:
+		return save.levels_beat[level]
+	return false
+
+
+func get_beat_counter():
+	return save.beat_counter
+
+
+func finish_beat():
+	save.beat_counter = -1
+	save_game()
+
+
+func finish_complete():
+	save.complete_counter = -1
+	save_game()
+
+
 func try_guess(guess):
-	if not guess in correct_guesses:
-		correct_guesses[guess] = true
-		total_coins += 1
+	if not guess in save.correct_guesses:
+		save.correct_guesses[guess] = true
+		save.total_coins += 1
+		save_game()
 
 
 func has_guessed(guess):
-	if guess in correct_guesses:
-		return correct_guesses[guess]
+	if guess in save.correct_guesses:
+		return save.correct_guesses[guess]
 	return false
+
+
+func get_total_coins():
+	return save.total_coins
+
+
+func get_last_level():
+	return save.last_level
+
+
+func set_last_level(val):
+	save.last_level = val
+
+
+func set_last_level_int(val):
+	save.last_level_int = val
+
+
+func get_last_level_int():
+	return save.last_level_int

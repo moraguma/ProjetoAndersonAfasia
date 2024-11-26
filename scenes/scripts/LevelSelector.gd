@@ -38,8 +38,8 @@ func _process(delta: float) -> void:
 func try_play():
 	if can_play:
 		SoundController.play_sfx("Button")
-		Globals.last_level = name
-		Globals.last_level_int = level
+		Globals.set_last_level(name)
+		Globals.set_last_level_int(level)
 		SceneManager.goto_scene("res://scenes/levels/%d.tscn" % [level])
 
 
