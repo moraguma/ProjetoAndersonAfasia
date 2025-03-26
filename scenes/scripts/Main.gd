@@ -45,8 +45,8 @@ func _ready() -> void:
 	coin_display.set_max(Globals.MAX_COINS)
 	coin_display.set_val(Globals.get_total_coins())
 	
-	var won = Globals.get_beat_counter() >= MAX_LEVELS
-	var completed = Globals.get_complete_counter() >= MAX_LEVELS
+	var won = Globals.has_beat()
+	var completed = Globals.has_completed()
 	interrupt = won or completed
 	
 	if Globals.get_last_level() == "start":

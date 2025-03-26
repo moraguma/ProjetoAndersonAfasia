@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://cuke6n1iow6ng" path="res://resources/sounds/sfx/win.wav" id="3_sf4ql"]
 [ext_resource type="AudioStream" uid="uid://cdf0pr6qtwpbi" path="res://resources/sounds/sfx/lose.wav" id="4_icl0v"]
 [ext_resource type="AudioStream" uid="uid://d18kllrk8j7aq" path="res://resources/sounds/sfx/level.wav" id="5_7hp6j"]
-[ext_resource type="AudioStream" uid="uid://de6udmyev2uny" path="res://resources/sounds/Music.ogg" id="6_ww02v"]
+[ext_resource type="AudioStream" uid="uid://bqrwkxwja8iwd" path="res://resources/sounds/Music.mp3" id="6_jcvwe"]
 
 [node name="SoundController" type="Node"]
 script = ExtResource("1_lfq44")
@@ -35,6 +35,5 @@ bus = &"SFX"
 [node name="Music" type="Node" parent="."]
 
 [node name="Music" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource("6_ww02v")
-volume_db = -20.0
+stream = ExtResource("6_jcvwe")
 bus = &"Music"

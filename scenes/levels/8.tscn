@@ -1,35 +1,11 @@
-[gd_scene load_steps=32 format=3 uid="uid://st0k1hg80i5v"]
+[gd_scene load_steps=8 format=3 uid="uid://st0k1hg80i5v"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_s3lml"]
 [ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_2whqj"]
-[ext_resource type="Texture2D" uid="uid://b11hvdbsbh7g3" path="res://resources/images/levels/level7/Leao.jpg" id="3_bbjlu"]
-[ext_resource type="Texture2D" uid="uid://c6o2cg7cftpfq" path="res://resources/images/levels/level7/Jararaca.png" id="4_p2gxg"]
-[ext_resource type="Texture2D" uid="uid://dgqoqo3yt2hq3" path="res://resources/images/levels/level7/Cachorro.jpeg" id="5_twyef"]
-[ext_resource type="Texture2D" uid="uid://cc2qqgpm58j2m" path="res://resources/images/levels/level7/Pato.jpeg" id="6_q2uc1"]
 [ext_resource type="Texture2D" uid="uid://c5wc7m6wtr8ny" path="res://resources/images/levels/level7/Passarinho.jpeg" id="7_jcru0"]
-[ext_resource type="Texture2D" uid="uid://dem7ttmvlqblw" path="res://resources/images/levels/level7/araras.jpeg" id="8_wbeue"]
-[ext_resource type="Texture2D" uid="uid://dn5rk0ntpr2vv" path="res://resources/images/levels/level7/Coruja (2).png" id="9_0jh8a"]
-[ext_resource type="Texture2D" uid="uid://b552d4552hlxr" path="res://resources/images/levels/level7/Canguru.jpg" id="10_qaawa"]
-[ext_resource type="Texture2D" uid="uid://fkixxfhaqi5o" path="res://resources/images/levels/level7/Vaca.jpeg" id="11_7p6jv"]
-[ext_resource type="Texture2D" uid="uid://ced5pfcdn5a1e" path="res://resources/images/levels/level7/Gata.jpg" id="12_77vvs"]
-[ext_resource type="Texture2D" uid="uid://claaeam5osfn" path="res://resources/images/levels/level7/Galinha.jpeg" id="13_87731"]
-[ext_resource type="Texture2D" uid="uid://cuk405gmdjwyi" path="res://resources/images/levels/level7/penguin.jpg" id="14_t7sx5"]
-[ext_resource type="Texture2D" uid="uid://cjsi7ovsjpk1a" path="res://resources/images/levels/level7/Morcego.jpeg" id="15_ui41a"]
 [ext_resource type="Texture2D" uid="uid://dvguora05qn3o" path="res://resources/images/levels/level7/Urso.jpg" id="16_efcat"]
-[ext_resource type="Texture2D" uid="uid://yn22nxhb3de4" path="res://resources/images/levels/level7/Avestruz.jpeg" id="17_wgs8n"]
-[ext_resource type="Texture2D" uid="uid://ccfwsspj53vr" path="res://resources/images/levels/level7/Bicho-preguica.jpg" id="18_smjku"]
-[ext_resource type="Texture2D" uid="uid://ih4ffe2cse1g" path="res://resources/images/levels/level7/Peru.jpg" id="19_baqca"]
-[ext_resource type="Texture2D" uid="uid://byelf3scrle2o" path="res://resources/images/levels/level7/Macaco.jpeg" id="20_pgs0l"]
 [ext_resource type="Texture2D" uid="uid://cf3o1623i6s6l" path="res://resources/images/levels/level7/cavalo_marinho.jpg" id="21_14xj0"]
-[ext_resource type="Texture2D" uid="uid://bllklcbvgf1b" path="res://resources/images/levels/level7/Panda.jpeg" id="22_2ebf2"]
-[ext_resource type="Texture2D" uid="uid://cincktd4ckwp4" path="res://resources/images/levels/level7/Coala.jpeg" id="23_6vswj"]
 [ext_resource type="Texture2D" uid="uid://cug0wcdy5ggdr" path="res://resources/images/levels/level7/Tubarao.jpg" id="24_qag71"]
-[ext_resource type="Texture2D" uid="uid://dhc1heiu3vgfc" path="res://resources/images/levels/level7/Elefantes.jpeg" id="25_yavi7"]
-[ext_resource type="Texture2D" uid="uid://d1ld8yqrhv6n3" path="res://resources/images/levels/level7/Onca.jpeg" id="26_4phoa"]
-[ext_resource type="Texture2D" uid="uid://dokvpf7hyop6y" path="res://resources/images/levels/level7/Minhoca.jpeg" id="27_7y0ef"]
-[ext_resource type="Texture2D" uid="uid://1nso2oqg15iw" path="res://resources/images/levels/level7/Pomba.jpg" id="28_hme1b"]
-[ext_resource type="Texture2D" uid="uid://b2mfdmpbv0i75" path="res://resources/images/levels/level7/Abelha.jpeg" id="29_fis2c"]
-[ext_resource type="Texture2D" uid="uid://cwbwbvs0kvaoi" path="res://resources/images/levels/level7/Formiga.jpg" id="30_413jb"]
 [ext_resource type="Texture2D" uid="uid://dpqs2dejh3a7p" path="res://resources/images/levels/level7/peixe.jpg" id="31_wms0r"]
 
 [node name="Base" type="Node2D"]
@@ -38,242 +14,48 @@
 prompt = "Que animal vive no mar?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
-custom_minimum_size = Vector2(3710, 1536)
+custom_minimum_size = Vector2(1032, 1536)
 
-[node name="Leao" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_2whqj")]
+[node name="Passarinho" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 32.0
-offset_right = 340.0
-offset_bottom = 357.0
-texture_normal = ExtResource("3_bbjlu")
-
-[node name="Cobra" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 1224.0
-offset_top = 32.0
-offset_right = 1651.0
-offset_bottom = 332.0
-texture_normal = ExtResource("4_p2gxg")
-
-[node name="Cachorro" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 520.0
-offset_top = 800.0
-offset_right = 865.0
-offset_bottom = 1100.0
-texture_normal = ExtResource("5_twyef")
-
-[node name="Pato" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 872.0
-offset_top = 32.0
-offset_right = 1172.0
-offset_bottom = 383.0
-texture_normal = ExtResource("6_q2uc1")
-
-[node name="Passarinho" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 2088.0
-offset_top = 32.0
-offset_right = 2520.0
-offset_bottom = 340.0
+offset_left = 552.0
+offset_top = 640.0
+offset_right = 984.0
+offset_bottom = 948.0
 texture_normal = ExtResource("7_jcru0")
 
-[node name="Araras" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_2whqj")]
+[node name="Urso" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 1256.0
-offset_top = 384.0
-offset_right = 1697.0
-offset_bottom = 684.0
-texture_normal = ExtResource("8_wbeue")
-
-[node name="Peixe" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 456.0
+offset_left = 616.0
 offset_top = 32.0
-offset_right = 756.0
-offset_bottom = 332.0
-texture_normal = ExtResource("9_0jh8a")
-correto = true
-
-[node name="Canguru" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 2408.0
-offset_top = 736.0
-offset_right = 2863.0
-offset_bottom = 1036.0
-texture_normal = ExtResource("10_qaawa")
-
-[node name="Vaca" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 1640.0
-offset_top = 1120.0
-offset_right = 2040.0
-offset_bottom = 1426.0
-texture_normal = ExtResource("11_7p6jv")
-
-[node name="Gata" parent="LevelBase/ItemContainer/Container" index="9" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 1768.0
-offset_top = 384.0
-offset_right = 2300.0
-offset_bottom = 684.0
-texture_normal = ExtResource("12_77vvs")
-
-[node name="Galinha" parent="LevelBase/ItemContainer/Container" index="10" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 1288.0
-offset_top = 1184.0
-offset_right = 1588.0
-offset_bottom = 1484.0
-texture_normal = ExtResource("13_87731")
-
-[node name="Pinguins" parent="LevelBase/ItemContainer/Container" index="11" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 1224.0
-offset_top = 736.0
-offset_right = 1524.0
-offset_bottom = 1087.0
-texture_normal = ExtResource("14_t7sx5")
-correto = true
-
-[node name="Morcego" parent="LevelBase/ItemContainer/Container" index="12" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 744.0
-offset_top = 448.0
-offset_right = 1188.0
-offset_bottom = 748.0
-texture_normal = ExtResource("15_ui41a")
-
-[node name="Urso" parent="LevelBase/ItemContainer/Container" index="13" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 2568.0
-offset_top = 32.0
-offset_right = 2968.0
+offset_right = 1016.0
 offset_bottom = 332.0
 texture_normal = ExtResource("16_efcat")
 
-[node name="Avestruz" parent="LevelBase/ItemContainer/Container" index="14" instance=ExtResource("2_2whqj")]
+[node name="Borboleta2" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 1704.0
+offset_left = 8.0
 offset_top = 32.0
-offset_right = 2031.0
+offset_right = 541.0
 offset_bottom = 332.0
-texture_normal = ExtResource("17_wgs8n")
-
-[node name="Bicho-preguica" parent="LevelBase/ItemContainer/Container" index="15" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 168.0
-offset_top = 448.0
-offset_right = 617.0
-offset_bottom = 748.0
-texture_normal = ExtResource("18_smjku")
-
-[node name="Peru" parent="LevelBase/ItemContainer/Container" index="16" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 904.0
-offset_top = 1024.0
-offset_right = 1204.0
-offset_bottom = 1472.0
-texture_normal = ExtResource("19_baqca")
-
-[node name="Macaco" parent="LevelBase/ItemContainer/Container" index="17" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 2920.0
-offset_top = 352.0
-offset_right = 3220.0
-offset_bottom = 771.0
-texture_normal = ExtResource("20_pgs0l")
-
-[node name="Borboleta2" parent="LevelBase/ItemContainer/Container" index="18" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 168.0
-offset_top = 1184.0
-offset_right = 701.0
-offset_bottom = 1484.0
 texture_normal = ExtResource("21_14xj0")
 correto = true
 
-[node name="Panda" parent="LevelBase/ItemContainer/Container" index="19" instance=ExtResource("2_2whqj")]
+[node name="Tubarao" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 800.0
-offset_right = 490.0
-offset_bottom = 1100.0
-texture_normal = ExtResource("22_2ebf2")
-
-[node name="Coala" parent="LevelBase/ItemContainer/Container" index="20" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 1576.0
-offset_top = 736.0
-offset_right = 2010.0
-offset_bottom = 1042.0
-texture_normal = ExtResource("23_6vswj")
-
-[node name="Tubarao" parent="LevelBase/ItemContainer/Container" index="21" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 2088.0
-offset_top = 1216.0
-offset_right = 2621.0
-offset_bottom = 1516.0
+offset_left = 264.0
+offset_top = 1088.0
+offset_right = 797.0
+offset_bottom = 1388.0
 texture_normal = ExtResource("24_qag71")
 correto = true
 
-[node name="Elefantes" parent="LevelBase/ItemContainer/Container" index="22" instance=ExtResource("2_2whqj")]
+[node name="Formigao2" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 2664.0
-offset_top = 1152.0
-offset_right = 3104.0
-offset_bottom = 1452.0
-texture_normal = ExtResource("25_yavi7")
-
-[node name="Onca" parent="LevelBase/ItemContainer/Container" index="23" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 2344.0
-offset_top = 384.0
-offset_right = 2794.0
-offset_bottom = 684.0
-texture_normal = ExtResource("26_4phoa")
-
-[node name="Minhoca" parent="LevelBase/ItemContainer/Container" index="24" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 3272.0
-offset_top = 448.0
-offset_right = 3673.0
-offset_bottom = 748.0
-texture_normal = ExtResource("27_7y0ef")
-
-[node name="Pomba" parent="LevelBase/ItemContainer/Container" index="25" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 2056.0
-offset_top = 832.0
-offset_right = 2356.0
-offset_bottom = 1132.0
-texture_normal = ExtResource("28_hme1b")
-
-[node name="Abelha" parent="LevelBase/ItemContainer/Container" index="26" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 3176.0
-offset_top = 32.0
-offset_right = 3565.0
-offset_bottom = 332.0
-texture_normal = ExtResource("29_fis2c")
-
-[node name="Formigao" parent="LevelBase/ItemContainer/Container" index="27" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 3144.0
-offset_top = 1184.0
-offset_right = 3594.0
-offset_bottom = 1484.0
-texture_normal = ExtResource("30_413jb")
-
-[node name="Formigao2" parent="LevelBase/ItemContainer/Container" index="28" instance=ExtResource("2_2whqj")]
-layout_mode = 0
-offset_left = 3080.0
-offset_top = 832.0
-offset_right = 3530.0
-offset_bottom = 1132.0
+offset_left = 72.0
+offset_top = 480.0
+offset_right = 522.0
+offset_bottom = 780.0
 texture_normal = ExtResource("31_wms0r")
 correto = true
 

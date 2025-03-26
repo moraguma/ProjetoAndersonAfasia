@@ -1,9 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://2uajy750q88p"]
+[gd_scene load_steps=11 format=3 uid="uid://2uajy750q88p"]
 
 [ext_resource type="Shader" path="res://resources/shaders/DiscreteSunset.gdshader" id="1_5ppv0"]
 [ext_resource type="Script" path="res://scenes/scripts/PlayerSelection.gd" id="1_yvksv"]
 [ext_resource type="PackedScene" uid="uid://cqip7djlmyyuu" path="res://scenes/TTSLabel.tscn" id="2_4lcs8"]
-[ext_resource type="Script" path="res://addons/jam_essentials/scenes/components/scripts/WavingElement.gd" id="3_873d3"]
 [ext_resource type="Texture2D" uid="uid://dltevnvxgpj46" path="res://resources/images/main/sprites/player0.png" id="4_878s8"]
 [ext_resource type="Texture2D" uid="uid://csn85dofe8mit" path="res://resources/images/main/sprites/player1.png" id="5_rt5sy"]
 [ext_resource type="Texture2D" uid="uid://cw6qjlau4b6ji" path="res://resources/images/main/sprites/player2.png" id="6_j8ukn"]
@@ -37,7 +36,6 @@ scale = Vector2(1, -1)
 text = "Escolha seu personagem"
 
 [node name="Players" type="Node2D" parent="."]
-script = ExtResource("3_873d3")
 
 [node name="0" type="TextureButton" parent="Players"]
 offset_left = 256.0

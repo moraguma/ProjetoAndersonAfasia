@@ -2,7 +2,7 @@ extends Node
 
 
 const OFF_DB = -80.0
-const FIXED_ON_DB = -20.0
+const FIXED_ON_DB = -15.0
 var ON_DB = FIXED_ON_DB
 
 

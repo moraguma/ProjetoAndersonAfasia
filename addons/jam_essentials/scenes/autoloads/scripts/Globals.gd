@@ -32,7 +32,8 @@ const TTS_FALLBACK = {
 const SAVE_PATH = "user://save.tres"
 
 
-const MAX_COINS = 69
+const MAX_COINS = 45
+const MAX_LEVELS = 10
 
 
 var player = 2
@@ -108,6 +109,11 @@ func load_game():
 	save = load(SAVE_PATH)
 
 
+func reset_game():
+	save = SaveFile.new()
+	save_game()
+
+
 func save_game():
 	ResourceSaver.save(save, SAVE_PATH)
 
@@ -154,7 +160,6 @@ func finish_beat():
 
 
 func finish_complete():
-	save.complete_counter = -1
 	save_game()
 
 
@@ -163,6 +168,14 @@ func try_guess(guess):
 		save.correct_guesses[guess] = true
 		save.total_coins += 1
 		save_game()
+
+
+func has_beat():
+	return get_beat_counter() >= MAX_LEVELS
+
+
+func has_completed():
+	return get_complete_counter() >= MAX_LEVELS
 
 
 func has_guessed(guess):

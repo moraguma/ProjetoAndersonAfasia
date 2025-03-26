@@ -1,31 +1,16 @@
-[gd_scene load_steps=27 format=3 uid="uid://db28w1mdwbyyq"]
+[gd_scene load_steps=12 format=3 uid="uid://db28w1mdwbyyq"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_11eo3"]
 [ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_8lh3d"]
 [ext_resource type="Texture2D" uid="uid://bvqyycceq0sjs" path="res://resources/images/levels/level5/carro.jpeg" id="3_gknku"]
-[ext_resource type="Texture2D" uid="uid://cgo0siinege1u" path="res://resources/images/levels/level5/Casa.jpeg" id="4_uy3f5"]
-[ext_resource type="Texture2D" uid="uid://mdryfcauayuw" path="res://resources/images/levels/level5/cinema.jpg" id="5_twidb"]
-[ext_resource type="Texture2D" uid="uid://dsslvcbut47mt" path="res://resources/images/levels/level5/Pintura.jpg" id="6_uwpea"]
 [ext_resource type="Texture2D" uid="uid://ialwslqjru2m" path="res://resources/images/levels/level5/aviao.jpg" id="7_yq2r2"]
-[ext_resource type="Texture2D" uid="uid://dusp14gn15vjk" path="res://resources/images/levels/level5/Corda.jpeg" id="8_vybke"]
 [ext_resource type="Texture2D" uid="uid://cljy12eg5slbk" path="res://resources/images/levels/level5/prego.jpeg" id="9_2rok1"]
-[ext_resource type="Texture2D" uid="uid://c7e5ti8klhqks" path="res://resources/images/levels/level5/Chuveiro.jpeg" id="10_87sf3"]
-[ext_resource type="Texture2D" uid="uid://bxegujs344wwu" path="res://resources/images/levels/level5/amigo.jpeg" id="11_hcbf1"]
 [ext_resource type="Texture2D" uid="uid://dck2m5cr83e1m" path="res://resources/images/levels/level5/onibus.jpeg" id="12_43c4u"]
-[ext_resource type="Texture2D" uid="uid://bgfci03udr3y0" path="res://resources/images/levels/level5/predio.jpeg" id="13_8lw4e"]
-[ext_resource type="Texture2D" uid="uid://nvsdingdj0dt" path="res://resources/images/levels/level5/arvore.jpeg" id="14_s5p71"]
-[ext_resource type="Texture2D" uid="uid://b85tlhm307ivx" path="res://resources/images/levels/level5/Escada.jpeg" id="15_ju7n0"]
-[ext_resource type="Texture2D" uid="uid://d1n6wk6b8k2se" path="res://resources/images/levels/level5/Quadro.png" id="16_rtdq5"]
-[ext_resource type="Texture2D" uid="uid://dsbk56q7ywllh" path="res://resources/images/levels/level5/Predetresjpg.jpg" id="17_kh50w"]
-[ext_resource type="Texture2D" uid="uid://bx51fpgpmignu" path="res://resources/images/levels/level5/Bicicleta.png" id="18_nxjrf"]
 [ext_resource type="Texture2D" uid="uid://b0jwaqs3cbukg" path="res://resources/images/levels/level5/caneta.jpg" id="19_m4cvg"]
 [ext_resource type="Texture2D" uid="uid://cy7lhj1a1px57" path="res://resources/images/levels/level5/Refrigerador.jpeg" id="20_di7n3"]
 [ext_resource type="Texture2D" uid="uid://dvjdiw1neviyu" path="res://resources/images/levels/level5/trem.jpg" id="21_cosms"]
-[ext_resource type="Texture2D" uid="uid://dxvnlicx4dyg" path="res://resources/images/levels/level5/Mesa.jpeg" id="22_w81g6"]
 [ext_resource type="Texture2D" uid="uid://dic23a2xiemlw" path="res://resources/images/levels/level5/bau.jpeg" id="23_tuhim"]
-[ext_resource type="Texture2D" uid="uid://1x8otekn50oo" path="res://resources/images/levels/level5/Lampada.jpeg" id="24_kd300"]
 [ext_resource type="Texture2D" uid="uid://co185ixrci28k" path="res://resources/images/levels/level5/navio.jpg" id="25_kdosu"]
-[ext_resource type="Texture2D" uid="uid://bfq2rjw7wn403" path="res://resources/images/levels/level5/Cadeira.png" id="26_difcd"]
 
 [node name="Base" type="Node2D"]
 
@@ -33,15 +18,15 @@
 prompt = "O que você pode usar para se locomover?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
-custom_minimum_size = Vector2(3300, 1536)
+custom_minimum_size = Vector2(1032, 1536)
 
 [node name="Carro" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.00969697
-anchor_top = 0.0208333
-anchor_right = 0.00969697
-anchor_bottom = 0.0208333
+anchor_left = 0.341085
+anchor_top = -0.0416667
+anchor_right = 0.341085
+anchor_bottom = -0.0416667
 offset_left = 8.0
 offset_top = 704.0
 offset_right = 635.0
@@ -50,52 +35,13 @@ texture_normal = ExtResource("3_gknku")
 correto = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Casa" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_8lh3d")]
+[node name="Aviao" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.0745455
-anchor_top = 0.166667
-anchor_right = -0.0745455
-anchor_bottom = 0.166667
-offset_left = 1790.0
-offset_top = -256.0
-offset_right = 2090.0
-offset_bottom = 47.0
-texture_normal = ExtResource("4_uy3f5")
-metadata/_edit_use_anchors_ = true
-
-[node name="Cinema" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0484848
-anchor_right = 0.0484848
-offset_left = 40.0
-offset_right = 340.0
-offset_bottom = 303.0
-texture_normal = ExtResource("5_twidb")
-metadata/_edit_use_anchors_ = true
-
-[node name="Pintura" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.0475758
-anchor_top = 0.208333
-anchor_right = -0.0475758
-anchor_bottom = 0.208333
-offset_left = 2085.0
-offset_top = -256.0
-offset_right = 2385.0
-offset_bottom = 217.0
-texture_normal = ExtResource("6_uwpea")
-metadata/_edit_use_anchors_ = true
-
-[node name="Aviao" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0678788
-anchor_top = 1.0
-anchor_right = 0.0678788
-anchor_bottom = 1.0
+anchor_left = -0.372093
+anchor_top = 0.979167
+anchor_right = -0.372093
+anchor_bottom = 0.979167
 offset_left = 392.0
 offset_top = -1536.0
 offset_right = 925.0
@@ -105,27 +51,13 @@ texture_normal = ExtResource("7_yq2r2")
 correto = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Corda" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_8lh3d")]
+[node name="Prego" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.921697
-anchor_top = 1.0
-anchor_right = 0.921697
-anchor_bottom = 1.0
-offset_left = -1465.6
-offset_top = -1184.0
-offset_right = -1165.6
-offset_bottom = -881.0
-texture_normal = ExtResource("8_vybke")
-metadata/_edit_use_anchors_ = true
-
-[node name="Prego" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -1.62735
-anchor_top = 1.42773
-anchor_right = -1.62735
-anchor_bottom = 1.42773
+anchor_left = -5.42078
+anchor_top = 0.948568
+anchor_right = -5.42078
+anchor_bottom = 0.948568
 offset_left = 6146.24
 offset_top = -1489.0
 offset_right = 6616.24
@@ -133,41 +65,13 @@ offset_bottom = -1186.0
 texture_normal = ExtResource("9_2rok1")
 metadata/_edit_use_anchors_ = true
 
-[node name="Chuveiro" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_8lh3d")]
+[node name="Onibus" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.270606
-anchor_top = -0.0299479
-anchor_right = -0.270606
-anchor_bottom = -0.0299479
-offset_left = 2085.0
-offset_top = 46.0
-offset_right = 2390.0
-offset_bottom = 350.0
-texture_normal = ExtResource("10_87sf3")
-metadata/_edit_use_anchors_ = true
-
-[node name="Amigos" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -1.38982
-anchor_top = -0.00990101
-anchor_right = -1.37982
-anchor_bottom = -0.00990101
-offset_left = 4658.4
-offset_top = 367.208
-offset_right = 4958.4
-offset_bottom = 670.208
-texture_normal = ExtResource("11_hcbf1")
-metadata/_edit_use_anchors_ = true
-
-[node name="Onibus" parent="LevelBase/ItemContainer/Container" index="9" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.07806
-anchor_top = -0.0066007
-anchor_right = 1.07806
-anchor_bottom = -0.0066007
+anchor_left = 2.17597
+anchor_top = -0.110768
+anchor_right = 2.17597
+anchor_bottom = -0.110768
 offset_left = -2141.6
 offset_top = 1130.14
 offset_right = -1570.6
@@ -176,102 +80,13 @@ texture_normal = ExtResource("12_43c4u")
 correto = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Predio" parent="LevelBase/ItemContainer/Container" index="10" instance=ExtResource("2_8lh3d")]
+[node name="Caneta" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.906667
-anchor_right = 0.916667
-anchor_bottom = 0.00330035
-offset_left = -2120.0
-offset_top = 352.0
-offset_right = -1820.0
-offset_bottom = 678.0
-texture_normal = ExtResource("13_8lw4e")
-metadata/_edit_use_anchors_ = true
-
-[node name="Arvore" parent="LevelBase/ItemContainer/Container" index="11" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.331795
-anchor_top = -3.75346
-anchor_right = 0.34198
-anchor_bottom = -3.75346
-offset_left = 1313.08
-offset_top = 5794.31
-offset_right = 1613.08
-offset_bottom = 6097.31
-scale = Vector2(1.11617, 1.38748)
-texture_normal = ExtResource("14_s5p71")
-metadata/_edit_use_anchors_ = true
-
-[node name="Escada" parent="LevelBase/ItemContainer/Container" index="12" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.22387
-anchor_top = -3.44556
-anchor_right = 0.234055
-anchor_bottom = -3.43514
-offset_left = 1605.23
-offset_top = 5804.38
-offset_right = 1905.23
-offset_bottom = 6186.38
-scale = Vector2(1, 1.36795)
-texture_normal = ExtResource("15_ju7n0")
-metadata/_edit_use_anchors_ = true
-
-[node name="Quadro" parent="LevelBase/ItemContainer/Container" index="13" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.241584
-anchor_top = -3.75866
-anchor_right = 0.241584
-anchor_bottom = -3.75541
-offset_left = 1994.77
-offset_top = 6317.31
-offset_right = 2335.77
-offset_bottom = 6621.31
-scale = Vector2(0.950595, 1.34748)
-texture_normal = ExtResource("16_rtdq5")
-metadata/_edit_use_anchors_ = true
-
-[node name="Pedestres" parent="LevelBase/ItemContainer/Container" index="14" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.0625455
-anchor_top = 0.097566
-anchor_right = -0.0625455
-anchor_bottom = 0.097566
-offset_left = 1430.4
-offset_top = 202.139
-offset_right = 1730.4
-offset_bottom = 506.139
-texture_normal = ExtResource("17_kh50w")
-correto = true
-metadata/_edit_use_anchors_ = true
-
-[node name="Bicliceta" parent="LevelBase/ItemContainer/Container" index="15" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.240353
-anchor_top = -3.07898
-anchor_right = 0.240353
-anchor_bottom = -3.06986
-offset_left = 1870.84
-offset_top = 5785.31
-offset_right = 2423.84
-offset_bottom = 6088.31
-scale = Vector2(1, 1.41322)
-texture_normal = ExtResource("18_nxjrf")
-correto = true
-metadata/_edit_use_anchors_ = true
-
-[node name="Caneta" parent="LevelBase/ItemContainer/Container" index="16" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.0732263
-anchor_top = -1.2698
-anchor_right = -0.0632261
-anchor_bottom = -1.2698
+anchor_left = -0.0170998
+anchor_top = -1.31146
+anchor_right = -0.0070996
+anchor_bottom = -1.31146
 offset_left = 665.647
 offset_top = 2302.41
 offset_right = 965.647
@@ -280,13 +95,13 @@ scale = Vector2(1, 1.04)
 texture_normal = ExtResource("19_m4cvg")
 metadata/_edit_use_anchors_ = true
 
-[node name="Refrigerador" parent="LevelBase/ItemContainer/Container" index="17" instance=ExtResource("2_8lh3d")]
+[node name="Refrigerador" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.335001
-anchor_top = -0.589933
-anchor_right = -0.335001
-anchor_bottom = -0.589933
+anchor_left = -0.420058
+anchor_top = -0.652435
+anchor_right = -0.420058
+anchor_bottom = -0.652435
 offset_left = 1145.5
 offset_top = 1962.14
 offset_right = 1445.5
@@ -294,13 +109,13 @@ offset_bottom = 2416.14
 texture_normal = ExtResource("20_di7n3")
 metadata/_edit_use_anchors_ = true
 
-[node name="Trem" parent="LevelBase/ItemContainer/Container" index="18" instance=ExtResource("2_8lh3d")]
+[node name="Trem" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.0154464
-anchor_top = -0.696053
-anchor_right = -0.0154464
-anchor_bottom = -0.696053
+anchor_left = -1.94086
+anchor_top = -0.591888
+anchor_right = -1.94086
+anchor_bottom = -0.591888
 offset_left = 2202.97
 offset_top = 2189.14
 offset_right = 2502.97
@@ -309,27 +124,13 @@ texture_normal = ExtResource("21_cosms")
 correto = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Mesa" parent="LevelBase/ItemContainer/Container" index="19" instance=ExtResource("2_8lh3d")]
+[node name="Bau" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.196518
-anchor_top = -0.693673
-anchor_right = -0.186518
-anchor_bottom = -0.690373
-offset_left = 1456.51
-offset_top = 2217.48
-offset_right = 1898.51
-offset_bottom = 2520.48
-texture_normal = ExtResource("22_w81g6")
-metadata/_edit_use_anchors_ = true
-
-[node name="Bau" parent="LevelBase/ItemContainer/Container" index="20" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.331628
-anchor_top = -2.56198
-anchor_right = 0.331628
-anchor_bottom = -2.56198
+anchor_left = -1.69925
+anchor_top = -2.20782
+anchor_right = -1.69925
+anchor_bottom = -2.20782
 offset_left = 1793.63
 offset_top = 4031.21
 offset_right = 2093.63
@@ -337,47 +138,19 @@ offset_bottom = 4334.21
 texture_normal = ExtResource("23_tuhim")
 metadata/_edit_use_anchors_ = true
 
-[node name="Lampada" parent="LevelBase/ItemContainer/Container" index="21" instance=ExtResource("2_8lh3d")]
+[node name="Navio" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_8lh3d")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.248307
-anchor_top = -1.9014
-anchor_right = -0.248307
-anchor_bottom = -1.9014
-offset_left = 2171.41
-offset_top = 3624.55
-offset_right = 2471.41
-offset_bottom = 3928.55
-texture_normal = ExtResource("24_kd300")
-metadata/_edit_use_anchors_ = true
-
-[node name="Navio" parent="LevelBase/ItemContainer/Container" index="22" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0930483
-anchor_top = -1.1787
-anchor_right = 0.103048
-anchor_bottom = -1.1754
+anchor_left = -1.34587
+anchor_top = -1.44953
+anchor_right = -1.33587
+anchor_bottom = -1.44623
 offset_left = 1460.94
 offset_top = 2514.48
 offset_right = 1957.94
 offset_bottom = 2817.48
 texture_normal = ExtResource("25_kdosu")
 correto = true
-metadata/_edit_use_anchors_ = true
-
-[node name="Algema" parent="LevelBase/ItemContainer/Container" index="23" instance=ExtResource("2_8lh3d")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.0731828
-anchor_top = -1.04063
-anchor_right = -0.0631827
-anchor_bottom = -1.04063
-offset_left = 633.503
-offset_top = 2686.41
-offset_right = 1005.5
-offset_bottom = 2989.41
-texture_normal = ExtResource("26_difcd")
 metadata/_edit_use_anchors_ = true
 
 [editable path="LevelBase"]

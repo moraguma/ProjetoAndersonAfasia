@@ -1,34 +1,15 @@
-[gd_scene load_steps=31 format=3 uid="uid://cxt72ykjw3nf3"]
+[gd_scene load_steps=12 format=3 uid="uid://cxt72ykjw3nf3"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_qt2dl"]
 [ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_j6560"]
 [ext_resource type="Texture2D" uid="uid://bvald32hiif15" path="res://resources/images/levels/level6/Alexa.png" id="3_jg7an"]
 [ext_resource type="Texture2D" uid="uid://c0evck2045xbn" path="res://resources/images/levels/level6/relogio ponto.jpeg" id="4_kwfvm"]
-[ext_resource type="Texture2D" uid="uid://cew2dxyagpc0r" path="res://resources/images/levels/level6/Cinema.png" id="5_7h8o3"]
 [ext_resource type="Texture2D" uid="uid://b1v8xd62wjvdr" path="res://resources/images/levels/level6/relogio.jpg" id="6_p5o3h"]
-[ext_resource type="Texture2D" uid="uid://c4w4x3tudlfbt" path="res://resources/images/levels/level6/orquestra.jpeg" id="7_0wjjo"]
-[ext_resource type="Texture2D" uid="uid://daispgmpkasdl" path="res://resources/images/levels/level6/enem-2023.jpg" id="8_3wn30"]
-[ext_resource type="Texture2D" uid="uid://mocfkmq2gpp5" path="res://resources/images/levels/level6/Exercito.jpg" id="9_n2tr3"]
-[ext_resource type="Texture2D" uid="uid://dhblwtsdhta0n" path="res://resources/images/levels/level6/sol.jpeg" id="10_5oyrm"]
-[ext_resource type="Texture2D" uid="uid://dw4106aoaos0j" path="res://resources/images/levels/level6/Alarme.png" id="11_t4oor"]
-[ext_resource type="Texture2D" uid="uid://6p6e4komv6er" path="res://resources/images/levels/level6/Lua.jpeg" id="12_hqxcy"]
-[ext_resource type="Texture2D" uid="uid://dm1soeh1uv7m0" path="res://resources/images/levels/level6/Estrela.jpg" id="13_n00an"]
 [ext_resource type="Texture2D" uid="uid://bchmfihbvs73a" path="res://resources/images/levels/level6/Carteria.jpeg" id="14_yi8ra"]
 [ext_resource type="Texture2D" uid="uid://dmrsa7nijhd70" path="res://resources/images/levels/level6/homem.jpeg" id="15_2soyy"]
-[ext_resource type="Texture2D" uid="uid://kyue6patq4j0" path="res://resources/images/levels/level6/Pix.png" id="16_hafgy"]
 [ext_resource type="Texture2D" uid="uid://svtntnh2bxgn" path="res://resources/images/levels/level6/tenis.jpeg" id="17_0w2vy"]
-[ext_resource type="Texture2D" uid="uid://d15vouud8af0j" path="res://resources/images/levels/level6/pedra.jpeg" id="18_edyor"]
-[ext_resource type="Texture2D" uid="uid://d0s27fstk72oy" path="res://resources/images/levels/level6/sino.png" id="19_eggxv"]
 [ext_resource type="Texture2D" uid="uid://c16mum4i6cfsj" path="res://resources/images/levels/level6/areia.jpg" id="20_xquj8"]
-[ext_resource type="Texture2D" uid="uid://vsn8lakyrmw8" path="res://resources/images/levels/level6/Papagaia.jpeg" id="21_ug640"]
-[ext_resource type="Texture2D" uid="uid://cyqt1kwt4p6er" path="res://resources/images/levels/level6/chefe.jpg" id="22_454ei"]
-[ext_resource type="Texture2D" uid="uid://g4o87mq0s8f5" path="res://resources/images/levels/level6/Cidade.jpg" id="23_vl0wp"]
 [ext_resource type="Texture2D" uid="uid://dg31mxm3r756u" path="res://resources/images/levels/level6/Natacao.jpeg" id="24_gncay"]
-[ext_resource type="Texture2D" uid="uid://cglh2t2qmlomp" path="res://resources/images/levels/level6/medico.jpeg" id="25_hwf1y"]
-[ext_resource type="Texture2D" uid="uid://cvks4q1g1f1yk" path="res://resources/images/levels/level6/Grama.jpeg" id="26_hebgv"]
-[ext_resource type="Texture2D" uid="uid://8vcoxxfhcr4j" path="res://resources/images/levels/level6/criancao.jpg" id="27_1r2to"]
-[ext_resource type="Texture2D" uid="uid://bb5bi20jooh0v" path="res://resources/images/levels/level6/tempera.jpg" id="28_dm4nt"]
-[ext_resource type="Texture2D" uid="uid://cvlo01ae12ip5" path="res://resources/images/levels/level6/Rei.jpeg" id="29_2svgb"]
 [ext_resource type="Texture2D" uid="uid://c2200vpap6m2a" path="res://resources/images/levels/level6/smartphones.png" id="30_do7cj"]
 
 [node name="Base" type="Node2D"]
@@ -37,226 +18,76 @@
 prompt = "O que eu posso usar para ver as horas"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
-custom_minimum_size = Vector2(3634, 1536)
+custom_minimum_size = Vector2(1032, 1536)
 
 [node name="Alexa" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 104.0
-offset_top = 704.0
-offset_right = 613.0
-offset_bottom = 1004.0
+offset_left = 40.0
+offset_top = 1184.0
+offset_right = 549.0
+offset_bottom = 1484.0
 texture_normal = ExtResource("3_jg7an")
 correto = true
 
 [node name="Trabalho hora" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 808.0
-offset_right = 1137.0
+offset_left = 360.0
+offset_right = 689.0
 texture_normal = ExtResource("4_kwfvm")
 correto = true
 
-[node name="Velho" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_j6560")]
+[node name="Relogio" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 1736.0
-offset_right = 2036.0
-offset_bottom = 303.0
-texture_normal = ExtResource("5_7h8o3")
-
-[node name="Relogio" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 40.0
-offset_right = 340.0
+offset_left = 8.0
+offset_right = 308.0
 texture_normal = ExtResource("6_p5o3h")
 correto = true
 
-[node name="Orquestra" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_j6560")]
+[node name="Carteira" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 1320.0
-offset_top = 1088.0
-offset_right = 1720.0
-offset_bottom = 1388.0
-texture_normal = ExtResource("7_0wjjo")
-
-[node name="ENEM" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 2280.0
-offset_top = 1120.0
-offset_right = 2813.0
-offset_bottom = 1420.0
-texture_normal = ExtResource("8_3wn30")
-
-[node name="Exercito" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 744.0
-offset_top = 352.0
-offset_right = 1244.0
-offset_bottom = 652.0
-texture_normal = ExtResource("9_n2tr3")
-
-[node name="Sol" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 1192.0
-offset_right = 1694.0
-texture_normal = ExtResource("10_5oyrm")
-
-[node name="Alarme" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 424.0
-offset_top = 1056.0
-offset_right = 724.0
-offset_bottom = 1471.0
-texture_normal = ExtResource("11_t4oor")
-correto = true
-
-[node name="Lua" parent="LevelBase/ItemContainer/Container" index="9" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 2280.0
-offset_top = 320.0
-offset_right = 2580.0
-offset_bottom = 671.0
-texture_normal = ExtResource("12_hqxcy")
-
-[node name="Estrela" parent="LevelBase/ItemContainer/Container" index="10" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 424.0
-offset_right = 754.0
-texture_normal = ExtResource("13_n00an")
-
-[node name="Carteira" parent="LevelBase/ItemContainer/Container" index="11" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 1768.0
-offset_top = 704.0
-offset_right = 2080.0
-offset_bottom = 1004.0
+offset_left = 712.0
+offset_right = 1024.0
 texture_normal = ExtResource("14_yi8ra")
 
-[node name="Homem relogio" parent="LevelBase/ItemContainer/Container" index="12" instance=ExtResource("2_j6560")]
+[node name="Homem relogio" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 2632.0
-offset_top = 32.0
-offset_right = 2932.0
-offset_bottom = 423.0
+offset_left = 136.0
+offset_top = 736.0
+offset_right = 436.0
+offset_bottom = 1127.0
 texture_normal = ExtResource("15_2soyy")
 correto = true
 
-[node name="Pix" parent="LevelBase/ItemContainer/Container" index="13" instance=ExtResource("2_j6560")]
+[node name="Tenis" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 1192.0
-offset_top = 704.0
-offset_right = 1698.0
-offset_bottom = 1004.0
-texture_normal = ExtResource("16_hafgy")
-
-[node name="Tenis" parent="LevelBase/ItemContainer/Container" index="14" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 1320.0
-offset_top = 352.0
-offset_right = 1831.0
-offset_bottom = 652.0
+offset_left = 520.0
+offset_top = 320.0
+offset_right = 1031.0
+offset_bottom = 620.0
 texture_normal = ExtResource("17_0w2vy")
 
-[node name="Pedra" parent="LevelBase/ItemContainer/Container" index="15" instance=ExtResource("2_j6560")]
+[node name="Areia" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 392.0
-offset_top = 352.0
-offset_right = 692.0
-offset_bottom = 659.0
-texture_normal = ExtResource("18_edyor")
-
-[node name="Igreja Sino" parent="LevelBase/ItemContainer/Container" index="16" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 72.0
-offset_top = 352.0
-offset_right = 372.0
-offset_bottom = 652.0
-texture_normal = ExtResource("19_eggxv")
-correto = true
-
-[node name="Areia" parent="LevelBase/ItemContainer/Container" index="17" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 1768.0
-offset_top = 1120.0
-offset_right = 2212.0
-offset_bottom = 1420.0
+offset_left = 584.0
+offset_top = 1184.0
+offset_right = 1028.0
+offset_bottom = 1484.0
 texture_normal = ExtResource("20_xquj8")
 
-[node name="Papagaia" parent="LevelBase/ItemContainer/Container" index="18" instance=ExtResource("2_j6560")]
+[node name="Natacao" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 72.0
-offset_top = 1120.0
-offset_right = 372.0
-offset_bottom = 1420.0
-texture_normal = ExtResource("21_ug640")
-
-[node name="Chefe" parent="LevelBase/ItemContainer/Container" index="19" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 808.0
-offset_top = 704.0
-offset_right = 1108.0
-offset_bottom = 1004.0
-texture_normal = ExtResource("22_454ei")
-
-[node name="Cidade" parent="LevelBase/ItemContainer/Container" index="20" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 808.0
-offset_top = 1056.0
-offset_right = 1258.0
-offset_bottom = 1356.0
-texture_normal = ExtResource("23_vl0wp")
-correto = true
-
-[node name="Natacao" parent="LevelBase/ItemContainer/Container" index="21" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 3144.0
-offset_top = 672.0
-offset_right = 3593.0
-offset_bottom = 972.0
+offset_left = 520.0
+offset_top = 768.0
+offset_right = 969.0
+offset_bottom = 1068.0
 texture_normal = ExtResource("24_gncay")
 
-[node name="Medico" parent="LevelBase/ItemContainer/Container" index="22" instance=ExtResource("2_j6560")]
+[node name="Smartphones" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_j6560")]
 layout_mode = 0
-offset_left = 2152.0
-offset_top = 704.0
-offset_right = 2602.0
-offset_bottom = 1004.0
-texture_normal = ExtResource("25_hwf1y")
-
-[node name="Grama" parent="LevelBase/ItemContainer/Container" index="23" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 3016.0
-offset_top = 160.0
-offset_right = 3589.0
-offset_bottom = 460.0
-texture_normal = ExtResource("26_hebgv")
-
-[node name="Criancao brinquedo" parent="LevelBase/ItemContainer/Container" index="24" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 1896.0
+offset_left = 72.0
 offset_top = 352.0
-offset_right = 2236.0
+offset_right = 472.0
 offset_bottom = 652.0
-texture_normal = ExtResource("27_1r2to")
-
-[node name="Cozinha" parent="LevelBase/ItemContainer/Container" index="25" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 2696.0
-offset_top = 608.0
-offset_right = 2996.0
-offset_bottom = 908.0
-texture_normal = ExtResource("28_dm4nt")
-
-[node name="Rei" parent="LevelBase/ItemContainer/Container" index="26" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 2984.0
-offset_top = 1120.0
-offset_right = 3376.0
-offset_bottom = 1420.0
-texture_normal = ExtResource("29_2svgb")
-
-[node name="Smartphones" parent="LevelBase/ItemContainer/Container" index="27" instance=ExtResource("2_j6560")]
-layout_mode = 0
-offset_left = 2088.0
-offset_right = 2488.0
 texture_normal = ExtResource("30_do7cj")
 correto = true
 
