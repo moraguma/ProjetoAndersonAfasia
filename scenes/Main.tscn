@@ -718,16 +718,16 @@ level = 10
 
 [node name="Player" type="Sprite2D" parent="."]
 position = Vector2(918, 1696)
-scale = Vector2(8, 8)
 texture = ExtResource("5_lx6vw")
 hframes = 2
 vframes = 3
 frame = 2
 
 [node name="Particles" type="CPUParticles2D" parent="Player"]
-position = Vector2(0, 8)
+visible = false
+position = Vector2(0, 72)
 emitting = false
-amount = 16
+amount = 1
 texture = ExtResource("8_0me5y")
 emission_shape = 1
 emission_sphere_radius = 4.0

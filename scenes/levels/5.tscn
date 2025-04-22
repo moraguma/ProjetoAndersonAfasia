@@ -15,7 +15,7 @@
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_c1rbe")]
-prompt = "Onde você pode deitar para dormir?"
+prompt = "Onde você pode dormir?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
 custom_minimum_size = Vector2(1032, 1536)

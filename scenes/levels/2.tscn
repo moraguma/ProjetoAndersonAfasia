@@ -3,19 +3,19 @@
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_dqe5e"]
 [ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_c4ylx"]
 [ext_resource type="Texture2D" uid="uid://c5vhsa5mltgfv" path="res://resources/images/levels/level3/Volei.jpeg" id="7_r611e"]
+[ext_resource type="Texture2D" uid="uid://bid4hlm1lu74o" path="res://resources/images/levels/changes/futebol.jpg" id="8_ieu5q"]
 [ext_resource type="Texture2D" uid="uid://itntdbbw43wp" path="res://resources/images/levels/level3/Hoquei.jpg" id="9_vcj4b"]
 [ext_resource type="Texture2D" uid="uid://cp41vtmfh2yod" path="res://resources/images/levels/level3/judo.jpeg" id="10_6ua8a"]
 [ext_resource type="Texture2D" uid="uid://d2tougkexp6er" path="res://resources/images/levels/level3/Basquete.jpeg" id="13_2puw8"]
 [ext_resource type="Texture2D" uid="uid://dhrp01uh57j6c" path="res://resources/images/levels/level3/Natacao.jpg" id="14_an7q2"]
 [ext_resource type="Texture2D" uid="uid://ivbs6g6f01nd" path="res://resources/images/levels/level3/salta ornamentais.jpg" id="15_6s7wd"]
 [ext_resource type="Texture2D" uid="uid://crf5j7q0rcy4m" path="res://resources/images/levels/level3/tenis.jpeg" id="17_ru133"]
-[ext_resource type="Texture2D" uid="uid://d3n4kvgr6yswx" path="res://resources/images/levels/level3/Rugbi.jpeg" id="19_u5tc7"]
 [ext_resource type="Texture2D" uid="uid://ge7x2wads5hr" path="res://resources/images/levels/level3/murer.jpg" id="26_bqkml"]
 
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_dqe5e")]
-prompt = "Qual esporte é possível se você joga com uma bola?"
+prompt = "Qual esporte é jogado com bola?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
 custom_minimum_size = Vector2(1700, 1536)
@@ -67,10 +67,19 @@ layout_mode = 0
 offset_left = 200.0
 offset_top = 32.0
 offset_right = 649.0
-offset_bottom = 336.0
+offset_bottom = 332.0
 texture_normal = ExtResource("14_an7q2")
 
-[node name="Salta" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_c4ylx")]
+[node name="Futebol" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_c4ylx")]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 704.0
+offset_right = 668.0
+offset_bottom = 1004.0
+texture_normal = ExtResource("8_ieu5q")
+correto = true
+
+[node name="Salta" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_c4ylx")]
 layout_mode = 0
 offset_left = 1064.0
 offset_top = 1056.0
@@ -78,22 +87,13 @@ offset_right = 1637.0
 offset_bottom = 1367.0
 texture_normal = ExtResource("15_6s7wd")
 
-[node name="Tenis" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_c4ylx")]
+[node name="Tenis" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_c4ylx")]
 layout_mode = 0
 offset_left = 584.0
 offset_top = 1056.0
 offset_right = 1040.0
 offset_bottom = 1356.0
 texture_normal = ExtResource("17_ru133")
-correto = true
-
-[node name="Rugbi" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_c4ylx")]
-layout_mode = 0
-offset_left = 264.0
-offset_top = 704.0
-offset_right = 718.0
-offset_bottom = 1004.0
-texture_normal = ExtResource("19_u5tc7")
 correto = true
 
 [node name="Atletismo" parent="LevelBase/ItemContainer/Container" index="9" instance=ExtResource("2_c4ylx")]

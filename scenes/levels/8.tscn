@@ -1,8 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://st0k1hg80i5v"]
+[gd_scene load_steps=12 format=3 uid="uid://st0k1hg80i5v"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_s3lml"]
 [ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_2whqj"]
+[ext_resource type="Texture2D" uid="uid://3nrthdjugofe" path="res://resources/images/levels/changes/pinguim.jpg" id="7_3f7b0"]
 [ext_resource type="Texture2D" uid="uid://c5wc7m6wtr8ny" path="res://resources/images/levels/level7/Passarinho.jpeg" id="7_jcru0"]
+[ext_resource type="Texture2D" uid="uid://cg2xsla7o0brh" path="res://resources/images/levels/changes/tartaruga.jpg" id="8_syhg7"]
+[ext_resource type="Texture2D" uid="uid://co5n2cqmb271t" path="res://resources/images/levels/changes/elefante.jpg" id="9_0twab"]
+[ext_resource type="Texture2D" uid="uid://bievvhaxledeh" path="res://resources/images/levels/changes/vaca.jpg" id="10_7gjjl"]
 [ext_resource type="Texture2D" uid="uid://dvguora05qn3o" path="res://resources/images/levels/level7/Urso.jpg" id="16_efcat"]
 [ext_resource type="Texture2D" uid="uid://cf3o1623i6s6l" path="res://resources/images/levels/level7/cavalo_marinho.jpg" id="21_14xj0"]
 [ext_resource type="Texture2D" uid="uid://cug0wcdy5ggdr" path="res://resources/images/levels/level7/Tubarao.jpg" id="24_qag71"]
@@ -14,48 +18,82 @@
 prompt = "Que animal vive no mar?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
-custom_minimum_size = Vector2(1032, 1536)
+custom_minimum_size = Vector2(1577, 1536)
 
 [node name="Passarinho" parent="LevelBase/ItemContainer/Container" index="0" instance=ExtResource("2_2whqj")]
 layout_mode = 0
 offset_left = 552.0
-offset_top = 640.0
+offset_top = 384.0
 offset_right = 984.0
-offset_bottom = 948.0
+offset_bottom = 684.0
 texture_normal = ExtResource("7_jcru0")
 
 [node name="Urso" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 616.0
+offset_left = 968.0
 offset_top = 32.0
-offset_right = 1016.0
+offset_right = 1368.0
 offset_bottom = 332.0
 texture_normal = ExtResource("16_efcat")
 
 [node name="Borboleta2" parent="LevelBase/ItemContainer/Container" index="2" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 8.0
+offset_left = 232.0
 offset_top = 32.0
-offset_right = 541.0
+offset_right = 765.0
 offset_bottom = 332.0
 texture_normal = ExtResource("21_14xj0")
 correto = true
 
 [node name="Tubarao" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 264.0
-offset_top = 1088.0
-offset_right = 797.0
-offset_bottom = 1388.0
+offset_left = 776.0
+offset_top = 736.0
+offset_right = 1309.0
+offset_bottom = 1036.0
 texture_normal = ExtResource("24_qag71")
 correto = true
 
-[node name="Formigao2" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_2whqj")]
+[node name="Tubarao2" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_2whqj")]
 layout_mode = 0
-offset_left = 72.0
-offset_top = 480.0
-offset_right = 522.0
-offset_bottom = 780.0
+offset_left = 264.0
+offset_top = 768.0
+offset_right = 709.0
+offset_bottom = 1068.0
+texture_normal = ExtResource("7_3f7b0")
+correto = true
+
+[node name="Tubarao3" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_2whqj")]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 1120.0
+offset_right = 536.0
+offset_bottom = 1420.0
+texture_normal = ExtResource("8_syhg7")
+correto = true
+
+[node name="Tubarao4" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_2whqj")]
+layout_mode = 0
+offset_left = 904.0
+offset_top = 1120.0
+offset_right = 1304.0
+offset_bottom = 1420.0
+texture_normal = ExtResource("9_0twab")
+
+[node name="Tubarao5" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_2whqj")]
+layout_mode = 0
+offset_left = 1096.0
+offset_top = 384.0
+offset_right = 1545.0
+offset_bottom = 684.0
+texture_normal = ExtResource("10_7gjjl")
+
+[node name="Formigao2" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_2whqj")]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 416.0
+offset_right = 490.0
+offset_bottom = 716.0
 texture_normal = ExtResource("31_wms0r")
 correto = true
 

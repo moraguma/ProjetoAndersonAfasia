@@ -1,12 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://v0kqwtwuklou"]
+[gd_scene load_steps=12 format=3 uid="uid://v0kqwtwuklou"]
 
 [ext_resource type="PackedScene" uid="uid://dni702klqguou" path="res://scenes/LevelBase.tscn" id="1_2vsbv"]
 [ext_resource type="PackedScene" uid="uid://xafc2mspuy6h" path="res://scenes/Item.tscn" id="2_okf8t"]
 [ext_resource type="Texture2D" uid="uid://bi4ea33dmwet1" path="res://resources/images/levels/level9/Celular.jpeg" id="3_f4ul5"]
 [ext_resource type="Texture2D" uid="uid://cuoieexlye2eo" path="res://resources/images/levels/level9/Meia.jpeg" id="4_fpqeg"]
 [ext_resource type="Texture2D" uid="uid://c38dl6sit8a7o" path="res://resources/images/levels/level9/Jaula.jpeg" id="5_b2kfq"]
+[ext_resource type="Texture2D" uid="uid://dnlrgo4fh4yun" path="res://resources/images/levels/changes/papel.jpg" id="7_1l5is"]
 [ext_resource type="Texture2D" uid="uid://mfy6etrkypfo" path="res://resources/images/levels/level9/notebook.jpeg" id="7_yc5li"]
-[ext_resource type="Texture2D" uid="uid://khuf145blb3b" path="res://resources/images/levels/level9/Livro.jpg" id="11_lyv1d"]
+[ext_resource type="Texture2D" uid="uid://vkppsddcinag" path="res://resources/images/levels/changes/postit.jpg" id="8_6jwd7"]
 [ext_resource type="Texture2D" uid="uid://4g7qdjwskooj" path="res://resources/images/levels/level9/Leao.png" id="18_mvend"]
 [ext_resource type="Texture2D" uid="uid://dqxplmw1i18ee" path="res://resources/images/levels/level9/Ovos.jpg" id="20_21v0l"]
 [ext_resource type="Texture2D" uid="uid://ohu4xfjf74u8" path="res://resources/images/levels/level9/Diario.jpeg" id="22_w3c7e"]
@@ -30,9 +31,9 @@ correto = true
 
 [node name="Meia" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_okf8t")]
 layout_mode = 0
-offset_left = 552.0
+offset_left = 360.0
 offset_top = 32.0
-offset_right = 852.0
+offset_right = 660.0
 offset_bottom = 332.0
 texture_normal = ExtResource("4_fpqeg")
 
@@ -46,23 +47,30 @@ texture_normal = ExtResource("5_b2kfq")
 
 [node name="Notebook" parent="LevelBase/ItemContainer/Container" index="3" instance=ExtResource("2_okf8t")]
 layout_mode = 0
-offset_left = 104.0
-offset_top = 32.0
-offset_right = 404.0
-offset_bottom = 332.0
+offset_left = 40.0
+offset_right = 340.0
 texture_normal = ExtResource("7_yc5li")
 correto = true
 
 [node name="Livro" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_okf8t")]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 384.0
-offset_right = 340.0
-offset_bottom = 684.0
-texture_normal = ExtResource("11_lyv1d")
+offset_left = 680.0
+offset_right = 1000.0
+offset_bottom = 288.0
+texture_normal = ExtResource("7_1l5is")
 correto = true
 
-[node name="Chave" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_okf8t")]
+[node name="Livro2" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_okf8t")]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 384.0
+offset_right = 488.0
+offset_bottom = 672.0
+texture_normal = ExtResource("8_6jwd7")
+stretch_mode = 4
+correto = true
+
+[node name="Chave" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_okf8t")]
 layout_mode = 0
 offset_left = 72.0
 offset_top = 1120.0
@@ -70,7 +78,7 @@ offset_right = 376.0
 offset_bottom = 1420.0
 texture_normal = ExtResource("18_mvend")
 
-[node name="Ovos" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_okf8t")]
+[node name="Ovos" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_okf8t")]
 layout_mode = 0
 offset_left = 136.0
 offset_top = 768.0
@@ -78,11 +86,11 @@ offset_right = 580.0
 offset_bottom = 1070.0
 texture_normal = ExtResource("20_21v0l")
 
-[node name="Diario" parent="LevelBase/ItemContainer/Container" index="7" instance=ExtResource("2_okf8t")]
+[node name="Diario" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_okf8t")]
 layout_mode = 0
-offset_left = 520.0
+offset_left = 552.0
 offset_top = 384.0
-offset_right = 970.0
+offset_right = 1002.0
 offset_bottom = 686.0
 texture_normal = ExtResource("22_w3c7e")
 correto = true

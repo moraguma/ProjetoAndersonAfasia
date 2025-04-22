@@ -38,49 +38,49 @@ text = "Escolha seu personagem"
 [node name="Players" type="Node2D" parent="."]
 
 [node name="0" type="TextureButton" parent="Players"]
-offset_left = 256.0
+offset_left = 200.0
 offset_top = 416.0
-offset_right = 512.0
-offset_bottom = 672.0
+offset_right = 520.0
+offset_bottom = 736.0
 texture_normal = ExtResource("4_878s8")
 stretch_mode = 0
 
 [node name="1" type="TextureButton" parent="Players"]
-offset_left = 576.0
+offset_left = 560.0
 offset_top = 416.0
-offset_right = 832.0
-offset_bottom = 672.0
+offset_right = 880.0
+offset_bottom = 736.0
 texture_normal = ExtResource("5_rt5sy")
 stretch_mode = 0
 
 [node name="2" type="TextureButton" parent="Players"]
-offset_left = 256.0
+offset_left = 200.0
 offset_top = 736.0
-offset_right = 512.0
-offset_bottom = 992.0
+offset_right = 520.0
+offset_bottom = 1056.0
 texture_normal = ExtResource("6_j8ukn")
 stretch_mode = 0
 
 [node name="3" type="TextureButton" parent="Players"]
-offset_left = 576.0
+offset_left = 560.0
 offset_top = 736.0
-offset_right = 832.0
-offset_bottom = 992.0
+offset_right = 880.0
+offset_bottom = 1056.0
 texture_normal = ExtResource("7_p7yiu")
 stretch_mode = 0
 
 [node name="4" type="TextureButton" parent="Players"]
-offset_left = 256.0
+offset_left = 200.0
 offset_top = 1056.0
-offset_right = 512.0
-offset_bottom = 1312.0
+offset_right = 520.0
+offset_bottom = 1376.0
 texture_normal = ExtResource("8_31t86")
 stretch_mode = 0
 
 [node name="5" type="TextureButton" parent="Players"]
-offset_left = 576.0
+offset_left = 560.0
 offset_top = 1056.0
-offset_right = 832.0
-offset_bottom = 1312.0
+offset_right = 880.0
+offset_bottom = 1376.0
 texture_normal = ExtResource("9_oniad")
 stretch_mode = 0

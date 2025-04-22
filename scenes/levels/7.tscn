@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://btnefgswuaq7m" path="res://resources/images/levels/level8/Suco laranja.jpeg" id="3_nr7mo"]
 [ext_resource type="Texture2D" uid="uid://8qo0bvta6jfm" path="res://resources/images/levels/level8/agua.jpeg" id="5_dmfha"]
 [ext_resource type="Texture2D" uid="uid://cruvgwbqelssx" path="res://resources/images/levels/level8/Detergente.jpeg" id="6_kyo86"]
-[ext_resource type="Texture2D" uid="uid://qpb7cl1ahs3w" path="res://resources/images/levels/level8/Detergente azul.jpeg" id="11_2j5hi"]
+[ext_resource type="Texture2D" uid="uid://bhwbcl2g551bp" path="res://resources/images/levels/changes/limpeza.jpg" id="6_u7bi0"]
 [ext_resource type="Texture2D" uid="uid://c4vcxxuhb4gbe" path="res://resources/images/levels/level8/Cafe.jpeg" id="15_6wvns"]
 [ext_resource type="Texture2D" uid="uid://t7ww1yg825u1" path="res://resources/images/levels/level8/Vinho.jpg" id="16_v8vhv"]
 [ext_resource type="Texture2D" uid="uid://dw08qam8rfplt" path="res://resources/images/levels/level8/Coca.jpeg" id="17_7vb8e"]
@@ -15,7 +15,7 @@
 [node name="Base" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource("1_4e1bn")]
-prompt = "O que você pode beber?"
+prompt = "O que você pode beber e não faz mal?"
 
 [node name="Container" parent="LevelBase/ItemContainer" index="0"]
 custom_minimum_size = Vector2(1032, 1536)
@@ -31,9 +31,9 @@ correto = true
 [node name="Agua" parent="LevelBase/ItemContainer/Container" index="1" instance=ExtResource("2_bdicd")]
 layout_mode = 0
 offset_left = 40.0
-offset_top = 352.0
+offset_top = 512.0
 offset_right = 346.0
-offset_bottom = 764.0
+offset_bottom = 924.0
 texture_normal = ExtResource("5_dmfha")
 correto = true
 
@@ -49,33 +49,33 @@ texture_normal = ExtResource("6_kyo86")
 layout_mode = 0
 offset_left = 40.0
 offset_right = 340.0
-offset_bottom = 302.0
-texture_normal = ExtResource("11_2j5hi")
+offset_bottom = 451.0
+texture_normal = ExtResource("6_u7bi0")
 
 [node name="Cafe" parent="LevelBase/ItemContainer/Container" index="4" instance=ExtResource("2_bdicd")]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 1152.0
-offset_right = 443.0
-offset_bottom = 1452.0
+offset_left = 616.0
+offset_top = 1056.0
+offset_right = 1019.0
+offset_bottom = 1356.0
 texture_normal = ExtResource("15_6wvns")
 correto = true
 
 [node name="Vinho" parent="LevelBase/ItemContainer/Container" index="5" instance=ExtResource("2_bdicd")]
 layout_mode = 0
-offset_left = 456.0
-offset_top = 1120.0
-offset_right = 1010.0
-offset_bottom = 1420.0
+offset_left = 8.0
+offset_top = 1312.0
+offset_right = 562.0
+offset_bottom = 1612.0
 texture_normal = ExtResource("16_v8vhv")
 correto = true
 
 [node name="Coca" parent="LevelBase/ItemContainer/Container" index="6" instance=ExtResource("2_bdicd")]
 layout_mode = 0
 offset_left = 72.0
-offset_top = 800.0
+offset_top = 960.0
 offset_right = 522.0
-offset_bottom = 1100.0
+offset_bottom = 1260.0
 texture_normal = ExtResource("17_7vb8e")
 correto = true
 
@@ -89,9 +89,9 @@ texture_normal = ExtResource("19_s3pwb")
 
 [node name="Alvejante" parent="LevelBase/ItemContainer/Container" index="8" instance=ExtResource("2_bdicd")]
 layout_mode = 0
-offset_left = 360.0
+offset_left = 392.0
 offset_top = 416.0
-offset_right = 660.0
+offset_right = 692.0
 offset_bottom = 722.0
 texture_normal = ExtResource("20_xbc7w")
 

@@ -3,7 +3,7 @@ extends Node2D
 const SPEED = 600
 const POSITION_DIF = Vector2(40, 72)
 
-const PLAYER_AMPLITUDE = 2
+const PLAYER_AMPLITUDE = 16
 const FREQUENCY = 0.5
 const MOVING_TIME_MULT = 4
 const ANGLE = PI/12

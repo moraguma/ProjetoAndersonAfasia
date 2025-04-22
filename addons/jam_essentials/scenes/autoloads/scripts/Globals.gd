@@ -16,14 +16,14 @@ const TTS_FALLBACK = {
 	"Assistente de voz habilitado": preload("res://resources/sounds/tts/ttsenabled.mp3"),
 	"Assistente de voz desabilitado": preload("res://resources/sounds/tts/ttsdisabled.mp3"),
 	"Onde você pode sentar?": preload("res://resources/sounds/tts/p1.wav"),
-	"Qual esporte é possível se você joga com uma bola?": preload("res://resources/sounds/tts/p2.wav"),
-	"O que ajuda a proteger do sol na cabeça?": preload("res://resources/sounds/tts/p3.wav"),
-	"O que eu posso usar para ver as horas": preload("res://resources/sounds/tts/p4.wav"),
-	"Onde você pode deitar para dormir?": preload("res://resources/sounds/tts/p5.wav"),
+	"Qual esporte é jogado com bola?": preload("res://resources/sounds/tts/p2.wav"),
+	"O que ajuda a proteger a minha cabeça no sol": preload("res://resources/sounds/tts/p3.wav"),
+	"Onde eu posso ver as horas?": preload("res://resources/sounds/tts/p4.wav"),
+	"Onde você pode dormir?": preload("res://resources/sounds/tts/p5.wav"),
 	"Onde você pode escrever?": preload("res://resources/sounds/tts/p6.wav"),
-	"O que você pode beber?": preload("res://resources/sounds/tts/p7.wav"),
+	"O que você pode beber e não faz mal?": preload("res://resources/sounds/tts/p7.wav"),
 	"Que animal vive no mar?": preload("res://resources/sounds/tts/p8.wav"),
-	"O que você pode usar para se locomover?": preload("res://resources/sounds/tts/p9.wav"),
+	"O que eu uso como transporte?": preload("res://resources/sounds/tts/p9.wav"),
 	"O que te ajuda a enxergar melhor?": preload("res://resources/sounds/tts/p10.wav"),
 	"Parabéns, você terminou o jogo!": preload("res://resources/sounds/tts/ending.mp3")
 }
@@ -32,7 +32,7 @@ const TTS_FALLBACK = {
 const SAVE_PATH = "user://save.tres"
 
 
-const MAX_COINS = 45
+const MAX_COINS = 50
 const MAX_LEVELS = 10
 
 

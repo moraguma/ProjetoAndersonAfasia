@@ -657,7 +657,6 @@ tile_set = SubResource("TileSet_ueme3")
 
 [node name="P1" type="Sprite2D" parent="."]
 position = Vector2(96, 704)
-scale = Vector2(8, 8)
 texture = ExtResource("5_u8sye")
 hframes = 2
 vframes = 3
@@ -666,7 +665,6 @@ amplitude = Vector2(0, 2)
 
 [node name="P2" type="Sprite2D" parent="."]
 position = Vector2(864, 736)
-scale = Vector2(8, 8)
 texture = ExtResource("5_u8sye")
 hframes = 2
 vframes = 3
@@ -676,7 +674,6 @@ amplitude = Vector2(0, 2)
 
 [node name="P3" type="Sprite2D" parent="."]
 position = Vector2(160, 992)
-scale = Vector2(8, 8)
 texture = ExtResource("5_u8sye")
 hframes = 2
 vframes = 3
@@ -686,7 +683,6 @@ amplitude = Vector2(0, 2)
 
 [node name="P4" type="Sprite2D" parent="."]
 position = Vector2(160, 1696)
-scale = Vector2(8, 8)
 texture = ExtResource("5_u8sye")
 flip_h = true
 hframes = 2
@@ -697,7 +693,6 @@ amplitude = Vector2(0, 2)
 
 [node name="P5" type="Sprite2D" parent="."]
 position = Vector2(992, 1344)
-scale = Vector2(8, 8)
 texture = ExtResource("5_u8sye")
 flip_h = true
 hframes = 2
@@ -708,7 +703,6 @@ amplitude = Vector2(0, 2)
 
 [node name="P6" type="Sprite2D" parent="."]
 position = Vector2(896, 1792)
-scale = Vector2(8, 8)
 texture = ExtResource("5_u8sye")
 hframes = 2
 vframes = 3
@@ -769,9 +763,9 @@ text = "[center]por um afásico"
 
 [node name="Play" type="TextureButton" parent="."]
 offset_left = 284.0
-offset_top = 928.0
+offset_top = 864.0
 offset_right = 796.0
-offset_bottom = 1440.0
+offset_bottom = 1376.0
 texture_normal = ExtResource("5_dmh0f")
 stretch_mode = 0
 script = ExtResource("9_603qt")
@@ -779,9 +773,9 @@ transition_path = "res://scenes/PlayerSelection.tscn"
 
 [node name="Tutorial" type="TextureButton" parent="."]
 offset_left = 416.0
-offset_top = 1440.0
+offset_top = 1376.0
 offset_right = 672.0
-offset_bottom = 1696.0
+offset_bottom = 1632.0
 texture_normal = ExtResource("9_hcylw")
 stretch_mode = 0
 script = ExtResource("8_7uuix")
@@ -816,9 +810,9 @@ bus = 3
 modulate = Color(1, 1, 1, 0.615686)
 clip_contents = false
 offset_left = 32.0
-offset_top = 1728.0
+offset_top = 1667.0
 offset_right = 373.0
-offset_bottom = 1824.0
+offset_bottom = 1763.0
 scale = Vector2(3, 3)
 theme = ExtResource("14_fgbjh")
 theme_override_colors/default_color = Color(1, 1, 1, 1)
@@ -829,4 +823,5 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_4o6xn")
 bbcode_enabled = true
 text = "[center]Jogo de Anderson Alberto Ramos
 Desenvolvido por Gustavo Araújo Morais
-Unicamp 2024"
+Imagens adicionais de Freepik
+Unicamp 2025"
