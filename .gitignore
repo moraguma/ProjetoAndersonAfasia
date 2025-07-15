@@ -2,3 +2,6 @@
 .godot/
 *.apk
 *.idsig
+android/
+senhakeystore.txt
+Anderson.keystore
